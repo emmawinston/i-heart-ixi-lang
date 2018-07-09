@@ -1,0 +1,78 @@
+/*****BLOOM******/
+/*---Deerful---*/
+
+/* ----setup----- */
+scale major
+tempo 80:2
+
+c -> (13)
+f -> (14)
+g -> (25)
+
+/* ----- instruments ----- */
+
+glock1 -> glock         [1 2 3 5 6 5 86 1 2 3 5 6 53   ](0)-2
+lead -> synth           [333332222111111333332222115555](0)+10
+glock2 -> glock         [1313](0)-2  
+bass -> pongbass        [11 1 1 1111 32](0)-2
+drum ->         cozykick|1   1   1   1   1   1   1   1 |
+chord1 -> drone[ccccccccccccccccccccccccccccccfffffffffffffffffffffffffffff ](0)-8
+clicks -> |      Q u  IQ om    | 
+pings -> |ld  J        DEI| 
+
+/*-----perk and doze-----*/ 
+
+group glocks -> glock1 glock2
+perk glocks
+doze glocks
+perk glock1
+doze glock1
+perk glock2
+doze glock2
+
+group perc -> clicks pings
+perk perc 
+doze perc
+perk clicks
+perk pings
+doze clicks
+doze pings
+
+perk drum
+doze drum
+
+perk chord1
+doze chord1
+
+perk lead
+doze lead
+
+perk bass
+doze bass
+
+kill
+
+
+/*----other controls----*/
+FADE OUT
+chord1 ((
+glock1 ((
+glock2 ((
+clicks ((
+pings ((
+drum ((
+bass ((
+lead ((
+
+TURN UP 
+chord1 ))
+glock1 ))
+glock2 ))
+clicks ))
+pings ))
+drum ))
+bass ))
+lead ))
+
+chord1 >> reverb
+lead >> reverb
