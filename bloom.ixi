@@ -10,6 +10,7 @@ f -> (14)
 g -> (25)
 
 /* ----- instruments ----- */
+/*---- these are all samples from Splice so alas I can't include them here, with the exception of the clicks/pings and the synth lead which are inbuilt with ixi lang -----*/
 
 glock1 -> glock         [1 2 3 5 6 5 86 1 2 3 5 6 53   ](0)-2
 lead -> synth           [333332222111111333332222115555](0)+10
