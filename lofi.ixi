@@ -1,0 +1,33 @@
+tempo 45:2
+scale minor
+
+loop1 -> weirdchord [1  1    5  5  5 ](0)
+loop2 -> weirdchord [5  8  5 4  4  3 ](0)
+reverbed >> reverb
+bass1 -> lofibass   [3333333322222222](0)-8
+group reverbed -> loop1 bass1 loop2 
+instruments
+doze loop1
+perk loop1
+doze loop2
+perk loop2
+doze reverbed
+perk reverbed
+doze bass1
+perk bass1
+
+drum1 ->            |o xo ox o xo oYi|
+hats1 ->            | j  j  j j  j jj|
+group drumsverse -> drum1 hats1
+doze drumsverse
+perk drumsverse
+
+snapshot -> test
+snapshot one //snapshot can't be recalled for some reason
+
+group everything -> loop1 bass1 drum1 hats1
+doze everything
+perk everything
+
+hats1 ((
+bass1 ))
