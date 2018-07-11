@@ -15,7 +15,7 @@ loop4 -> weirdchord [5  8  5 4  4  3 ](0)
 loop5 -> weirdchord [1  1    5  5  5 ](0)
 
 /* EFFECTS */
-group reverbed -> loop1 loop2 loop3 loop4 loop1a loop2a loop3a loop4a bass1
+group reverbed -> loop1 loop2 loop3 loop4 loop5 loop1a loop2a loop3a loop4a bass1
 
 /* CONTROLS */
 perk loop1
@@ -28,7 +28,7 @@ doze loop1
 doze loop2
 doze loop3
 doze loop4
-perk loop5
+doze loop5
 
 /* ----------- BASS ---------- */
 
@@ -47,19 +47,19 @@ doze drumsverse
 perk drumsverse
 
 /*---------- SNAPSHOTS - USE THESE TO CONTROL SONG SECTIONS ---------*/
-
+snapshot -> intro
 snapshot -> v1
 snapshot -> c1
 snapshot -> v2
 snapshot -> c2
 snapshot -> outro
 
+snapshot intro
 snapshot v1
 snapshot c1
 snapshot v2
 snapshot c2
 snapshot outro
-
 
 /* -------- EMERGENCY EXTRA CHORDS IF YOU RUN OUT OF SNAPSHOTS --------*/
 
