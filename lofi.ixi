@@ -3,8 +3,6 @@
 /*----SETUP----*/
 tempo 45:2
 scale minor
-reverbed >> reverb
-
 
 /*----- MAIN CHORDS -----*/
 
@@ -14,8 +12,16 @@ loop3 -> weirdchord [1  1    5  5  5 ](0)
 loop4 -> weirdchord [5  8  5 4  4  3 ](0)
 loop5 -> weirdchord [1  1    5  5  5 ](0)
 
+snapshot -> intro
+snapshot -> v1
+snapshot -> c1
+snapshot -> v2
+snapshot -> c2
+snapshot -> outro
+
 /* EFFECTS */
-group reverbed -> loop1 loop2 loop3 loop4 loop5 loop1a loop2a loop3a loop4a bass1
+group reverbed -> loop1 loop2 loop3 loop4 loop5 bass1
+reverbed >> reverb
 
 /* CONTROLS */
 perk loop1
@@ -47,12 +53,6 @@ doze drumsverse
 perk drumsverse
 
 /*---------- SNAPSHOTS - USE THESE TO CONTROL SONG SECTIONS ---------*/
-snapshot -> intro
-snapshot -> v1
-snapshot -> c1
-snapshot -> v2
-snapshot -> c2
-snapshot -> outro
 
 snapshot intro
 snapshot v1
@@ -61,38 +61,7 @@ snapshot v2
 snapshot c2
 snapshot outro
 
-/* -------- EMERGENCY EXTRA CHORDS IF YOU RUN OUT OF SNAPSHOTS --------*/
-
-loop1a -> weirdchord [1  1    5  5  5 ](0)
-loop2a -> weirdchord [5  8  5 4  4  3 ](0)
-loop3a -> weirdchord [1  1    5  5  5 ](0)
-loop4a -> weirdchord [5  8  5 4  4  3 ](0)
-
-doze loop1a
-doze loop2a
-doze loop3a
-doze loop4a
-
-perk loop1a
-perk loop2a
-perk loop3a
-perk loop4a
-
-
-/* SNAPSHOTS */
-
-snapshot -> v1a
-snapshot -> c1a
-snapshot -> v2a
-snapshot -> c2a
-
-snapshot v1a
-snapshot c1a
-snapshot v2a
-snapshot c2a
-
-
 /*-------GLOBAL STORAGE-------*/
 
-store session1
+store lofi
 kill
