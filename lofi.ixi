@@ -1,32 +1,44 @@
+/***DEERFUL***/
+
+/*----SETUP----*/
 tempo 45:2
 scale minor
+reverbed >> reverb
+
+
+/*----- MAIN CHORDS -----*/
 
 loop1 -> weirdchord [1  1    5  5  5 ](0)
 loop2 -> weirdchord [5  8  5 4  4  3 ](0)
 loop3 -> weirdchord [1  1    5  5  5 ](0)
 loop4 -> weirdchord [5  8  5 4  4  3 ](0)
+loop5 -> weirdchord [1  1    5  5  5 ](0)
 
-loop1a -> weirdchord [1  1    5  5  5 ](0)
-loop2a -> weirdchord [5  8  5 4  4  3 ](0)
-loop3a -> weirdchord [1  1    5  5  5 ](0)
-loop4a -> weirdchord [5  8  5 4  4  3 ](0)
+/* EFFECTS */
+group reverbed -> loop1 loop2 loop3 loop4 loop1a loop2a loop3a loop4a bass1
 
-group reverbed -> loop1 bass1 loop2 
-reverbed >> reverb
-
-bass1 -> lofibass   [3333333322222222](0)-8
-perk bass1
-doze bass1
+/* CONTROLS */
+perk loop1
+perk loop2
+perk loop3
+perk loop4
+perk loop5
 
 doze loop1
 doze loop2
 doze loop3
 doze loop4
+perk loop5
 
-perk loop1
-perk loop2
-perk loop3
-perk loop4
+/* ----------- BASS ---------- */
+
+bass1 -> lofibass   [3333333322222222](0)-8
+
+perk bass1
+doze bass1
+
+
+/* ----------- DRUMS ---------- */
 
 drum1 ->            |o xo ox o xo oYi|
 hats1 ->            | j  j  j j  j jj|
@@ -34,22 +46,53 @@ group drumsverse -> drum1 hats1
 doze drumsverse
 perk drumsverse
 
-snapshot -> v1 //snapshots work provided you progress linearly through them and never go backwards (why?!)
+/*---------- SNAPSHOTS - USE THESE TO CONTROL SONG SECTIONS ---------*/
+
+snapshot -> v1
 snapshot -> c1
 snapshot -> v2
 snapshot -> c2
+snapshot -> outro
 
 snapshot v1
 snapshot c1
 snapshot v2
 snapshot c2
+snapshot outro
 
-doze loop1
-perk loop2
 
-group everything -> loop1 bass1 drum1 hats1
-doze everything
-perk everything
+/* -------- EMERGENCY EXTRA CHORDS IF YOU RUN OUT OF SNAPSHOTS --------*/
 
-hats1 ((
-bass1 ))
+loop1a -> weirdchord [1  1    5  5  5 ](0)
+loop2a -> weirdchord [5  8  5 4  4  3 ](0)
+loop3a -> weirdchord [1  1    5  5  5 ](0)
+loop4a -> weirdchord [5  8  5 4  4  3 ](0)
+
+doze loop1a
+doze loop2a
+doze loop3a
+doze loop4a
+
+perk loop1a
+perk loop2a
+perk loop3a
+perk loop4a
+
+
+/* SNAPSHOTS */
+
+snapshot -> v1a
+snapshot -> c1a
+snapshot -> v2a
+snapshot -> c2a
+
+snapshot v1a
+snapshot c1a
+snapshot v2a
+snapshot c2a
+
+
+/*-------GLOBAL STORAGE-------*/
+
+store session1
+kill
