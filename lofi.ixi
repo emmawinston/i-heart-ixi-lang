@@ -28,6 +28,9 @@ doze loop2
 
 loop2 ((
 
+loop3 -> piano      [3  9  7 2  9  7 ]
+
+
 /* don't touch these ;) */
 snapshot -> intro
 snapshot -> verse1
