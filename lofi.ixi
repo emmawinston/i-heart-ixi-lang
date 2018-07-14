@@ -4,6 +4,8 @@
 tempo 45:2
 scale minor
 a -> $1
+b -> $4
+c -> $11
 kill
 
 /*----- WAVES ------*/
@@ -16,19 +18,30 @@ waves ))
 
 loop1 -> weirdchord [1  1    5  5  5 ](0)
 
-//       weirdchord [5  8  5 4  4  3 ](0)
-//       weirdchord [1  1    5  5  5 ](0)
+//                  [5  8  5 4  4  3 ](0)
+//                  [1  1    5  5  5 ](0)
 
 doze loop1
 
+/* FADE */
 loop1 ((
 
-loop2 -> smooth     [a       1       a   3   1       ](0)+6
+/*--- LEAD VERSE SYNTH ---*/
+loop2 -> smooth     [](0)+6
+//                  [a       1       a   3   1       ](0)+6
+
 doze loop2
 
+/* FADE */
 loop2 ((
 
-loop3 -> piano      [3  9  7 2  9  7 ]
+/*--- LEAD CHORUS RHODES ---*/
+loop3 -> rhodes     [22 99 cc22 99 cc ](0)
+doze loop3
+perk loop3
+
+/* FADE */
+loop3 ((
 
 
 /* don't touch these ;) */
@@ -70,22 +83,11 @@ snapshot -> bassdrums
 snapshot bassdrums
 
 /* EFFECTS */
-group reverbed -> loop1 loop2 bass1 
+group reverbed -> loop1 loop2 bass1 loop3
 reverbed >> reverb
 
-/* CONTROLS */
-perk loop1
-perk loop2
-perk loop3
-perk loop4
-perk loop5
+/*---------- GLOBAL FILE STORAGE ---------*/
 
-doze loop1
-doze loop2
-doze loop3
-doze loop4
-doze loop5
+store lofi
 
-/*---------- SNAPSHOTS - USE THESE TO CONTROL SONG SECTIONS ---------*/
-
-store sessionlofi1
+kill
