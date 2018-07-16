@@ -1,4 +1,5 @@
-/***DEERFUL***/
+/***THE SEASIDE TOWN***/
+/***---Deerful---***/
 
 /*----SETUP----*/
 tempo 45:2
@@ -8,7 +9,7 @@ b -> $4
 c -> $11
 kill
 
-/* don't touch these ;) */
+/* use these to save appropriate combinations of instruments/effects */
 snapshot -> intro
 snapshot -> verse1
 snapshot -> chorus1
@@ -27,7 +28,7 @@ waves ))
 
 /*----- MAIN CHORDS -----*/
 
-loop1 -> weirdchord [1  1    5  5  5 ](0)
+loop1 -> weirdchord [5  8  5 4  4  3 ](0)
 
 //                  [5  8  5 4  4  3 ](0)
 //                  [1  1    5  5  5 ](0)
@@ -38,7 +39,7 @@ doze loop1
 loop1 ((
 
 /*--- LEAD VERSE SYNTH ---*/
-loop2 -> smooth     [](0)+6
+loop2 -> smooth     [a       1       a   3   1       ](0)+6
 //                  [a       1       a   3   1       ](0)+6
 
 doze loop2
@@ -92,16 +93,16 @@ VERSE
 across the bay
 a hundred miles away
 get lost in me 
-I’m waiting for the day
+I'm waiting for the day
 
 my ship comes in 
 the summer sky is grey 
-and can’t you see
+and can‚Äôt you see
 I only wanted you to stay
 
 CHORUS
-Aren’t you the girl from the seaside town, they say
-Weren’t you the girl who lost her way
+Aren't you the girl from the seaside town, they say
+Weren't you the one who lost her way
 But you were the girl with the salt taste skin, I know
 Come back to me with the ocean spray
 
@@ -112,8 +113,8 @@ the light that fades
 and leaves me out here on my own
  
 CHORUS
-Aren’t you the girl from the seaside town, they say
-Weren’t you the girl who lost her way
+Aren't you the girl from the seaside town, they say
+Weren't you the one who lost her way
 But you were the girl with the salt taste skin, I know
 Come back to me with the ocean spray
 
