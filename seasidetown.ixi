@@ -123,3 +123,10 @@ Come bind me here
 With all your silken sails 
 and oh my dear
 the sea will tell your tale 
+
+/*---Synthdef for verse 2---*/
+/* SynthDef(\smooth, { |out, freq = 440, sustain = 1, gate=1, amp = 0.1|
+    var sig;
+    sig = SinOsc.ar(freq, 0, amp) * EnvGen.kr(Env.linen(0.05, sustain, 0.8), doneAction:2);
+    Out.ar(out, sig ! 2)
+}).add(\seasidetown); */
