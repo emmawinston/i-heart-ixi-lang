@@ -58,6 +58,12 @@ But what if I'm not ready
 What if I'm not ready 
 What am I supposed to do instead 
 
+loop1 -> piano[a3a3a3a3b2b2b2b2c1c1c1c1c1c1b2b2](0.5)
+loop2 -> piano[6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ](0.5)-24
+
+group pianos -> loop1 loop2
+pianos >> reverb
+
 VERSE
 If I could climb inside your head and stay there
 If I could be the one who came prepared
