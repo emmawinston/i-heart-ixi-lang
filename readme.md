@@ -8,6 +8,6 @@ Videos/audio of songs will be posted in this readme as I record them.
 - The Seaside Town (coming soon)
 - N1C (unreleased for now)
 
-I'm now playing the [TOPLAP Moot](https://toplap.org/moot2018/) in Sheffield on the 1st of September. Watch this repository for my progress in building a full 8-song set throughout July (it's fine, I work fast).
+I'm now playing the [TOPLAP Moot](https://toplap.org/moot2018/) in Sheffield on the 1st of September. Watch this repository for my progress in building a full live set throughout July (it's fine, I work fast).
 
 Can you live-code pop music? I'm going to try.
