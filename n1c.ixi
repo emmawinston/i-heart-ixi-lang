@@ -1,13 +1,22 @@
-/***DEERFUL - N1C*** (UNFINISHED)/
+/***DEERFUL - N1C*** (UNFINISHED)***/
 
-tonic 69
-scale minor
+tonic 60
+scale major
+tempo 72:2
+a -> (68)
+b -> (57)
+c -> (46)
+kill
 
-// chords are Am, G, F throughout - this one should be simple since it's just a case of building looped layers 
+loop1 -> piano[a3a3a3a3b2b2b2b2c1c1c1c1c1c1b2b2](0.5)
+loop2 -> piano[6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ](0.5)-24
+
+group pianos -> loop1 loop2
+pianos >> reverb
 
 /*---GLOBAL STORAGE---*/
 
-store session1
+store session3
 kill
 
 
@@ -19,7 +28,7 @@ a storm in from the south
 a crack across the sky 
 that shook us where we waited on the ground
 
-I laughed that this was what I’d always wanted
+I laughed that this was what I‚Äôd always wanted
 Be washed away without a trace behind 
 it breaks my heart in half
 it breaks my heart in half 
@@ -27,8 +36,8 @@ No one can be this happy all the time
 
 CHORUS
 everything will change, you said 
-But what if I’m not ready 
-What if I’m not ready 
+But what if I‚Äôm not ready 
+What if I‚Äôm not ready 
 What am I supposed to do instead 
 
 VERSE 
@@ -36,17 +45,17 @@ The hours I spent fixating on the weather
 And silencing the voice inside my heart 
 I could not read the signs 
 I did not know you then 
-And now I don’t know where to even start
+And now I don‚Äôt know where to even start
  
 CHORUS
 everything will change, you said 
-But what if I’m not ready 
-What if I’m not ready 
+But what if I‚Äôm not ready 
+What if I‚Äôm not ready 
 What am I supposed to do instead 
 
 Everything will change, you said 
-But what if I’m not ready 
-What if I’m not ready 
+But what if I‚Äôm not ready 
+What if I‚Äôm not ready 
 What am I supposed to do instead 
 
 VERSE
@@ -54,4 +63,4 @@ If I could climb inside your head and stay there
 If I could be the one who came prepared
 A storm in from the west 
 A crack across my heart
-Perhaps I wouldn’t be so fucking scared
+Perhaps I wouldn‚Äôt be so fucking scared
