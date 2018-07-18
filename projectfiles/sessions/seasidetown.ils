@@ -1,0 +1,4803 @@
+var o, p;
+o = [
+	Array.prNew(8),  "lofi",  "C",  "/***DEERFUL***/
+
+/*----SETUP----*/
+tempo 45:2
+scale minor
+a -> $1
+b -> $4
+c -> $11
+kill
+
+/* don't touch these ;) */
+snapshot -> intro
+snapshot -> verse1
+snapshot -> chorus1
+snapshot -> verse2
+snapshot -> verse2lead
+snapshot -> chorus2
+snapshot -> verse3
+snapshot -> bassoutro
+snapshot -> outro
+
+/*----- WAVES ------*/
+waves -> waves {1 }
+doze waves
+perk waves
+waves ))
+
+/*----- MAIN CHORDS -----*/
+
+loop1 -> weirdchord [1  1    5  5  5 ](0)
+
+//                  [5  8  5 4  4  3 ](0)
+//                  [1  1    5  5  5 ](0)
+
+doze loop1
+
+/* FADE */
+loop1 ((
+
+/*--- LEAD VERSE SYNTH ---*/
+loop2 -> smooth     [](0)+6
+//                  [a       1       a   3   1       ](0)+6
+
+doze loop2
+
+/* FADE */
+loop2 ((
+
+/*--- LEAD CHORUS RHODES ---*/
+loop3 -> rhodes     [22 99 cc22 99 cc ](0)
+doze loop3
+perk loop3
+
+/* FADE */
+loop3 ((
+
+/* use these to control */
+snapshot intro
+snapshot chorus1
+snapshot verse2
+snapshot verse2lead
+snapshot chorus2
+snapshot verse3
+snapshot bassoutro
+snapshot outro
+
+/* ----------- DRUMS ---------- */
+
+drum1 ->            |o xo ox o xo oYi|
+hats1 ->            | j  j  j j  j jj|
+group drumsverse -> drum1 hats1
+doze drumsverse
+
+/* ----------- BASS ---------- */
+
+bass1 -> lofibass   [3333333322222222](0)-8
+doze bass1
+
+/* EFFECTS */
+group reverbed -> loop1 loop2 bass1 loop3
+reverbed >> reverb
+
+/*---------- GLOBAL FILE STORAGE ---------*/
+
+store seasidetown
+
+kill
+
+/*---LYRICS---*/
+
+VERSE
+across the bay
+a hundred miles away
+get lost in me 
+I’m waiting for the day
+
+my ship comes in 
+the summer sky is grey 
+and can’t you see
+I only wanted you to stay
+
+CHORUS
+Aren’t you the girl from the seaside town, they say
+Weren’t you the girl who lost her way
+But you were the girl with the salt taste skin, I know
+Come back to me with the ocean spray
+
+VERSE
+the garden blown
+the wind against the stone 
+the light that fades 
+and leaves me out here on my own
+ 
+CHORUS
+Aren’t you the girl from the seaside town, they say
+Weren’t you the girl who lost her way
+But you were the girl with the salt taste skin, I know
+Come back to me with the ocean spray
+
+VERSE
+Come bind me here 
+With all your silken sails 
+and oh my dear
+the sea will tell your tale ",  
+	IdentityDictionary.prNew,  Array.prNew(32),  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "rhodes",  
+	Array.prNew(12),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(12),  "\"loop3 -> rhodes     [22 99 cc22 99 cc ](0)\"",  "22 99 cc22 99 cc ",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"weirdchord",  Array.prNew(5),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(5),  "\"loop1 -> weirdchord [1  1    5  5  5 ](0)\"",  "1  1    5  5  5 ",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "smooth",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  "\"loop2 -> smooth     [](0)+6\"",  
+	"]",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "rhythmtrack",  Array.prNew(11),  
+	"lofikick",  "vaporsnare",  "lofisnare",  "rollhat",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  "o xo ox o xo oYi",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	Array.prNew(7),  "lofihat",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(7),  "\"hats1 ->            | j  j  j j  j jj|\"",  
+	" j  j  j j  j jj",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "waves",  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  "\"waves -> waves {1 }\"",  "1 ",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "lofibass",  Array.prNew(16),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(16),  "\"bass1 -> lofibass   [3333333322222222](0)-8\"",  
+	"3333333322222222",  IdentityDictionary.prNew,  Array.prNew(64),  IdentityDictionary.prNew,  
+	Array.prNew(32),  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "rhodes",  Array.prNew(12),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(12),  
+	"\"loop3 -> rhodes     [22 99 cc22 99 cc ](0)\"",  "22 99 cc22 99 cc ",  Array.prNew,  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"weirdchord",  Array.prNew(5),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(5),  "\"loop1 -> weirdchord [1  1    5  5  5 ](0)\"",  "1  1    5  5  5 ",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "smooth",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  "\"loop2 -> smooth     [](0)+6\"",  
+	"]",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "rhythmtrack",  Array.prNew(11),  
+	"lofikick",  "vaporsnare",  "lofisnare",  "rollhat",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  "o xo ox o xo oYi",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	Array.prNew(7),  "lofihat",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(7),  "\"hats1 ->            | j  j  j j  j jj|\"",  
+	" j  j  j j  j jj",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "waves",  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  "\"waves -> waves {1 }\"",  "1 ",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "lofibass",  Array.prNew(16),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(16),  "\"bass1 -> lofibass   [3333333322222222](0)-8\"",  
+	"3333333322222222",  IdentityDictionary.prNew,  Array.prNew(32),  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"weirdchord",  Array.prNew(6),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(6),  "\"loop1 -> weirdchord [5  8  5 4  4  3 ](0)\"",  "5  8  5 4  4  3 ",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "smooth",  Array.prNew(5),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  "\"loop2 -> smooth     [a       1       a   3   1       ](0)+6\"",  
+	"a       1       a   3   1       ",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "rhythmtrack",  Array.prNew(11),  
+	"lofikick",  "vaporsnare",  "lofisnare",  "rollhat",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  "o xo ox o xo oYi",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	Array.prNew(7),  "lofihat",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(7),  "\"hats1 ->            | j  j  j j  j jj|\"",  
+	" j  j  j j  j jj",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "waves",  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  "\"waves -> waves {1 }\"",  "1 ",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "lofibass",  Array.prNew(16),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(16),  "\"bass1 -> lofibass   [3333333322222222](0)-8\"",  
+	"3333333322222222",  IdentityDictionary.prNew,  Array.prNew(32),  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"weirdchord",  Array.prNew(6),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(6),  "\"loop1 -> weirdchord [5  8  5 4  4  3 ](0)\"",  "5  8  5 4  4  3 ",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "smooth",  Array.prNew(5),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  "\"loop2 -> smooth     [a       1       a   3   1       ](0)+6\"",  
+	"a       1       a   3   1       ",  Array.prNew,  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "rhythmtrack",  
+	Array.prNew(11),  "lofikick",  "vaporsnare",  "lofisnare",  
+	"rollhat",  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  "o xo ox o xo oYi",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  Array.prNew(7),  "lofihat",  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(7),  
+	"\"hats1 ->            | j  j  j j  j jj|\"",  " j  j  j j  j jj",  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "waves",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  "\"waves -> waves {1 }\"",  
+	"1 ",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "lofibass",  Array.prNew(16),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(16),  
+	"\"bass1 -> lofibass   [3333333322222222](0)-8\"",  "3333333322222222",  IdentityDictionary.prNew,  Array.prNew(32),  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "weirdchord",  Array.prNew(5),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  "\"loop1 -> weirdchord [1  1    5  5  5 ](0)\"",  
+	"1  1    5  5  5 ",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "smooth",  Array.prNew(5),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  
+	"\"loop2 -> smooth     [a       1       a   3   1       ](0)+6\"",  "a       1       a   3   1       ",  Array.prNew,  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"rhythmtrack",  Array.prNew(11),  "lofikick",  "vaporsnare",  
+	"lofisnare",  "rollhat",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  
+	"o xo ox o xo oYi",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  Array.prNew(7),  "lofihat",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(7),  "\"hats1 ->            | j  j  j j  j jj|\"",  " j  j  j j  j jj",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"waves",  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	"\"waves -> waves {1 }\"",  "1 ",  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "lofibass",  
+	Array.prNew(16),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(16),  "\"bass1 -> lofibass   [3333333322222222](0)-8\"",  "3333333322222222",  IdentityDictionary.prNew,  
+	Array.prNew(32),  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "weirdchord",  Array.prNew(5),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  
+	"\"loop1 -> weirdchord [1  1    5  5  5 ](0)\"",  "1  1    5  5  5 ",  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "smooth",  
+	Array.prNew(5),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(5),  "\"loop2 -> smooth     [a       1       a   3   1       ](0)+6\"",  "a       1       a   3   1       ",  Array.prNew,  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "rhythmtrack",  Array.prNew(11),  "lofikick",  
+	"vaporsnare",  "lofisnare",  "rollhat",  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(11),  
+	"\"drum1 ->            |o xo ox o xo oYi|\"",  "o xo ox o xo oYi",  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  Array.prNew(7),  
+	"lofihat",  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(7),  "\"hats1 ->            | j  j  j j  j jj|\"",  " j  j  j j  j jj",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "waves",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  "\"waves -> waves {1 }\"",  "1 ",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"lofibass",  Array.prNew(16),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(16),  "\"bass1 -> lofibass   [3333333322222222](0)-8\"",  "3333333322222222",  
+	IdentityDictionary.prNew,  Array.prNew(32),  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "weirdchord",  
+	Array.prNew(6),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(6),  "\"loop1 -> weirdchord [5  8  5 4  4  3 ](0)\"",  "5  8  5 4  4  3 ",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"rhythmtrack",  Array.prNew(11),  "lofikick",  "vaporsnare",  
+	"lofisnare",  "rollhat",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  
+	"o xo ox o xo oYi",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  Array.prNew(7),  "lofihat",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(7),  "\"hats1 ->            | j  j  j j  j jj|\"",  " j  j  j j  j jj",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"waves",  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	"\"waves -> waves {1 }\"",  "1 ",  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "lofibass",  
+	Array.prNew(16),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(16),  "\"bass1 -> lofibass   [3333333322222222](0)-8\"",  "3333333322222222",  Array.prNew,  
+	IdentityDictionary.prNew,  Array.prNew(32),  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "weirdchord",  
+	Array.prNew(5),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(5),  "\"loop1 -> weirdchord [1  1    5  5  5 ](0)\"",  "1  1    5  5  5 ",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"smooth",  Array.prNew(5),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(5),  "\"loop2 -> smooth     [a       1       a   3   1       ](0)+6\"",  "a       1       a   3   1       ",  
+	Array.prNew,  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "rhythmtrack",  Array.prNew(11),  
+	"lofikick",  "vaporsnare",  "lofisnare",  "rollhat",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  "o xo ox o xo oYi",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	Array.prNew(7),  "lofihat",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(7),  "\"hats1 ->            | j  j  j j  j jj|\"",  
+	" j  j  j j  j jj",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "waves",  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  "\"waves -> waves {1 }\"",  "1 ",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "lofibass",  Array.prNew(16),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(16),  "\"bass1 -> lofibass   [3333333322222222](0)-8\"",  
+	"3333333322222222",  IdentityDictionary.prNew,  Array.prNew(32),  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"weirdchord",  Array.prNew(5),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(5),  "\"loop1 -> weirdchord [1  1    5  5  5 ](0)\"",  "1  1    5  5  5 ",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "smooth",  Array.prNew(5),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  "\"loop2 -> smooth     [a       1       a   3   1       ](0)+6\"",  
+	"a       1       a   3   1       ",  Array.prNew,  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "rhythmtrack",  
+	Array.prNew(11),  "lofikick",  "vaporsnare",  "lofisnare",  
+	"rollhat",  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  "o xo ox o xo oYi",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  Array.prNew(7),  "lofihat",  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(7),  
+	"\"hats1 ->            | j  j  j j  j jj|\"",  " j  j  j j  j jj",  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "waves",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  "\"waves -> waves {1 }\"",  
+	"1 ",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "lofibass",  Array.prNew(16),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(16),  
+	"\"bass1 -> lofibass   [3333333322222222](0)-8\"",  "3333333322222222",  IdentityDictionary.prNew,  Array.prNew(32),  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "weirdchord",  Array.prNew(5),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  "\"loop1 -> weirdchord [1  1    5  5  5 ](0)\"",  
+	"1  1    5  5  5 ",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "smooth",  Array.prNew(5),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  
+	"\"loop2 -> smooth     [a       1       a   3   1       ](0)+6\"",  "a       1       a   3   1       ",  Array.prNew,  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"rhythmtrack",  Array.prNew(11),  "lofikick",  "vaporsnare",  
+	"lofisnare",  "rollhat",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  
+	"o xo ox o xo oYi",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  Array.prNew(7),  "lofihat",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(7),  "\"hats1 ->            | j  j  j j  j jj|\"",  " j  j  j j  j jj",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"waves",  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	"\"waves -> waves {1 }\"",  "1 ",  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "lofibass",  
+	Array.prNew(16),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(16),  "\"bass1 -> lofibass   [3333333322222222](0)-8\"",  "3333333322222222",  IdentityDictionary.prNew,  
+	Array.prNew(32),  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "rhodes",  Array.prNew(12),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(12),  
+	"\"loop3 -> rhodes     [22 99 cc22 99 cc ](0)\"",  "22 99 cc22 99 cc ",  Array.prNew,  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"weirdchord",  Array.prNew(6),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(6),  "\"loop1 -> weirdchord [5  8  5 4  4  3 ](0)\"",  "5  8  5 4  4  3 ",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "smooth",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  "\"loop2 -> smooth     [](0)+6\"",  
+	"]",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "rhythmtrack",  Array.prNew(11),  
+	"lofikick",  "vaporsnare",  "lofisnare",  "rollhat",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  "o xo ox o xo oYi",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	Array.prNew(7),  "lofihat",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(7),  "\"hats1 ->            | j  j  j j  j jj|\"",  
+	" j  j  j j  j jj",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "waves",  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  "\"waves -> waves {1 }\"",  "1 ",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "lofibass",  Array.prNew(16),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(16),  "\"bass1 -> lofibass   [3333333322222222](0)-8\"",  
+	"3333333322222222",  IdentityDictionary.prNew,  Array.prNew(32),  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"weirdchord",  Array.prNew(5),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(5),  "\"loop1 -> weirdchord [1  1    5  5  5 ](0)\"",  "1  1    5  5  5 ",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "smooth",  Array.prNew(5),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  "\"loop2 -> smooth     [a       1       a   3   1       ](0)+6\"",  
+	"a       1       a   3   1       ",  Array.prNew,  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "rhythmtrack",  
+	Array.prNew(11),  "lofikick",  "vaporsnare",  "lofisnare",  
+	"rollhat",  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  "o xo ox o xo oYi",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  Array.prNew(7),  "lofihat",  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(7),  
+	"\"hats1 ->            | j  j  j j  j jj|\"",  " j  j  j j  j jj",  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "waves",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  "\"waves -> waves {1 }\"",  
+	"1 ",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "lofibass",  Array.prNew(16),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(16),  
+	"\"bass1 -> lofibass   [3333333322222222](0)-8\"",  "3333333322222222",  IdentityDictionary.prNew,  Array.prNew(32),  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "weirdchord",  Array.prNew(5),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  "\"loop1 -> weirdchord [1  1    5  5  5 ](0)\"",  
+	"1  1    5  5  5 ",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "smooth",  Array.prNew(5),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  
+	"\"loop2 -> smooth     [a       1       a   3   1       ](0)+6\"",  "a       1       a   3   1       ",  Array.prNew,  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"rhythmtrack",  Array.prNew(11),  "lofikick",  "vaporsnare",  
+	"lofisnare",  "rollhat",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  
+	"o xo ox o xo oYi",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  Array.prNew(7),  "lofihat",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(7),  "\"hats1 ->            | j  j  j j  j jj|\"",  " j  j  j j  j jj",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"waves",  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	"\"waves -> waves {1 }\"",  "1 ",  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "lofibass",  
+	Array.prNew(16),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(16),  "\"bass1 -> lofibass   [3333333322222222](0)-8\"",  "3333333322222222",  IdentityDictionary.prNew,  
+	Array.prNew(32),  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "weirdchord",  Array.prNew(5),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  
+	"\"loop1 -> weirdchord [1  1    5  5  5 ](0)\"",  "1  1    5  5  5 ",  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "smooth",  
+	Array.prNew(5),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(5),  "\"loop2 -> smooth     [a       1       a   3   1       ](0)+6\"",  "a       1       a   3   1       ",  Array.prNew,  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "rhythmtrack",  Array.prNew(11),  "lofikick",  
+	"vaporsnare",  "lofisnare",  "rollhat",  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(11),  
+	"\"drum1 ->            |o xo ox o xo oYi|\"",  "o xo ox o xo oYi",  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  Array.prNew(7),  
+	"lofihat",  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(7),  "\"hats1 ->            | j  j  j j  j jj|\"",  " j  j  j j  j jj",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "waves",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  "\"waves -> waves {1 }\"",  "1 ",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"lofibass",  Array.prNew(16),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(16),  "\"bass1 -> lofibass   [3333333322222222](0)-8\"",  "3333333322222222",  
+	Array.prNew,  IdentityDictionary.prNew,  Array.prNew(32),  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"weirdchord",  Array.prNew(5),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(5),  "\"loop1 -> weirdchord [1  1    5  5  5 ](0)\"",  "1  1    5  5  5 ",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "smooth",  Array.prNew(5),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  "\"loop2 -> smooth     [a       1       a   3   1       ](0)+6\"",  
+	"a       1       a   3   1       ",  Array.prNew,  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "rhythmtrack",  
+	Array.prNew(11),  "lofikick",  "vaporsnare",  "lofisnare",  
+	"rollhat",  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  "o xo ox o xo oYi",  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  Array.prNew(7),  "lofihat",  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(7),  
+	"\"hats1 ->            | j  j  j j  j jj|\"",  " j  j  j j  j jj",  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "waves",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  "\"waves -> waves {1 }\"",  
+	"1 ",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "lofibass",  Array.prNew(16),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(16),  
+	"\"bass1 -> lofibass   [3333333322222222](0)-8\"",  "3333333322222222",  IdentityDictionary.prNew,  Array.prNew(32),  
+	Array.prNew(3),  Event.prNew,  Array.prNew(4),  Event.prNew,  
+	Array.prNew(64),  "weirdchord",  Array.prNew(5),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  "\"loop1 -> weirdchord [1  1    5  5  5 ](0)\"",  
+	"1  1    5  5  5 ",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  "smooth",  Array.prNew(5),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(5),  
+	"\"loop2 -> smooth     [a       1       a   3   1       ](0)+6\"",  "a       1       a   3   1       ",  Array.prNew,  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"rhythmtrack",  Array.prNew(11),  "lofikick",  "vaporsnare",  
+	"lofisnare",  "rollhat",  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(11),  "\"drum1 ->            |o xo ox o xo oYi|\"",  
+	"o xo ox o xo oYi",  Array.prNew(3),  Event.prNew,  Array.prNew(4),  
+	Event.prNew,  Array.prNew(64),  Array.prNew(7),  "lofihat",  
+	Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(7),  "\"hats1 ->            | j  j  j j  j jj|\"",  " j  j  j j  j jj",  Array.prNew(3),  
+	Event.prNew,  Array.prNew(4),  Event.prNew,  Array.prNew(64),  
+	"waves",  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	"\"waves -> waves {1 }\"",  "1 ",  Array.prNew(3),  Event.prNew,  
+	Array.prNew(4),  Event.prNew,  Array.prNew(64),  "lofibass",  
+	Array.prNew(16),  Array.prNew(1),  Array.prNew(1),  Array.prNew(1),  
+	Array.prNew(16),  "\"bass1 -> lofibass   [3333333322222222](0)-8\"",  "3333333322222222",  Array.prNew,  
+	Event.prNew,  Array.prNew(8),  Array.prNew(2),  Array.prNew(4)
+];
+p = [
+	// Array
+	0, [ o[1],  o[2],  nil,  o[3],  
+		o[4],  o[101],  o[1392],  8 ],  
+	// IdentityDictionary
+	4, [ array: o[5],  size: 7,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	5, [ nil,  nil,  '8loop3',  o[6],  
+		'8loop1',  o[19],  nil,  nil,  
+		'8loop2',  o[32],  nil,  nil,  
+		'8drum1',  o[45],  '8hats1',  o[63],  
+		nil,  nil,  '8waves',  o[77],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[88] ],  
+	// Array
+	6, [ o[7],  o[9],  nil ],  
+	// Event
+	7, [ array: o[8],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	8, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	9, [ array: o[10],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	10, [ 'instrument',  o[11],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[12],  nil,  nil,  
+		'amp',  0.250000,  'sustainarr',  o[13],  
+		nil,  nil,  'midichannel',  -1,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[14],  
+		'attackarr',  o[15],  nil,  nil,  
+		nil,  nil,  'durarr',  o[16],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[17],  
+		nil,  nil,  'score',  o[18],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	12, [ 62,  62,  74,  74,  
+		71,  71,  62,  62,  
+		74,  74,  71,  71 ],  
+	// Array
+	13, [ 1.000000 ],  
+	// Array
+	14, [ 0.000000 ],  
+	// Array
+	15, [ 0.555556 ],  
+	// Array
+	16, [ 0.250000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000,  0.500000,  
+		0.250000,  0.500000,  0.250000,  0.500000 ],  
+	// Array
+	19, [ o[20],  o[22],  nil ],  
+	// Event
+	20, [ array: o[21],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	21, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	22, [ array: o[23],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	23, [ 'instrument',  o[24],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[25],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[26],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[27],  
+		'attackarr',  o[28],  nil,  nil,  
+		nil,  nil,  'durarr',  o[29],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[30],  
+		nil,  nil,  'score',  o[31],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	25, [ 60,  60,  67,  67,  
+		67 ],  
+	// Array
+	26, [ 1.000000 ],  
+	// Array
+	27, [ 0.000000 ],  
+	// Array
+	28, [ 0.555556 ],  
+	// Array
+	29, [ 0.750000,  1.250000,  0.750000,  0.750000,  
+		0.500000 ],  
+	// Array
+	32, [ o[33],  o[35],  nil ],  
+	// Event
+	33, [ array: o[34],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	34, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	35, [ array: o[36],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	36, [ 'instrument',  o[37],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[38],  nil,  nil,  
+		'amp',  0.300000,  'sustainarr',  o[39],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[40],  
+		'attackarr',  o[41],  nil,  nil,  
+		nil,  nil,  'durarr',  o[42],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[43],  
+		nil,  nil,  'score',  o[44],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	38, [ 's' ],  
+	// Array
+	39, [ 1.000000 ],  
+	// Array
+	40, [ 0.000000 ],  
+	// Array
+	41, [ 0.555556 ],  
+	// Array
+	42, [ 0.250000 ],  
+	// Array
+	45, [ o[46],  o[48],  nil ],  
+	// Event
+	46, [ array: o[47],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	47, [ nil,  nil,  nil,  nil ],  
+	// Event
+	48, [ array: o[49],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	49, [ 'instrument',  o[50],  'instrarr',  o[51],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[56],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[57],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[58],  
+		'attackarr',  o[59],  nil,  nil,  
+		nil,  nil,  'durarr',  o[60],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[61],  
+		nil,  nil,  'score',  o[62],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	51, [ o[52],  o[53],  o[52],  o[52],  
+		o[53],  o[52],  o[53],  o[52],  
+		o[52],  o[54],  o[55] ],  
+	// Array
+	56, [ 60 ],  
+	// Array
+	57, [ 0.250000 ],  
+	// Array
+	58, [ 0.000000 ],  
+	// Array
+	59, [ 0.555556 ],  
+	// Array
+	60, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	63, [ o[64],  o[66],  nil ],  
+	// Event
+	64, [ array: o[65],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	65, [ nil,  nil,  nil,  nil ],  
+	// Event
+	66, [ array: o[67],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	67, [ 'instrument',  o[50],  'instrarr',  o[68],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[70],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[71],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[72],  
+		'attackarr',  o[73],  nil,  nil,  
+		nil,  nil,  'durarr',  o[74],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[75],  
+		nil,  nil,  'score',  o[76],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	68, [ o[69],  o[69],  o[69],  o[69],  
+		o[69],  o[69],  o[69] ],  
+	// Array
+	70, [ 60 ],  
+	// Array
+	71, [ 0.250000 ],  
+	// Array
+	72, [ 0.000000 ],  
+	// Array
+	73, [ 0.555556 ],  
+	// Array
+	74, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	77, [ o[78],  o[80],  nil ],  
+	// Event
+	78, [ array: o[79],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	79, [ nil,  nil,  nil,  nil ],  
+	// Event
+	80, [ array: o[81],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	81, [ 'instrument',  o[82],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.450000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[83],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[84],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[85],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[86],  
+		nil,  nil,  'score',  o[87],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	83, [ 0.100000 ],  
+	// Array
+	84, [ 0.000000 ],  
+	// Array
+	85, [ 0.500000 ],  
+	// Array
+	88, [ o[89],  o[91],  nil ],  
+	// Event
+	89, [ array: o[90],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	90, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	91, [ array: o[92],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	92, [ 'instrument',  o[93],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[94],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[95],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[96],  
+		'attackarr',  o[97],  nil,  nil,  
+		nil,  nil,  'durarr',  o[98],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[99],  
+		nil,  nil,  'score',  o[100],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	94, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	95, [ 1.000000 ],  
+	// Array
+	96, [ 0.000000 ],  
+	// Array
+	97, [ 0.555556 ],  
+	// Array
+	98, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	101, [ array: o[102],  size: 15,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	102, [ nil,  nil,  'verse3',  o[103],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'chorus',  o[201],  
+		'chorus1',  o[285],  'verse2',  o[370],  
+		'outro',  o[455],  'verselead',  o[540],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'drums',  o[612],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'intro',  o[697],  
+		nil,  nil,  'bassoutro',  o[782],  
+		'chorus2',  o[867],  'verse2lead',  o[965],  
+		'bassdrums',  o[1050],  nil,  nil,  
+		'verse4',  o[1135],  'verse1',  o[1221],  
+		nil,  nil,  'outrobass',  o[1306],  
+		nil,  nil,  nil,  nil ],  
+	// IdentityDictionary
+	103, [ array: o[104],  size: 7,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	104, [ nil,  nil,  '8loop3',  o[105],  
+		'8loop1',  o[119],  nil,  nil,  
+		'8loop2',  o[132],  nil,  nil,  
+		'8drum1',  o[145],  '8hats1',  o[163],  
+		nil,  nil,  '8waves',  o[177],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[188] ],  
+	// Array
+	105, [ o[106],  o[108],  o[118] ],  
+	// Event
+	106, [ array: o[107],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	107, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	108, [ array: o[109],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	109, [ 'instrument',  o[110],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[111],  nil,  nil,  
+		'amp',  0.250000,  'sustainarr',  o[112],  
+		nil,  nil,  'midichannel',  -1,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[113],  
+		'attackarr',  o[114],  nil,  nil,  
+		nil,  nil,  'durarr',  o[115],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[116],  
+		nil,  nil,  'score',  o[117],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	111, [ 62,  62,  74,  74,  
+		71,  71,  62,  62,  
+		74,  74,  71,  71 ],  
+	// Array
+	112, [ 1.000000 ],  
+	// Array
+	113, [ 0.000000 ],  
+	// Array
+	114, [ 0.555556 ],  
+	// Array
+	115, [ 0.250000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000,  0.500000,  
+		0.250000,  0.500000,  0.250000,  0.500000 ],  
+	// Array
+	119, [ o[120],  o[122],  nil ],  
+	// Event
+	120, [ array: o[121],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	121, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	122, [ array: o[123],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	123, [ 'instrument',  o[124],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[125],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[126],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[127],  
+		'attackarr',  o[128],  nil,  nil,  
+		nil,  nil,  'durarr',  o[129],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[130],  
+		nil,  nil,  'score',  o[131],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	125, [ 60,  60,  67,  67,  
+		67 ],  
+	// Array
+	126, [ 1.000000 ],  
+	// Array
+	127, [ 0.000000 ],  
+	// Array
+	128, [ 0.555556 ],  
+	// Array
+	129, [ 0.750000,  1.250000,  0.750000,  0.750000,  
+		0.500000 ],  
+	// Array
+	132, [ o[133],  o[135],  nil ],  
+	// Event
+	133, [ array: o[134],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	134, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	135, [ array: o[136],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	136, [ 'instrument',  o[137],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[138],  nil,  nil,  
+		'amp',  0.300000,  'sustainarr',  o[139],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[140],  
+		'attackarr',  o[141],  nil,  nil,  
+		nil,  nil,  'durarr',  o[142],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[143],  
+		nil,  nil,  'score',  o[144],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	138, [ 's' ],  
+	// Array
+	139, [ 1.000000 ],  
+	// Array
+	140, [ 0.000000 ],  
+	// Array
+	141, [ 0.555556 ],  
+	// Array
+	142, [ 0.250000 ],  
+	// Array
+	145, [ o[146],  o[148],  nil ],  
+	// Event
+	146, [ array: o[147],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	147, [ nil,  nil,  nil,  nil ],  
+	// Event
+	148, [ array: o[149],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	149, [ 'instrument',  o[150],  'instrarr',  o[151],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[156],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[157],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[158],  
+		'attackarr',  o[159],  nil,  nil,  
+		nil,  nil,  'durarr',  o[160],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[161],  
+		nil,  nil,  'score',  o[162],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	151, [ o[152],  o[153],  o[152],  o[152],  
+		o[153],  o[152],  o[153],  o[152],  
+		o[152],  o[154],  o[155] ],  
+	// Array
+	156, [ 60 ],  
+	// Array
+	157, [ 0.250000 ],  
+	// Array
+	158, [ 0.000000 ],  
+	// Array
+	159, [ 0.555556 ],  
+	// Array
+	160, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	163, [ o[164],  o[166],  nil ],  
+	// Event
+	164, [ array: o[165],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	165, [ nil,  nil,  nil,  nil ],  
+	// Event
+	166, [ array: o[167],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	167, [ 'instrument',  o[150],  'instrarr',  o[168],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[170],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[171],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[172],  
+		'attackarr',  o[173],  nil,  nil,  
+		nil,  nil,  'durarr',  o[174],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[175],  
+		nil,  nil,  'score',  o[176],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	168, [ o[169],  o[169],  o[169],  o[169],  
+		o[169],  o[169],  o[169] ],  
+	// Array
+	170, [ 60 ],  
+	// Array
+	171, [ 0.250000 ],  
+	// Array
+	172, [ 0.000000 ],  
+	// Array
+	173, [ 0.555556 ],  
+	// Array
+	174, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	177, [ o[178],  o[180],  nil ],  
+	// Event
+	178, [ array: o[179],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	179, [ nil,  nil,  nil,  nil ],  
+	// Event
+	180, [ array: o[181],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	181, [ 'instrument',  o[182],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.450000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[183],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[184],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[185],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[186],  
+		nil,  nil,  'score',  o[187],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	183, [ 0.100000 ],  
+	// Array
+	184, [ 0.000000 ],  
+	// Array
+	185, [ 0.500000 ],  
+	// Array
+	188, [ o[189],  o[191],  nil ],  
+	// Event
+	189, [ array: o[190],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	190, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	191, [ array: o[192],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	192, [ 'instrument',  o[193],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[194],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[195],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[196],  
+		'attackarr',  o[197],  nil,  nil,  
+		nil,  nil,  'durarr',  o[198],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[199],  
+		nil,  nil,  'score',  o[200],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	194, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	195, [ 1.000000 ],  
+	// Array
+	196, [ 0.000000 ],  
+	// Array
+	197, [ 0.555556 ],  
+	// Array
+	198, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	201, [ array: o[202],  size: 6,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	202, [ nil,  nil,  nil,  nil,  
+		'8loop1',  o[203],  nil,  nil,  
+		'8loop2',  o[216],  nil,  nil,  
+		'8drum1',  o[229],  '8hats1',  o[247],  
+		nil,  nil,  '8waves',  o[261],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[272] ],  
+	// Array
+	203, [ o[204],  o[206],  nil ],  
+	// Event
+	204, [ array: o[205],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	205, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	206, [ array: o[207],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	207, [ 'instrument',  o[208],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[209],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[210],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[211],  
+		'attackarr',  o[212],  nil,  nil,  
+		nil,  nil,  'durarr',  o[213],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[214],  
+		nil,  nil,  'score',  o[215],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	209, [ 67,  72,  67,  65,  
+		65,  63 ],  
+	// Array
+	210, [ 1.000000 ],  
+	// Array
+	211, [ 0.000000 ],  
+	// Array
+	212, [ 0.555556 ],  
+	// Array
+	213, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.750000,  0.500000 ],  
+	// Array
+	216, [ o[217],  o[219],  nil ],  
+	// Event
+	217, [ array: o[218],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	218, [ nil,  nil,  nil,  nil ],  
+	// Event
+	219, [ array: o[220],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	220, [ 'instrument',  o[221],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[222],  nil,  nil,  
+		'amp',  0.250000,  'sustainarr',  o[223],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[224],  
+		'attackarr',  o[225],  nil,  nil,  
+		nil,  nil,  'durarr',  o[226],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[227],  
+		nil,  nil,  'score',  o[228],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	222, [ 67.000000,  66.000000,  67.000000,  69.000000,  
+		66.000000 ],  
+	// Array
+	223, [ 1.000000 ],  
+	// Array
+	224, [ 0.000000 ],  
+	// Array
+	225, [ 0.555556 ],  
+	// Array
+	226, [ 2.000000,  2.000000,  1.000000,  1.000000,  
+		2.000000 ],  
+	// Array
+	229, [ o[230],  o[232],  nil ],  
+	// Event
+	230, [ array: o[231],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	231, [ nil,  nil,  nil,  nil ],  
+	// Event
+	232, [ array: o[233],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	233, [ 'instrument',  o[234],  'instrarr',  o[235],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[240],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[241],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[242],  
+		'attackarr',  o[243],  nil,  nil,  
+		nil,  nil,  'durarr',  o[244],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[245],  
+		nil,  nil,  'score',  o[246],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	235, [ o[236],  o[237],  o[236],  o[236],  
+		o[237],  o[236],  o[237],  o[236],  
+		o[236],  o[238],  o[239] ],  
+	// Array
+	240, [ 60 ],  
+	// Array
+	241, [ 0.250000 ],  
+	// Array
+	242, [ 0.000000 ],  
+	// Array
+	243, [ 0.555556 ],  
+	// Array
+	244, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	247, [ o[248],  o[250],  nil ],  
+	// Event
+	248, [ array: o[249],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	249, [ nil,  nil,  nil,  nil ],  
+	// Event
+	250, [ array: o[251],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	251, [ 'instrument',  o[234],  'instrarr',  o[252],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[254],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[255],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[256],  
+		'attackarr',  o[257],  nil,  nil,  
+		nil,  nil,  'durarr',  o[258],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[259],  
+		nil,  nil,  'score',  o[260],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	252, [ o[253],  o[253],  o[253],  o[253],  
+		o[253],  o[253],  o[253] ],  
+	// Array
+	254, [ 60 ],  
+	// Array
+	255, [ 0.250000 ],  
+	// Array
+	256, [ 0.000000 ],  
+	// Array
+	257, [ 0.555556 ],  
+	// Array
+	258, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	261, [ o[262],  o[264],  nil ],  
+	// Event
+	262, [ array: o[263],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	263, [ nil,  nil,  nil,  nil ],  
+	// Event
+	264, [ array: o[265],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	265, [ 'instrument',  o[266],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.050000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[267],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[268],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[269],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[270],  
+		nil,  nil,  'score',  o[271],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	267, [ 0.100000 ],  
+	// Array
+	268, [ 0.000000 ],  
+	// Array
+	269, [ 0.500000 ],  
+	// Array
+	272, [ o[273],  o[275],  nil ],  
+	// Event
+	273, [ array: o[274],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	274, [ nil,  nil,  nil,  nil ],  
+	// Event
+	275, [ array: o[276],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	276, [ 'instrument',  o[277],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[278],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[279],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[280],  
+		'attackarr',  o[281],  nil,  nil,  
+		nil,  nil,  'durarr',  o[282],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[283],  
+		nil,  nil,  'score',  o[284],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	278, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	279, [ 1.000000 ],  
+	// Array
+	280, [ 0.000000 ],  
+	// Array
+	281, [ 0.555556 ],  
+	// Array
+	282, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	285, [ array: o[286],  size: 6,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	286, [ nil,  nil,  nil,  nil,  
+		'8loop1',  o[287],  nil,  nil,  
+		'8loop2',  o[300],  nil,  nil,  
+		'8drum1',  o[314],  '8hats1',  o[332],  
+		nil,  nil,  '8waves',  o[346],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[357] ],  
+	// Array
+	287, [ o[288],  o[290],  nil ],  
+	// Event
+	288, [ array: o[289],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	289, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	290, [ array: o[291],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	291, [ 'instrument',  o[292],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[293],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[294],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[295],  
+		'attackarr',  o[296],  nil,  nil,  
+		nil,  nil,  'durarr',  o[297],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[298],  
+		nil,  nil,  'score',  o[299],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	293, [ 67,  72,  67,  65,  
+		65,  63 ],  
+	// Array
+	294, [ 1.000000 ],  
+	// Array
+	295, [ 0.000000 ],  
+	// Array
+	296, [ 0.555556 ],  
+	// Array
+	297, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.750000,  0.500000 ],  
+	// Array
+	300, [ o[301],  o[303],  o[313] ],  
+	// Event
+	301, [ array: o[302],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	302, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	303, [ array: o[304],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	304, [ 'instrument',  o[305],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[306],  nil,  nil,  
+		'amp',  0.300000,  'sustainarr',  o[307],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[308],  
+		'attackarr',  o[309],  nil,  nil,  
+		nil,  nil,  'durarr',  o[310],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[311],  
+		nil,  nil,  'score',  o[312],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	306, [ 67.000000,  66.000000,  67.000000,  69.000000,  
+		66.000000 ],  
+	// Array
+	307, [ 1.000000 ],  
+	// Array
+	308, [ 0.000000 ],  
+	// Array
+	309, [ 0.555556 ],  
+	// Array
+	310, [ 2.000000,  2.000000,  1.000000,  1.000000,  
+		2.000000 ],  
+	// Array
+	314, [ o[315],  o[317],  nil ],  
+	// Event
+	315, [ array: o[316],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	316, [ nil,  nil,  nil,  nil ],  
+	// Event
+	317, [ array: o[318],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	318, [ 'instrument',  o[319],  'instrarr',  o[320],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[325],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[326],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[327],  
+		'attackarr',  o[328],  nil,  nil,  
+		nil,  nil,  'durarr',  o[329],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[330],  
+		nil,  nil,  'score',  o[331],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	320, [ o[321],  o[322],  o[321],  o[321],  
+		o[322],  o[321],  o[322],  o[321],  
+		o[321],  o[323],  o[324] ],  
+	// Array
+	325, [ 60 ],  
+	// Array
+	326, [ 0.250000 ],  
+	// Array
+	327, [ 0.000000 ],  
+	// Array
+	328, [ 0.555556 ],  
+	// Array
+	329, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	332, [ o[333],  o[335],  nil ],  
+	// Event
+	333, [ array: o[334],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	334, [ nil,  nil,  nil,  nil ],  
+	// Event
+	335, [ array: o[336],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	336, [ 'instrument',  o[319],  'instrarr',  o[337],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[339],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[340],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[341],  
+		'attackarr',  o[342],  nil,  nil,  
+		nil,  nil,  'durarr',  o[343],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[344],  
+		nil,  nil,  'score',  o[345],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	337, [ o[338],  o[338],  o[338],  o[338],  
+		o[338],  o[338],  o[338] ],  
+	// Array
+	339, [ 60 ],  
+	// Array
+	340, [ 0.250000 ],  
+	// Array
+	341, [ 0.000000 ],  
+	// Array
+	342, [ 0.555556 ],  
+	// Array
+	343, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	346, [ o[347],  o[349],  nil ],  
+	// Event
+	347, [ array: o[348],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	348, [ nil,  nil,  nil,  nil ],  
+	// Event
+	349, [ array: o[350],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	350, [ 'instrument',  o[351],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.400000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[352],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[353],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[354],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[355],  
+		nil,  nil,  'score',  o[356],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	352, [ 0.100000 ],  
+	// Array
+	353, [ 0.000000 ],  
+	// Array
+	354, [ 0.500000 ],  
+	// Array
+	357, [ o[358],  o[360],  nil ],  
+	// Event
+	358, [ array: o[359],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	359, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	360, [ array: o[361],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	361, [ 'instrument',  o[362],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[363],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[364],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[365],  
+		'attackarr',  o[366],  nil,  nil,  
+		nil,  nil,  'durarr',  o[367],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[368],  
+		nil,  nil,  'score',  o[369],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	363, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	364, [ 1.000000 ],  
+	// Array
+	365, [ 0.000000 ],  
+	// Array
+	366, [ 0.555556 ],  
+	// Array
+	367, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	370, [ array: o[371],  size: 6,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	371, [ nil,  nil,  nil,  nil,  
+		'8loop1',  o[372],  nil,  nil,  
+		'8loop2',  o[385],  nil,  nil,  
+		'8drum1',  o[399],  '8hats1',  o[417],  
+		nil,  nil,  '8waves',  o[431],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[442] ],  
+	// Array
+	372, [ o[373],  o[375],  nil ],  
+	// Event
+	373, [ array: o[374],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	374, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	375, [ array: o[376],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	376, [ 'instrument',  o[377],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[378],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[379],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[380],  
+		'attackarr',  o[381],  nil,  nil,  
+		nil,  nil,  'durarr',  o[382],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[383],  
+		nil,  nil,  'score',  o[384],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	378, [ 60,  60,  67,  67,  
+		67 ],  
+	// Array
+	379, [ 1.000000 ],  
+	// Array
+	380, [ 0.000000 ],  
+	// Array
+	381, [ 0.555556 ],  
+	// Array
+	382, [ 0.750000,  1.250000,  0.750000,  0.750000,  
+		0.500000 ],  
+	// Array
+	385, [ o[386],  o[388],  o[398] ],  
+	// Event
+	386, [ array: o[387],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	387, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	388, [ array: o[389],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	389, [ 'instrument',  o[390],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[391],  nil,  nil,  
+		'amp',  0.300000,  'sustainarr',  o[392],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[393],  
+		'attackarr',  o[394],  nil,  nil,  
+		nil,  nil,  'durarr',  o[395],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[396],  
+		nil,  nil,  'score',  o[397],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	391, [ 67.000000,  66.000000,  67.000000,  69.000000,  
+		66.000000 ],  
+	// Array
+	392, [ 1.000000 ],  
+	// Array
+	393, [ 0.000000 ],  
+	// Array
+	394, [ 0.555556 ],  
+	// Array
+	395, [ 2.000000,  2.000000,  1.000000,  1.000000,  
+		2.000000 ],  
+	// Array
+	399, [ o[400],  o[402],  nil ],  
+	// Event
+	400, [ array: o[401],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	401, [ nil,  nil,  nil,  nil ],  
+	// Event
+	402, [ array: o[403],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	403, [ 'instrument',  o[404],  'instrarr',  o[405],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[410],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[411],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[412],  
+		'attackarr',  o[413],  nil,  nil,  
+		nil,  nil,  'durarr',  o[414],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[415],  
+		nil,  nil,  'score',  o[416],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	405, [ o[406],  o[407],  o[406],  o[406],  
+		o[407],  o[406],  o[407],  o[406],  
+		o[406],  o[408],  o[409] ],  
+	// Array
+	410, [ 60 ],  
+	// Array
+	411, [ 0.250000 ],  
+	// Array
+	412, [ 0.000000 ],  
+	// Array
+	413, [ 0.555556 ],  
+	// Array
+	414, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	417, [ o[418],  o[420],  nil ],  
+	// Event
+	418, [ array: o[419],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	419, [ nil,  nil,  nil,  nil ],  
+	// Event
+	420, [ array: o[421],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	421, [ 'instrument',  o[404],  'instrarr',  o[422],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[424],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[425],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[426],  
+		'attackarr',  o[427],  nil,  nil,  
+		nil,  nil,  'durarr',  o[428],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[429],  
+		nil,  nil,  'score',  o[430],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	422, [ o[423],  o[423],  o[423],  o[423],  
+		o[423],  o[423],  o[423] ],  
+	// Array
+	424, [ 60 ],  
+	// Array
+	425, [ 0.250000 ],  
+	// Array
+	426, [ 0.000000 ],  
+	// Array
+	427, [ 0.555556 ],  
+	// Array
+	428, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	431, [ o[432],  o[434],  nil ],  
+	// Event
+	432, [ array: o[433],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	433, [ nil,  nil,  nil,  nil ],  
+	// Event
+	434, [ array: o[435],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	435, [ 'instrument',  o[436],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.400000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[437],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[438],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[439],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[440],  
+		nil,  nil,  'score',  o[441],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	437, [ 0.100000 ],  
+	// Array
+	438, [ 0.000000 ],  
+	// Array
+	439, [ 0.500000 ],  
+	// Array
+	442, [ o[443],  o[445],  nil ],  
+	// Event
+	443, [ array: o[444],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	444, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	445, [ array: o[446],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	446, [ 'instrument',  o[447],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[448],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[449],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[450],  
+		'attackarr',  o[451],  nil,  nil,  
+		nil,  nil,  'durarr',  o[452],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[453],  
+		nil,  nil,  'score',  o[454],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	448, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	449, [ 1.000000 ],  
+	// Array
+	450, [ 0.000000 ],  
+	// Array
+	451, [ 0.555556 ],  
+	// Array
+	452, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	455, [ array: o[456],  size: 6,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	456, [ nil,  nil,  nil,  nil,  
+		'8loop1',  o[457],  nil,  nil,  
+		'8loop2',  o[470],  nil,  nil,  
+		'8drum1',  o[484],  '8hats1',  o[502],  
+		nil,  nil,  '8waves',  o[516],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[527] ],  
+	// Array
+	457, [ o[458],  o[460],  nil ],  
+	// Event
+	458, [ array: o[459],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	459, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	460, [ array: o[461],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	461, [ 'instrument',  o[462],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[463],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[464],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[465],  
+		'attackarr',  o[466],  nil,  nil,  
+		nil,  nil,  'durarr',  o[467],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[468],  
+		nil,  nil,  'score',  o[469],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	463, [ 60,  60,  67,  67,  
+		67 ],  
+	// Array
+	464, [ 1.000000 ],  
+	// Array
+	465, [ 0.000000 ],  
+	// Array
+	466, [ 0.555556 ],  
+	// Array
+	467, [ 0.750000,  1.250000,  0.750000,  0.750000,  
+		0.500000 ],  
+	// Array
+	470, [ o[471],  o[473],  o[483] ],  
+	// Event
+	471, [ array: o[472],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	472, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	473, [ array: o[474],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	474, [ 'instrument',  o[475],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[476],  nil,  nil,  
+		'amp',  0.300000,  'sustainarr',  o[477],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[478],  
+		'attackarr',  o[479],  nil,  nil,  
+		nil,  nil,  'durarr',  o[480],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[481],  
+		nil,  nil,  'score',  o[482],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	476, [ 67.000000,  66.000000,  67.000000,  69.000000,  
+		66.000000 ],  
+	// Array
+	477, [ 1.000000 ],  
+	// Array
+	478, [ 0.000000 ],  
+	// Array
+	479, [ 0.555556 ],  
+	// Array
+	480, [ 2.000000,  2.000000,  1.000000,  1.000000,  
+		2.000000 ],  
+	// Array
+	484, [ o[485],  o[487],  nil ],  
+	// Event
+	485, [ array: o[486],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	486, [ nil,  nil,  nil,  nil ],  
+	// Event
+	487, [ array: o[488],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	488, [ 'instrument',  o[489],  'instrarr',  o[490],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[495],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[496],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[497],  
+		'attackarr',  o[498],  nil,  nil,  
+		nil,  nil,  'durarr',  o[499],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[500],  
+		nil,  nil,  'score',  o[501],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	490, [ o[491],  o[492],  o[491],  o[491],  
+		o[492],  o[491],  o[492],  o[491],  
+		o[491],  o[493],  o[494] ],  
+	// Array
+	495, [ 60 ],  
+	// Array
+	496, [ 0.250000 ],  
+	// Array
+	497, [ 0.000000 ],  
+	// Array
+	498, [ 0.555556 ],  
+	// Array
+	499, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	502, [ o[503],  o[505],  nil ],  
+	// Event
+	503, [ array: o[504],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	504, [ nil,  nil,  nil,  nil ],  
+	// Event
+	505, [ array: o[506],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	506, [ 'instrument',  o[489],  'instrarr',  o[507],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[509],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[510],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[511],  
+		'attackarr',  o[512],  nil,  nil,  
+		nil,  nil,  'durarr',  o[513],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[514],  
+		nil,  nil,  'score',  o[515],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	507, [ o[508],  o[508],  o[508],  o[508],  
+		o[508],  o[508],  o[508] ],  
+	// Array
+	509, [ 60 ],  
+	// Array
+	510, [ 0.250000 ],  
+	// Array
+	511, [ 0.000000 ],  
+	// Array
+	512, [ 0.555556 ],  
+	// Array
+	513, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	516, [ o[517],  o[519],  nil ],  
+	// Event
+	517, [ array: o[518],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	518, [ nil,  nil,  nil,  nil ],  
+	// Event
+	519, [ array: o[520],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	520, [ 'instrument',  o[521],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.400000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[522],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[523],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[524],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[525],  
+		nil,  nil,  'score',  o[526],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	522, [ 0.100000 ],  
+	// Array
+	523, [ 0.000000 ],  
+	// Array
+	524, [ 0.500000 ],  
+	// Array
+	527, [ o[528],  o[530],  nil ],  
+	// Event
+	528, [ array: o[529],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	529, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	530, [ array: o[531],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	531, [ 'instrument',  o[532],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[533],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[534],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[535],  
+		'attackarr',  o[536],  nil,  nil,  
+		nil,  nil,  'durarr',  o[537],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[538],  
+		nil,  nil,  'score',  o[539],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	533, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	534, [ 1.000000 ],  
+	// Array
+	535, [ 0.000000 ],  
+	// Array
+	536, [ 0.555556 ],  
+	// Array
+	537, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	540, [ array: o[541],  size: 5,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	541, [ nil,  nil,  nil,  nil,  
+		'8loop1',  o[542],  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		'8drum1',  o[555],  '8hats1',  o[573],  
+		nil,  nil,  '8waves',  o[587],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[598] ],  
+	// Array
+	542, [ o[543],  o[545],  nil ],  
+	// Event
+	543, [ array: o[544],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	544, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	545, [ array: o[546],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	546, [ 'instrument',  o[547],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[548],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[549],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[550],  
+		'attackarr',  o[551],  nil,  nil,  
+		nil,  nil,  'durarr',  o[552],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[553],  
+		nil,  nil,  'score',  o[554],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	548, [ 67,  72,  67,  65,  
+		65,  63 ],  
+	// Array
+	549, [ 1.000000 ],  
+	// Array
+	550, [ 0.000000 ],  
+	// Array
+	551, [ 0.555556 ],  
+	// Array
+	552, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.750000,  0.500000 ],  
+	// Array
+	555, [ o[556],  o[558],  nil ],  
+	// Event
+	556, [ array: o[557],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	557, [ nil,  nil,  nil,  nil ],  
+	// Event
+	558, [ array: o[559],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	559, [ 'instrument',  o[560],  'instrarr',  o[561],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[566],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[567],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[568],  
+		'attackarr',  o[569],  nil,  nil,  
+		nil,  nil,  'durarr',  o[570],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[571],  
+		nil,  nil,  'score',  o[572],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	561, [ o[562],  o[563],  o[562],  o[562],  
+		o[563],  o[562],  o[563],  o[562],  
+		o[562],  o[564],  o[565] ],  
+	// Array
+	566, [ 60 ],  
+	// Array
+	567, [ 0.250000 ],  
+	// Array
+	568, [ 0.000000 ],  
+	// Array
+	569, [ 0.555556 ],  
+	// Array
+	570, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	573, [ o[574],  o[576],  nil ],  
+	// Event
+	574, [ array: o[575],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	575, [ nil,  nil,  nil,  nil ],  
+	// Event
+	576, [ array: o[577],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	577, [ 'instrument',  o[560],  'instrarr',  o[578],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[580],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[581],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[582],  
+		'attackarr',  o[583],  nil,  nil,  
+		nil,  nil,  'durarr',  o[584],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[585],  
+		nil,  nil,  'score',  o[586],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	578, [ o[579],  o[579],  o[579],  o[579],  
+		o[579],  o[579],  o[579] ],  
+	// Array
+	580, [ 60 ],  
+	// Array
+	581, [ 0.250000 ],  
+	// Array
+	582, [ 0.000000 ],  
+	// Array
+	583, [ 0.555556 ],  
+	// Array
+	584, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	587, [ o[588],  o[590],  nil ],  
+	// Event
+	588, [ array: o[589],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	589, [ nil,  nil,  nil,  nil ],  
+	// Event
+	590, [ array: o[591],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	591, [ 'instrument',  o[592],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.200000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[593],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[594],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[595],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[596],  
+		nil,  nil,  'score',  o[597],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	593, [ 0.100000 ],  
+	// Array
+	594, [ 0.000000 ],  
+	// Array
+	595, [ 0.500000 ],  
+	// Array
+	598, [ o[599],  o[601],  o[611] ],  
+	// Event
+	599, [ array: o[600],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	600, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	601, [ array: o[602],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	602, [ 'instrument',  o[603],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[604],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[605],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[606],  
+		'attackarr',  o[607],  nil,  nil,  
+		nil,  nil,  'durarr',  o[608],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[609],  
+		nil,  nil,  'score',  o[610],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	604, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	605, [ 1.000000 ],  
+	// Array
+	606, [ 0.000000 ],  
+	// Array
+	607, [ 0.555556 ],  
+	// Array
+	608, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	612, [ array: o[613],  size: 6,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	613, [ nil,  nil,  nil,  nil,  
+		'8loop1',  o[614],  nil,  nil,  
+		'8loop2',  o[627],  nil,  nil,  
+		'8drum1',  o[641],  '8hats1',  o[659],  
+		nil,  nil,  '8waves',  o[673],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[684] ],  
+	// Array
+	614, [ o[615],  o[617],  nil ],  
+	// Event
+	615, [ array: o[616],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	616, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	617, [ array: o[618],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	618, [ 'instrument',  o[619],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[620],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[621],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[622],  
+		'attackarr',  o[623],  nil,  nil,  
+		nil,  nil,  'durarr',  o[624],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[625],  
+		nil,  nil,  'score',  o[626],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	620, [ 60,  60,  67,  67,  
+		67 ],  
+	// Array
+	621, [ 1.000000 ],  
+	// Array
+	622, [ 0.000000 ],  
+	// Array
+	623, [ 0.555556 ],  
+	// Array
+	624, [ 0.750000,  1.250000,  0.750000,  0.750000,  
+		0.500000 ],  
+	// Array
+	627, [ o[628],  o[630],  o[640] ],  
+	// Event
+	628, [ array: o[629],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	629, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	630, [ array: o[631],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	631, [ 'instrument',  o[632],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[633],  nil,  nil,  
+		'amp',  0.300000,  'sustainarr',  o[634],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[635],  
+		'attackarr',  o[636],  nil,  nil,  
+		nil,  nil,  'durarr',  o[637],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[638],  
+		nil,  nil,  'score',  o[639],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	633, [ 67.000000,  66.000000,  67.000000,  69.000000,  
+		66.000000 ],  
+	// Array
+	634, [ 1.000000 ],  
+	// Array
+	635, [ 0.000000 ],  
+	// Array
+	636, [ 0.555556 ],  
+	// Array
+	637, [ 2.000000,  2.000000,  1.000000,  1.000000,  
+		2.000000 ],  
+	// Array
+	641, [ o[642],  o[644],  nil ],  
+	// Event
+	642, [ array: o[643],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	643, [ nil,  nil,  nil,  nil ],  
+	// Event
+	644, [ array: o[645],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	645, [ 'instrument',  o[646],  'instrarr',  o[647],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[652],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[653],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[654],  
+		'attackarr',  o[655],  nil,  nil,  
+		nil,  nil,  'durarr',  o[656],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[657],  
+		nil,  nil,  'score',  o[658],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	647, [ o[648],  o[649],  o[648],  o[648],  
+		o[649],  o[648],  o[649],  o[648],  
+		o[648],  o[650],  o[651] ],  
+	// Array
+	652, [ 60 ],  
+	// Array
+	653, [ 0.250000 ],  
+	// Array
+	654, [ 0.000000 ],  
+	// Array
+	655, [ 0.555556 ],  
+	// Array
+	656, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	659, [ o[660],  o[662],  nil ],  
+	// Event
+	660, [ array: o[661],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	661, [ nil,  nil,  nil,  nil ],  
+	// Event
+	662, [ array: o[663],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	663, [ 'instrument',  o[646],  'instrarr',  o[664],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[666],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[667],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[668],  
+		'attackarr',  o[669],  nil,  nil,  
+		nil,  nil,  'durarr',  o[670],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[671],  
+		nil,  nil,  'score',  o[672],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	664, [ o[665],  o[665],  o[665],  o[665],  
+		o[665],  o[665],  o[665] ],  
+	// Array
+	666, [ 60 ],  
+	// Array
+	667, [ 0.250000 ],  
+	// Array
+	668, [ 0.000000 ],  
+	// Array
+	669, [ 0.555556 ],  
+	// Array
+	670, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	673, [ o[674],  o[676],  nil ],  
+	// Event
+	674, [ array: o[675],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	675, [ nil,  nil,  nil,  nil ],  
+	// Event
+	676, [ array: o[677],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	677, [ 'instrument',  o[678],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.400000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[679],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[680],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[681],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[682],  
+		nil,  nil,  'score',  o[683],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	679, [ 0.100000 ],  
+	// Array
+	680, [ 0.000000 ],  
+	// Array
+	681, [ 0.500000 ],  
+	// Array
+	684, [ o[685],  o[687],  nil ],  
+	// Event
+	685, [ array: o[686],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	686, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	687, [ array: o[688],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	688, [ 'instrument',  o[689],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[690],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[691],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[692],  
+		'attackarr',  o[693],  nil,  nil,  
+		nil,  nil,  'durarr',  o[694],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[695],  
+		nil,  nil,  'score',  o[696],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	690, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	691, [ 1.000000 ],  
+	// Array
+	692, [ 0.000000 ],  
+	// Array
+	693, [ 0.555556 ],  
+	// Array
+	694, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	697, [ array: o[698],  size: 6,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	698, [ nil,  nil,  nil,  nil,  
+		'8loop1',  o[699],  nil,  nil,  
+		'8loop2',  o[712],  nil,  nil,  
+		'8drum1',  o[726],  '8hats1',  o[744],  
+		nil,  nil,  '8waves',  o[758],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[769] ],  
+	// Array
+	699, [ o[700],  o[702],  nil ],  
+	// Event
+	700, [ array: o[701],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	701, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	702, [ array: o[703],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	703, [ 'instrument',  o[704],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[705],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[706],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[707],  
+		'attackarr',  o[708],  nil,  nil,  
+		nil,  nil,  'durarr',  o[709],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[710],  
+		nil,  nil,  'score',  o[711],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	705, [ 60,  60,  67,  67,  
+		67 ],  
+	// Array
+	706, [ 1.000000 ],  
+	// Array
+	707, [ 0.000000 ],  
+	// Array
+	708, [ 0.555556 ],  
+	// Array
+	709, [ 0.750000,  1.250000,  0.750000,  0.750000,  
+		0.500000 ],  
+	// Array
+	712, [ o[713],  o[715],  o[725] ],  
+	// Event
+	713, [ array: o[714],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	714, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	715, [ array: o[716],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	716, [ 'instrument',  o[717],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[718],  nil,  nil,  
+		'amp',  0.300000,  'sustainarr',  o[719],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[720],  
+		'attackarr',  o[721],  nil,  nil,  
+		nil,  nil,  'durarr',  o[722],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[723],  
+		nil,  nil,  'score',  o[724],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	718, [ 67.000000,  66.000000,  67.000000,  69.000000,  
+		66.000000 ],  
+	// Array
+	719, [ 1.000000 ],  
+	// Array
+	720, [ 0.000000 ],  
+	// Array
+	721, [ 0.555556 ],  
+	// Array
+	722, [ 2.000000,  2.000000,  1.000000,  1.000000,  
+		2.000000 ],  
+	// Array
+	726, [ o[727],  o[729],  nil ],  
+	// Event
+	727, [ array: o[728],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	728, [ nil,  nil,  nil,  nil ],  
+	// Event
+	729, [ array: o[730],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	730, [ 'instrument',  o[731],  'instrarr',  o[732],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[737],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[738],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[739],  
+		'attackarr',  o[740],  nil,  nil,  
+		nil,  nil,  'durarr',  o[741],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[742],  
+		nil,  nil,  'score',  o[743],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	732, [ o[733],  o[734],  o[733],  o[733],  
+		o[734],  o[733],  o[734],  o[733],  
+		o[733],  o[735],  o[736] ],  
+	// Array
+	737, [ 60 ],  
+	// Array
+	738, [ 0.250000 ],  
+	// Array
+	739, [ 0.000000 ],  
+	// Array
+	740, [ 0.555556 ],  
+	// Array
+	741, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	744, [ o[745],  o[747],  nil ],  
+	// Event
+	745, [ array: o[746],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	746, [ nil,  nil,  nil,  nil ],  
+	// Event
+	747, [ array: o[748],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	748, [ 'instrument',  o[731],  'instrarr',  o[749],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[751],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[752],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[753],  
+		'attackarr',  o[754],  nil,  nil,  
+		nil,  nil,  'durarr',  o[755],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[756],  
+		nil,  nil,  'score',  o[757],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	749, [ o[750],  o[750],  o[750],  o[750],  
+		o[750],  o[750],  o[750] ],  
+	// Array
+	751, [ 60 ],  
+	// Array
+	752, [ 0.250000 ],  
+	// Array
+	753, [ 0.000000 ],  
+	// Array
+	754, [ 0.555556 ],  
+	// Array
+	755, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	758, [ o[759],  o[761],  nil ],  
+	// Event
+	759, [ array: o[760],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	760, [ nil,  nil,  nil,  nil ],  
+	// Event
+	761, [ array: o[762],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	762, [ 'instrument',  o[763],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.400000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[764],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[765],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[766],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[767],  
+		nil,  nil,  'score',  o[768],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	764, [ 0.100000 ],  
+	// Array
+	765, [ 0.000000 ],  
+	// Array
+	766, [ 0.500000 ],  
+	// Array
+	769, [ o[770],  o[772],  nil ],  
+	// Event
+	770, [ array: o[771],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	771, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	772, [ array: o[773],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	773, [ 'instrument',  o[774],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[775],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[776],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[777],  
+		'attackarr',  o[778],  nil,  nil,  
+		nil,  nil,  'durarr',  o[779],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[780],  
+		nil,  nil,  'score',  o[781],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	775, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	776, [ 1.000000 ],  
+	// Array
+	777, [ 0.000000 ],  
+	// Array
+	778, [ 0.555556 ],  
+	// Array
+	779, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	782, [ array: o[783],  size: 6,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	783, [ nil,  nil,  nil,  nil,  
+		'8loop1',  o[784],  nil,  nil,  
+		'8loop2',  o[797],  nil,  nil,  
+		'8drum1',  o[811],  '8hats1',  o[829],  
+		nil,  nil,  '8waves',  o[843],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[854] ],  
+	// Array
+	784, [ o[785],  o[787],  nil ],  
+	// Event
+	785, [ array: o[786],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	786, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	787, [ array: o[788],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	788, [ 'instrument',  o[789],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[790],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[791],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[792],  
+		'attackarr',  o[793],  nil,  nil,  
+		nil,  nil,  'durarr',  o[794],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[795],  
+		nil,  nil,  'score',  o[796],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	790, [ 60,  60,  67,  67,  
+		67 ],  
+	// Array
+	791, [ 1.000000 ],  
+	// Array
+	792, [ 0.000000 ],  
+	// Array
+	793, [ 0.555556 ],  
+	// Array
+	794, [ 0.750000,  1.250000,  0.750000,  0.750000,  
+		0.500000 ],  
+	// Array
+	797, [ o[798],  o[800],  o[810] ],  
+	// Event
+	798, [ array: o[799],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	799, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	800, [ array: o[801],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	801, [ 'instrument',  o[802],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[803],  nil,  nil,  
+		'amp',  0.300000,  'sustainarr',  o[804],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[805],  
+		'attackarr',  o[806],  nil,  nil,  
+		nil,  nil,  'durarr',  o[807],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[808],  
+		nil,  nil,  'score',  o[809],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	803, [ 67.000000,  66.000000,  67.000000,  69.000000,  
+		66.000000 ],  
+	// Array
+	804, [ 1.000000 ],  
+	// Array
+	805, [ 0.000000 ],  
+	// Array
+	806, [ 0.555556 ],  
+	// Array
+	807, [ 2.000000,  2.000000,  1.000000,  1.000000,  
+		2.000000 ],  
+	// Array
+	811, [ o[812],  o[814],  nil ],  
+	// Event
+	812, [ array: o[813],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	813, [ nil,  nil,  nil,  nil ],  
+	// Event
+	814, [ array: o[815],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	815, [ 'instrument',  o[816],  'instrarr',  o[817],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[822],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[823],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[824],  
+		'attackarr',  o[825],  nil,  nil,  
+		nil,  nil,  'durarr',  o[826],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[827],  
+		nil,  nil,  'score',  o[828],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	817, [ o[818],  o[819],  o[818],  o[818],  
+		o[819],  o[818],  o[819],  o[818],  
+		o[818],  o[820],  o[821] ],  
+	// Array
+	822, [ 60 ],  
+	// Array
+	823, [ 0.250000 ],  
+	// Array
+	824, [ 0.000000 ],  
+	// Array
+	825, [ 0.555556 ],  
+	// Array
+	826, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	829, [ o[830],  o[832],  nil ],  
+	// Event
+	830, [ array: o[831],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	831, [ nil,  nil,  nil,  nil ],  
+	// Event
+	832, [ array: o[833],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	833, [ 'instrument',  o[816],  'instrarr',  o[834],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[836],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[837],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[838],  
+		'attackarr',  o[839],  nil,  nil,  
+		nil,  nil,  'durarr',  o[840],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[841],  
+		nil,  nil,  'score',  o[842],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	834, [ o[835],  o[835],  o[835],  o[835],  
+		o[835],  o[835],  o[835] ],  
+	// Array
+	836, [ 60 ],  
+	// Array
+	837, [ 0.250000 ],  
+	// Array
+	838, [ 0.000000 ],  
+	// Array
+	839, [ 0.555556 ],  
+	// Array
+	840, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	843, [ o[844],  o[846],  nil ],  
+	// Event
+	844, [ array: o[845],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	845, [ nil,  nil,  nil,  nil ],  
+	// Event
+	846, [ array: o[847],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	847, [ 'instrument',  o[848],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.400000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[849],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[850],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[851],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[852],  
+		nil,  nil,  'score',  o[853],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	849, [ 0.100000 ],  
+	// Array
+	850, [ 0.000000 ],  
+	// Array
+	851, [ 0.500000 ],  
+	// Array
+	854, [ o[855],  o[857],  nil ],  
+	// Event
+	855, [ array: o[856],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	856, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	857, [ array: o[858],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	858, [ 'instrument',  o[859],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[860],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[861],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[862],  
+		'attackarr',  o[863],  nil,  nil,  
+		nil,  nil,  'durarr',  o[864],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[865],  
+		nil,  nil,  'score',  o[866],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	860, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	861, [ 1.000000 ],  
+	// Array
+	862, [ 0.000000 ],  
+	// Array
+	863, [ 0.555556 ],  
+	// Array
+	864, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	867, [ array: o[868],  size: 7,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	868, [ nil,  nil,  '8loop3',  o[869],  
+		'8loop1',  o[883],  nil,  nil,  
+		'8loop2',  o[896],  nil,  nil,  
+		'8drum1',  o[909],  '8hats1',  o[927],  
+		nil,  nil,  '8waves',  o[941],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[952] ],  
+	// Array
+	869, [ o[870],  o[872],  o[882] ],  
+	// Event
+	870, [ array: o[871],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	871, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	872, [ array: o[873],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	873, [ 'instrument',  o[874],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[875],  nil,  nil,  
+		'amp',  0.250000,  'sustainarr',  o[876],  
+		nil,  nil,  'midichannel',  -1,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[877],  
+		'attackarr',  o[878],  nil,  nil,  
+		nil,  nil,  'durarr',  o[879],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[880],  
+		nil,  nil,  'score',  o[881],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	875, [ 62,  62,  74,  74,  
+		71,  71,  62,  62,  
+		74,  74,  71,  71 ],  
+	// Array
+	876, [ 1.000000 ],  
+	// Array
+	877, [ 0.000000 ],  
+	// Array
+	878, [ 0.555556 ],  
+	// Array
+	879, [ 0.250000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000,  0.500000,  
+		0.250000,  0.500000,  0.250000,  0.500000 ],  
+	// Array
+	883, [ o[884],  o[886],  nil ],  
+	// Event
+	884, [ array: o[885],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	885, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	886, [ array: o[887],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	887, [ 'instrument',  o[888],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[889],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[890],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[891],  
+		'attackarr',  o[892],  nil,  nil,  
+		nil,  nil,  'durarr',  o[893],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[894],  
+		nil,  nil,  'score',  o[895],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	889, [ 67,  72,  67,  65,  
+		65,  63 ],  
+	// Array
+	890, [ 1.000000 ],  
+	// Array
+	891, [ 0.000000 ],  
+	// Array
+	892, [ 0.555556 ],  
+	// Array
+	893, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.750000,  0.500000 ],  
+	// Array
+	896, [ o[897],  o[899],  nil ],  
+	// Event
+	897, [ array: o[898],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	898, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	899, [ array: o[900],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	900, [ 'instrument',  o[901],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[902],  nil,  nil,  
+		'amp',  0.300000,  'sustainarr',  o[903],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[904],  
+		'attackarr',  o[905],  nil,  nil,  
+		nil,  nil,  'durarr',  o[906],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[907],  
+		nil,  nil,  'score',  o[908],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	902, [ 's' ],  
+	// Array
+	903, [ 1.000000 ],  
+	// Array
+	904, [ 0.000000 ],  
+	// Array
+	905, [ 0.555556 ],  
+	// Array
+	906, [ 0.250000 ],  
+	// Array
+	909, [ o[910],  o[912],  nil ],  
+	// Event
+	910, [ array: o[911],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	911, [ nil,  nil,  nil,  nil ],  
+	// Event
+	912, [ array: o[913],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	913, [ 'instrument',  o[914],  'instrarr',  o[915],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[920],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[921],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[922],  
+		'attackarr',  o[923],  nil,  nil,  
+		nil,  nil,  'durarr',  o[924],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[925],  
+		nil,  nil,  'score',  o[926],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	915, [ o[916],  o[917],  o[916],  o[916],  
+		o[917],  o[916],  o[917],  o[916],  
+		o[916],  o[918],  o[919] ],  
+	// Array
+	920, [ 60 ],  
+	// Array
+	921, [ 0.250000 ],  
+	// Array
+	922, [ 0.000000 ],  
+	// Array
+	923, [ 0.555556 ],  
+	// Array
+	924, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	927, [ o[928],  o[930],  nil ],  
+	// Event
+	928, [ array: o[929],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	929, [ nil,  nil,  nil,  nil ],  
+	// Event
+	930, [ array: o[931],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	931, [ 'instrument',  o[914],  'instrarr',  o[932],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[934],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[935],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[936],  
+		'attackarr',  o[937],  nil,  nil,  
+		nil,  nil,  'durarr',  o[938],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[939],  
+		nil,  nil,  'score',  o[940],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	932, [ o[933],  o[933],  o[933],  o[933],  
+		o[933],  o[933],  o[933] ],  
+	// Array
+	934, [ 60 ],  
+	// Array
+	935, [ 0.250000 ],  
+	// Array
+	936, [ 0.000000 ],  
+	// Array
+	937, [ 0.555556 ],  
+	// Array
+	938, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	941, [ o[942],  o[944],  nil ],  
+	// Event
+	942, [ array: o[943],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	943, [ nil,  nil,  nil,  nil ],  
+	// Event
+	944, [ array: o[945],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	945, [ 'instrument',  o[946],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.450000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[947],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[948],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[949],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[950],  
+		nil,  nil,  'score',  o[951],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	947, [ 0.100000 ],  
+	// Array
+	948, [ 0.000000 ],  
+	// Array
+	949, [ 0.500000 ],  
+	// Array
+	952, [ o[953],  o[955],  nil ],  
+	// Event
+	953, [ array: o[954],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	954, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	955, [ array: o[956],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	956, [ 'instrument',  o[957],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[958],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[959],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[960],  
+		'attackarr',  o[961],  nil,  nil,  
+		nil,  nil,  'durarr',  o[962],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[963],  
+		nil,  nil,  'score',  o[964],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	958, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	959, [ 1.000000 ],  
+	// Array
+	960, [ 0.000000 ],  
+	// Array
+	961, [ 0.555556 ],  
+	// Array
+	962, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	965, [ array: o[966],  size: 6,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	966, [ nil,  nil,  nil,  nil,  
+		'8loop1',  o[967],  nil,  nil,  
+		'8loop2',  o[980],  nil,  nil,  
+		'8drum1',  o[994],  '8hats1',  o[1012],  
+		nil,  nil,  '8waves',  o[1026],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[1037] ],  
+	// Array
+	967, [ o[968],  o[970],  nil ],  
+	// Event
+	968, [ array: o[969],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	969, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	970, [ array: o[971],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	971, [ 'instrument',  o[972],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[973],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[974],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[975],  
+		'attackarr',  o[976],  nil,  nil,  
+		nil,  nil,  'durarr',  o[977],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[978],  
+		nil,  nil,  'score',  o[979],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	973, [ 60,  60,  67,  67,  
+		67 ],  
+	// Array
+	974, [ 1.000000 ],  
+	// Array
+	975, [ 0.000000 ],  
+	// Array
+	976, [ 0.555556 ],  
+	// Array
+	977, [ 0.750000,  1.250000,  0.750000,  0.750000,  
+		0.500000 ],  
+	// Array
+	980, [ o[981],  o[983],  o[993] ],  
+	// Event
+	981, [ array: o[982],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	982, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	983, [ array: o[984],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	984, [ 'instrument',  o[985],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[986],  nil,  nil,  
+		'amp',  0.300000,  'sustainarr',  o[987],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[988],  
+		'attackarr',  o[989],  nil,  nil,  
+		nil,  nil,  'durarr',  o[990],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[991],  
+		nil,  nil,  'score',  o[992],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	986, [ 67.000000,  66.000000,  67.000000,  69.000000,  
+		66.000000 ],  
+	// Array
+	987, [ 1.000000 ],  
+	// Array
+	988, [ 0.000000 ],  
+	// Array
+	989, [ 0.555556 ],  
+	// Array
+	990, [ 2.000000,  2.000000,  1.000000,  1.000000,  
+		2.000000 ],  
+	// Array
+	994, [ o[995],  o[997],  nil ],  
+	// Event
+	995, [ array: o[996],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	996, [ nil,  nil,  nil,  nil ],  
+	// Event
+	997, [ array: o[998],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	998, [ 'instrument',  o[999],  'instrarr',  o[1000],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[1005],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1006],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1007],  
+		'attackarr',  o[1008],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1009],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1010],  
+		nil,  nil,  'score',  o[1011],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1000, [ o[1001],  o[1002],  o[1001],  o[1001],  
+		o[1002],  o[1001],  o[1002],  o[1001],  
+		o[1001],  o[1003],  o[1004] ],  
+	// Array
+	1005, [ 60 ],  
+	// Array
+	1006, [ 0.250000 ],  
+	// Array
+	1007, [ 0.000000 ],  
+	// Array
+	1008, [ 0.555556 ],  
+	// Array
+	1009, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	1012, [ o[1013],  o[1015],  nil ],  
+	// Event
+	1013, [ array: o[1014],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1014, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1015, [ array: o[1016],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1016, [ 'instrument',  o[999],  'instrarr',  o[1017],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[1019],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1020],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1021],  
+		'attackarr',  o[1022],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1023],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1024],  
+		nil,  nil,  'score',  o[1025],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1017, [ o[1018],  o[1018],  o[1018],  o[1018],  
+		o[1018],  o[1018],  o[1018] ],  
+	// Array
+	1019, [ 60 ],  
+	// Array
+	1020, [ 0.250000 ],  
+	// Array
+	1021, [ 0.000000 ],  
+	// Array
+	1022, [ 0.555556 ],  
+	// Array
+	1023, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	1026, [ o[1027],  o[1029],  nil ],  
+	// Event
+	1027, [ array: o[1028],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1028, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1029, [ array: o[1030],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1030, [ 'instrument',  o[1031],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.400000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[1032],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1033],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[1034],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1035],  
+		nil,  nil,  'score',  o[1036],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1032, [ 0.100000 ],  
+	// Array
+	1033, [ 0.000000 ],  
+	// Array
+	1034, [ 0.500000 ],  
+	// Array
+	1037, [ o[1038],  o[1040],  nil ],  
+	// Event
+	1038, [ array: o[1039],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1039, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	1040, [ array: o[1041],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1041, [ 'instrument',  o[1042],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[1043],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1044],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1045],  
+		'attackarr',  o[1046],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1047],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1048],  
+		nil,  nil,  'score',  o[1049],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1043, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	1044, [ 1.000000 ],  
+	// Array
+	1045, [ 0.000000 ],  
+	// Array
+	1046, [ 0.555556 ],  
+	// Array
+	1047, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	1050, [ array: o[1051],  size: 6,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	1051, [ nil,  nil,  nil,  nil,  
+		'8loop1',  o[1052],  nil,  nil,  
+		'8loop2',  o[1065],  nil,  nil,  
+		'8drum1',  o[1079],  '8hats1',  o[1097],  
+		nil,  nil,  '8waves',  o[1111],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[1122] ],  
+	// Array
+	1052, [ o[1053],  o[1055],  nil ],  
+	// Event
+	1053, [ array: o[1054],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1054, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	1055, [ array: o[1056],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1056, [ 'instrument',  o[1057],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[1058],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1059],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1060],  
+		'attackarr',  o[1061],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1062],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1063],  
+		nil,  nil,  'score',  o[1064],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1058, [ 60,  60,  67,  67,  
+		67 ],  
+	// Array
+	1059, [ 1.000000 ],  
+	// Array
+	1060, [ 0.000000 ],  
+	// Array
+	1061, [ 0.555556 ],  
+	// Array
+	1062, [ 0.750000,  1.250000,  0.750000,  0.750000,  
+		0.500000 ],  
+	// Array
+	1065, [ o[1066],  o[1068],  o[1078] ],  
+	// Event
+	1066, [ array: o[1067],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1067, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	1068, [ array: o[1069],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1069, [ 'instrument',  o[1070],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[1071],  nil,  nil,  
+		'amp',  0.300000,  'sustainarr',  o[1072],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1073],  
+		'attackarr',  o[1074],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1075],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[1076],  
+		nil,  nil,  'score',  o[1077],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1071, [ 67.000000,  66.000000,  67.000000,  69.000000,  
+		66.000000 ],  
+	// Array
+	1072, [ 1.000000 ],  
+	// Array
+	1073, [ 0.000000 ],  
+	// Array
+	1074, [ 0.555556 ],  
+	// Array
+	1075, [ 2.000000,  2.000000,  1.000000,  1.000000,  
+		2.000000 ],  
+	// Array
+	1079, [ o[1080],  o[1082],  nil ],  
+	// Event
+	1080, [ array: o[1081],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1081, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1082, [ array: o[1083],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1083, [ 'instrument',  o[1084],  'instrarr',  o[1085],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[1090],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1091],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1092],  
+		'attackarr',  o[1093],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1094],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1095],  
+		nil,  nil,  'score',  o[1096],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1085, [ o[1086],  o[1087],  o[1086],  o[1086],  
+		o[1087],  o[1086],  o[1087],  o[1086],  
+		o[1086],  o[1088],  o[1089] ],  
+	// Array
+	1090, [ 60 ],  
+	// Array
+	1091, [ 0.250000 ],  
+	// Array
+	1092, [ 0.000000 ],  
+	// Array
+	1093, [ 0.555556 ],  
+	// Array
+	1094, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	1097, [ o[1098],  o[1100],  nil ],  
+	// Event
+	1098, [ array: o[1099],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1099, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1100, [ array: o[1101],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1101, [ 'instrument',  o[1084],  'instrarr',  o[1102],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[1104],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1105],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1106],  
+		'attackarr',  o[1107],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1108],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1109],  
+		nil,  nil,  'score',  o[1110],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1102, [ o[1103],  o[1103],  o[1103],  o[1103],  
+		o[1103],  o[1103],  o[1103] ],  
+	// Array
+	1104, [ 60 ],  
+	// Array
+	1105, [ 0.250000 ],  
+	// Array
+	1106, [ 0.000000 ],  
+	// Array
+	1107, [ 0.555556 ],  
+	// Array
+	1108, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	1111, [ o[1112],  o[1114],  nil ],  
+	// Event
+	1112, [ array: o[1113],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1113, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1114, [ array: o[1115],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1115, [ 'instrument',  o[1116],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.400000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[1117],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1118],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[1119],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1120],  
+		nil,  nil,  'score',  o[1121],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1117, [ 0.100000 ],  
+	// Array
+	1118, [ 0.000000 ],  
+	// Array
+	1119, [ 0.500000 ],  
+	// Array
+	1122, [ o[1123],  o[1125],  nil ],  
+	// Event
+	1123, [ array: o[1124],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1124, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	1125, [ array: o[1126],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1126, [ 'instrument',  o[1127],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[1128],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1129],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1130],  
+		'attackarr',  o[1131],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1132],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1133],  
+		nil,  nil,  'score',  o[1134],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1128, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	1129, [ 1.000000 ],  
+	// Array
+	1130, [ 0.000000 ],  
+	// Array
+	1131, [ 0.555556 ],  
+	// Array
+	1132, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	1135, [ array: o[1136],  size: 6,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	1136, [ nil,  nil,  nil,  nil,  
+		'8loop1',  o[1137],  nil,  nil,  
+		'8loop2',  o[1150],  nil,  nil,  
+		'8drum1',  o[1164],  '8hats1',  o[1182],  
+		nil,  nil,  '8waves',  o[1196],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[1207] ],  
+	// Array
+	1137, [ o[1138],  o[1140],  nil ],  
+	// Event
+	1138, [ array: o[1139],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1139, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	1140, [ array: o[1141],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1141, [ 'instrument',  o[1142],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[1143],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1144],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1145],  
+		'attackarr',  o[1146],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1147],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1148],  
+		nil,  nil,  'score',  o[1149],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1143, [ 60,  60,  67,  67,  
+		67 ],  
+	// Array
+	1144, [ 1.000000 ],  
+	// Array
+	1145, [ 0.000000 ],  
+	// Array
+	1146, [ 0.555556 ],  
+	// Array
+	1147, [ 0.750000,  1.250000,  0.750000,  0.750000,  
+		0.500000 ],  
+	// Array
+	1150, [ o[1151],  o[1153],  o[1163] ],  
+	// Event
+	1151, [ array: o[1152],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1152, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	1153, [ array: o[1154],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1154, [ 'instrument',  o[1155],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[1156],  nil,  nil,  
+		'amp',  0.250000,  'sustainarr',  o[1157],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1158],  
+		'attackarr',  o[1159],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1160],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[1161],  
+		nil,  nil,  'score',  o[1162],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1156, [ 67.000000,  66.000000,  67.000000,  69.000000,  
+		66.000000 ],  
+	// Array
+	1157, [ 1.000000 ],  
+	// Array
+	1158, [ 0.000000 ],  
+	// Array
+	1159, [ 0.555556 ],  
+	// Array
+	1160, [ 2.000000,  2.000000,  1.000000,  1.000000,  
+		2.000000 ],  
+	// Array
+	1164, [ o[1165],  o[1167],  nil ],  
+	// Event
+	1165, [ array: o[1166],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1166, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1167, [ array: o[1168],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1168, [ 'instrument',  o[1169],  'instrarr',  o[1170],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[1175],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1176],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1177],  
+		'attackarr',  o[1178],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1179],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1180],  
+		nil,  nil,  'score',  o[1181],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1170, [ o[1171],  o[1172],  o[1171],  o[1171],  
+		o[1172],  o[1171],  o[1172],  o[1171],  
+		o[1171],  o[1173],  o[1174] ],  
+	// Array
+	1175, [ 60 ],  
+	// Array
+	1176, [ 0.250000 ],  
+	// Array
+	1177, [ 0.000000 ],  
+	// Array
+	1178, [ 0.555556 ],  
+	// Array
+	1179, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	1182, [ o[1183],  o[1185],  nil ],  
+	// Event
+	1183, [ array: o[1184],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1184, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1185, [ array: o[1186],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1186, [ 'instrument',  o[1169],  'instrarr',  o[1187],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[1189],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1190],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1191],  
+		'attackarr',  o[1192],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1193],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1194],  
+		nil,  nil,  'score',  o[1195],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1187, [ o[1188],  o[1188],  o[1188],  o[1188],  
+		o[1188],  o[1188],  o[1188] ],  
+	// Array
+	1189, [ 60 ],  
+	// Array
+	1190, [ 0.250000 ],  
+	// Array
+	1191, [ 0.000000 ],  
+	// Array
+	1192, [ 0.555556 ],  
+	// Array
+	1193, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	1196, [ o[1197],  o[1199],  nil ],  
+	// Event
+	1197, [ array: o[1198],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1198, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1199, [ array: o[1200],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1200, [ 'instrument',  o[1201],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.200000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[1202],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1203],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[1204],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1205],  
+		nil,  nil,  'score',  o[1206],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1202, [ 0.100000 ],  
+	// Array
+	1203, [ 0.000000 ],  
+	// Array
+	1204, [ 0.500000 ],  
+	// Array
+	1207, [ o[1208],  o[1210],  o[1220] ],  
+	// Event
+	1208, [ array: o[1209],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1209, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	1210, [ array: o[1211],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1211, [ 'instrument',  o[1212],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[1213],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1214],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1215],  
+		'attackarr',  o[1216],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1217],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1218],  
+		nil,  nil,  'score',  o[1219],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1213, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	1214, [ 1.000000 ],  
+	// Array
+	1215, [ 0.000000 ],  
+	// Array
+	1216, [ 0.555556 ],  
+	// Array
+	1217, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	1221, [ array: o[1222],  size: 6,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	1222, [ nil,  nil,  nil,  nil,  
+		'8loop1',  o[1223],  nil,  nil,  
+		'8loop2',  o[1236],  nil,  nil,  
+		'8drum1',  o[1250],  '8hats1',  o[1268],  
+		nil,  nil,  '8waves',  o[1282],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[1293] ],  
+	// Array
+	1223, [ o[1224],  o[1226],  nil ],  
+	// Event
+	1224, [ array: o[1225],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1225, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	1226, [ array: o[1227],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1227, [ 'instrument',  o[1228],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[1229],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1230],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1231],  
+		'attackarr',  o[1232],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1233],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1234],  
+		nil,  nil,  'score',  o[1235],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1229, [ 60,  60,  67,  67,  
+		67 ],  
+	// Array
+	1230, [ 1.000000 ],  
+	// Array
+	1231, [ 0.000000 ],  
+	// Array
+	1232, [ 0.555556 ],  
+	// Array
+	1233, [ 0.750000,  1.250000,  0.750000,  0.750000,  
+		0.500000 ],  
+	// Array
+	1236, [ o[1237],  o[1239],  o[1249] ],  
+	// Event
+	1237, [ array: o[1238],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1238, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	1239, [ array: o[1240],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1240, [ 'instrument',  o[1241],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[1242],  nil,  nil,  
+		'amp',  0.300000,  'sustainarr',  o[1243],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1244],  
+		'attackarr',  o[1245],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1246],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[1247],  
+		nil,  nil,  'score',  o[1248],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1242, [ 67.000000,  66.000000,  67.000000,  69.000000,  
+		66.000000 ],  
+	// Array
+	1243, [ 1.000000 ],  
+	// Array
+	1244, [ 0.000000 ],  
+	// Array
+	1245, [ 0.555556 ],  
+	// Array
+	1246, [ 2.000000,  2.000000,  1.000000,  1.000000,  
+		2.000000 ],  
+	// Array
+	1250, [ o[1251],  o[1253],  nil ],  
+	// Event
+	1251, [ array: o[1252],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1252, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1253, [ array: o[1254],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1254, [ 'instrument',  o[1255],  'instrarr',  o[1256],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[1261],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1262],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1263],  
+		'attackarr',  o[1264],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1265],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1266],  
+		nil,  nil,  'score',  o[1267],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1256, [ o[1257],  o[1258],  o[1257],  o[1257],  
+		o[1258],  o[1257],  o[1258],  o[1257],  
+		o[1257],  o[1259],  o[1260] ],  
+	// Array
+	1261, [ 60 ],  
+	// Array
+	1262, [ 0.250000 ],  
+	// Array
+	1263, [ 0.000000 ],  
+	// Array
+	1264, [ 0.555556 ],  
+	// Array
+	1265, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	1268, [ o[1269],  o[1271],  nil ],  
+	// Event
+	1269, [ array: o[1270],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1270, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1271, [ array: o[1272],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1272, [ 'instrument',  o[1255],  'instrarr',  o[1273],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[1275],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1276],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1277],  
+		'attackarr',  o[1278],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1279],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1280],  
+		nil,  nil,  'score',  o[1281],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1273, [ o[1274],  o[1274],  o[1274],  o[1274],  
+		o[1274],  o[1274],  o[1274] ],  
+	// Array
+	1275, [ 60 ],  
+	// Array
+	1276, [ 0.250000 ],  
+	// Array
+	1277, [ 0.000000 ],  
+	// Array
+	1278, [ 0.555556 ],  
+	// Array
+	1279, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	1282, [ o[1283],  o[1285],  nil ],  
+	// Event
+	1283, [ array: o[1284],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1284, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1285, [ array: o[1286],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1286, [ 'instrument',  o[1287],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.400000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[1288],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1289],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[1290],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1291],  
+		nil,  nil,  'score',  o[1292],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1288, [ 0.100000 ],  
+	// Array
+	1289, [ 0.000000 ],  
+	// Array
+	1290, [ 0.500000 ],  
+	// Array
+	1293, [ o[1294],  o[1296],  nil ],  
+	// Event
+	1294, [ array: o[1295],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1295, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	1296, [ array: o[1297],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1297, [ 'instrument',  o[1298],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[1299],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1300],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1301],  
+		'attackarr',  o[1302],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1303],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1304],  
+		nil,  nil,  'score',  o[1305],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1299, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	1300, [ 1.000000 ],  
+	// Array
+	1301, [ 0.000000 ],  
+	// Array
+	1302, [ 0.555556 ],  
+	// Array
+	1303, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// IdentityDictionary
+	1306, [ array: o[1307],  size: 6,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	1307, [ nil,  nil,  nil,  nil,  
+		'8loop1',  o[1308],  nil,  nil,  
+		'8loop2',  o[1321],  nil,  nil,  
+		'8drum1',  o[1335],  '8hats1',  o[1353],  
+		nil,  nil,  '8waves',  o[1367],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  '8bass1',  o[1378] ],  
+	// Array
+	1308, [ o[1309],  o[1311],  nil ],  
+	// Event
+	1309, [ array: o[1310],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1310, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	1311, [ array: o[1312],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1312, [ 'instrument',  o[1313],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[1314],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1315],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1316],  
+		'attackarr',  o[1317],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1318],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1319],  
+		nil,  nil,  'score',  o[1320],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1314, [ 60,  60,  67,  67,  
+		67 ],  
+	// Array
+	1315, [ 1.000000 ],  
+	// Array
+	1316, [ 0.000000 ],  
+	// Array
+	1317, [ 0.555556 ],  
+	// Array
+	1318, [ 0.750000,  1.250000,  0.750000,  0.750000,  
+		0.500000 ],  
+	// Array
+	1321, [ o[1322],  o[1324],  o[1334] ],  
+	// Event
+	1322, [ array: o[1323],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1323, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	1324, [ array: o[1325],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1325, [ 'instrument',  o[1326],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[1327],  nil,  nil,  
+		'amp',  0.250000,  'sustainarr',  o[1328],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1329],  
+		'attackarr',  o[1330],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1331],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[1332],  
+		nil,  nil,  'score',  o[1333],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1327, [ 67.000000,  66.000000,  67.000000,  69.000000,  
+		66.000000 ],  
+	// Array
+	1328, [ 1.000000 ],  
+	// Array
+	1329, [ 0.000000 ],  
+	// Array
+	1330, [ 0.555556 ],  
+	// Array
+	1331, [ 2.000000,  2.000000,  1.000000,  1.000000,  
+		2.000000 ],  
+	// Array
+	1335, [ o[1336],  o[1338],  nil ],  
+	// Event
+	1336, [ array: o[1337],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1337, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1338, [ array: o[1339],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1339, [ 'instrument',  o[1340],  'instrarr',  o[1341],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[1346],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1347],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1348],  
+		'attackarr',  o[1349],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1350],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[1351],  
+		nil,  nil,  'score',  o[1352],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1341, [ o[1342],  o[1343],  o[1342],  o[1342],  
+		o[1343],  o[1342],  o[1343],  o[1342],  
+		o[1342],  o[1344],  o[1345] ],  
+	// Array
+	1346, [ 60 ],  
+	// Array
+	1347, [ 0.250000 ],  
+	// Array
+	1348, [ 0.000000 ],  
+	// Array
+	1349, [ 0.555556 ],  
+	// Array
+	1350, [ 0.500000,  0.250000,  0.500000,  0.250000,  
+		0.500000,  0.500000,  0.250000,  0.500000,  
+		0.250000,  0.250000,  0.250000 ],  
+	// Array
+	1353, [ o[1354],  o[1356],  nil ],  
+	// Event
+	1354, [ array: o[1355],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1355, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1356, [ array: o[1357],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1357, [ 'instrument',  o[1340],  'instrarr',  o[1358],  
+		nil,  nil,  'mode',  0,  
+		'notearr',  o[1360],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1361],  
+		nil,  nil,  nil,  nil,  
+		'quantphase',  0.250000,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1362],  
+		'attackarr',  o[1363],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1364],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  false,  
+		nil,  nil,  'scorestring',  o[1365],  
+		nil,  nil,  'score',  o[1366],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1358, [ o[1359],  o[1359],  o[1359],  o[1359],  
+		o[1359],  o[1359],  o[1359] ],  
+	// Array
+	1360, [ 60 ],  
+	// Array
+	1361, [ 0.250000 ],  
+	// Array
+	1362, [ 0.000000 ],  
+	// Array
+	1363, [ 0.555556 ],  
+	// Array
+	1364, [ 0.750000,  0.750000,  0.500000,  0.750000,  
+		0.500000,  0.250000,  0.500000 ],  
+	// Array
+	1367, [ o[1368],  o[1370],  nil ],  
+	// Event
+	1368, [ array: o[1369],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1369, [ nil,  nil,  nil,  nil ],  
+	// Event
+	1370, [ array: o[1371],  size: 11,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1371, [ 'instrument',  o[1372],  nil,  nil,  
+		nil,  nil,  'mode',  2,  
+		nil,  nil,  nil,  nil,  
+		'amp',  1.200000,  nil,  nil,  
+		nil,  nil,  'amparr',  o[1373],  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1374],  
+		nil,  nil,  nil,  nil,  
+		'pitch',  60,  'durarr',  o[1375],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1376],  
+		nil,  nil,  'score',  o[1377],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1373, [ 0.100000 ],  
+	// Array
+	1374, [ 0.000000 ],  
+	// Array
+	1375, [ 0.500000 ],  
+	// Array
+	1378, [ o[1379],  o[1381],  o[1391] ],  
+	// Event
+	1379, [ array: o[1380],  size: 1,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1380, [ 'reverb',  1,  nil,  nil ],  
+	// Event
+	1381, [ array: o[1382],  size: 13,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1382, [ 'instrument',  o[1383],  nil,  nil,  
+		nil,  nil,  'mode',  1,  
+		'notearr',  o[1384],  nil,  nil,  
+		'amp',  0.500000,  'sustainarr',  o[1385],  
+		nil,  nil,  'midichannel',  0,  
+		'quantphase',  0,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'panarr',  o[1386],  
+		'attackarr',  o[1387],  nil,  nil,  
+		nil,  nil,  'durarr',  o[1388],  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  'playstate',  true,  
+		nil,  nil,  'scorestring',  o[1389],  
+		nil,  nil,  'score',  o[1390],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1384, [ 55.000000,  55.000000,  55.000000,  55.000000,  
+		55.000000,  55.000000,  55.000000,  55.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000,  
+		54.000000,  54.000000,  54.000000,  54.000000 ],  
+	// Array
+	1385, [ 1.000000 ],  
+	// Array
+	1386, [ 0.000000 ],  
+	// Array
+	1387, [ 0.555556 ],  
+	// Array
+	1388, [ 0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000,  
+		0.250000,  0.250000,  0.250000,  0.250000 ],  
+	// Event
+	1392, [ array: o[1393],  size: 2,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	1393, [ '8drumsverse',  o[1394],  '8reverbed',  o[1395],  
+		nil,  nil,  nil,  nil ],  
+	// Array
+	1394, [ 'drum1',  'hats1' ],  
+	// Array
+	1395, [ 'loop1',  'loop2',  'bass1',  'loop3' ]
+];
+prUnarchive(o,p);

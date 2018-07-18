@@ -1,0 +1,26 @@
+var o, p;
+o = [
+	Array.prNew(5),  Color.prNew,  Color.prNew,  Color.prNew,  
+	Color.prNew,  Color.prNew
+];
+p = [
+	// Array
+	0, [ o[1],  o[2],  o[3],  o[4],  
+		o[5] ],  
+	// Color
+	1, [ red: 0.000000,  green: 0.050955,  
+		blue: 0.089172,  alpha: 1.000000 ],  
+	// Color
+	2, [ red: 1.000000,  green: 1.000000,  
+		blue: 1.000000,  alpha: 1.000000 ],  
+	// Color
+	3, [ red: 1.000000,  green: 1.000000,  
+		blue: 0.000000,  alpha: 1.000000 ],  
+	// Color
+	4, [ red: 0.000000,  green: 1.000000,  
+		blue: 0.000000,  alpha: 1.000000 ],  
+	// Color
+	5, [ red: 1.000000,  green: 0.000000,  
+		blue: 0.000000,  alpha: 1.000000 ]
+];
+prUnarchive(o,p);
