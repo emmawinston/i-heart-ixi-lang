@@ -6,6 +6,10 @@ tempo 72:2
 a -> (68)
 b -> (57)
 c -> (46)
+d -> (35)
+e -> (24)
+f -> (13)
+g -> (58)
 kill
 
 loop1 -> sine [a3a3a3a3b2b2b2b2c1c1c1c1c1c1b2b2](1)
@@ -27,10 +31,6 @@ that shook us where we waited on the ground
 
 bass -> fmbass  [66 666  55 555  44 444  44445555]-12
 chimes -> klang [8 38    727  7 6 6 16 6 616 7 7 ]
-hats ->         |j j j j j j j j jjjjjjjjj j j jj|/2^844484444444444484443^
-kicks ->        |o       |
-snares ->       |    x   |
-kicks ))
 
 I laughed that this was what I'd always wanted
 Be washed away without a trace behind 
@@ -38,20 +38,22 @@ it breaks my heart in half
 it breaks my heart in half 
 No one can be this happy all the time 
 
-/*---GLOBAL STORAGE---*/
+hats ->         |F F F F F F F F FFFFFFFFF F F FF|/2^844484444444444484443^
+kicks ->        |o       |
+snares ->       |    x   |
+group drums -> hats kicks snares
+kicks ))
 
-store session3
-kill
-
-
-/*---LYRICS---*/
-
+string -> dubpad[33332222111111113333225511111122](0)+12*2^9^
 
 CHORUS
 everything will change, you said 
 But what if I'm not ready 
 What if I'm not ready 
 What am I supposed to do instead 
+
+string -> dubpad[](0)+12*2^9^
+chimes -> klang []
 
 VERSE 
 The hours I spent fixating on the weather 
@@ -59,23 +61,31 @@ And silencing the voice inside my heart
 I could not read the signs 
 I did not know you then 
 And now I don't know where to even start
- 
+
+chimes -> klang [8 38    727  7 6 6 16 6 616 7 7 ]
+
+
+string -> dubpad[33332222111111113333225511111122](0)+12*2^9^ 
+
 CHORUS
 everything will change, you said 
 But what if I'm not ready 
 What if I'm not ready 
 What am I supposed to do instead 
 
+string -> dubpad[ddddeeeeffffffffddddeeggddddddee](0)+12*2^9^
+
 Everything will change, you said 
 But what if I'm not ready 
 What if I'm not ready 
 What am I supposed to do instead 
 
-loop1 -> piano[a3a3a3a3b2b2b2b2c1c1c1c1c1c1b2b2](0.5)
-loop2 -> piano[6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ](0.5)-24
+string -> dubpad[](0)+12*2^9^
+chimes -> klang []
+bass -> fmbass  []-12
 
-group pianos -> loop1 loop2
-pianos >> reverb
+doze drums
+perk drums
 
 VERSE
 If I could climb inside your head and stay there
@@ -83,3 +93,18 @@ If I could be the one who came prepared
 A storm in from the west 
 A crack across my heart
 Perhaps I wouldn't be so fucking scared
+
+doze pianos
+
+/*---GLOBAL STORAGE---*/
+
+store session3
+kill
+
+
+/*--- fx ---*/
+
+group pianos -> loop1 loop2
+pianos >> reverb
+group all -> bass string chimes kicks hats snares
+all >> reverb
