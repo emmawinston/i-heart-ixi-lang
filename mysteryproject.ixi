@@ -9,16 +9,25 @@ a -> (136)
 
 instruments
 
-VERSE //chords use the sawpad synthdef from n1c
-chords -> sawpad[ccccggggccccccccffffccccggggggggaaaaggggffffccccaaaaffffcccccccc](0)
-bass ->   elbass[1111555511111111444411115555555566665555444411116666444411111111](0.8)-12
-lead ->   synth []
+VERSE
+chords -> sawpad[ffffggggccccccccffffffffggggggggffffggggccccccccffffffffgggggggg](0)
+bass ->   elbass[4444555511111111444444445555555544445555111111114444444455555555](0.8)-12
+
 chords ((
 bass ((
 drums ->        |ooxooxox|
 hats ->         |j i jWi|
 kicks ->        |y z |
 
+snapshot -> one
+snapshot one
+
 CHORUS
 chords -> sawpad[ffffggggccccccccffffffffggggggggffffggggccccccccffffffffgggggggg](0)
 bass ->   elbass[4444555511111111444444445555555544445555111111114444444455555555](0.8)-12
+lead ->    synth[876543215   1   876543215       876543215   1   876543215       ](0.2)
+
+snapshot -> two
+snapshot two
+
+store sessionone
