@@ -44,7 +44,7 @@ snares ->       |    x   |
 group drums -> hats kicks snares
 kicks ))
 
-string -> dubpad[33332222111111113333225511111122](0)+12*2^9^
+string -> sawpad[33332222111111113333225511111122](0)+12*2^9^
 
 CHORUS
 everything will change, you said 
@@ -52,7 +52,7 @@ But what if I'm not ready
 What if I'm not ready 
 What am I supposed to do instead 
 
-string -> dubpad[](0)+12*2^9^
+string -> sawpad[](0)+12*2^9^
 chimes -> klang []
 
 VERSE 
@@ -73,14 +73,14 @@ But what if I'm not ready
 What if I'm not ready 
 What am I supposed to do instead 
 
-string -> dubpad[ddddeeeeffffffffddddeeggddddddee](0)+12*2^9^
+string -> sawpad[ddddeeeeffffffffddddeeggddddddee](0)+12*2^9^
 
 Everything will change, you said 
 But what if I'm not ready 
 What if I'm not ready 
 What am I supposed to do instead 
 
-string -> dubpad[](0)+12*2^9^
+string -> sawpad[](0)+12*2^9^
 chimes -> klang []
 bass -> fmbass  []-12
 
@@ -98,9 +98,8 @@ doze pianos
 
 /*---GLOBAL STORAGE---*/
 
-store session3
+store session2
 kill
-
 
 /*--- fx ---*/
 
@@ -108,3 +107,12 @@ group pianos -> loop1 loop2
 pianos >> reverb
 group all -> bass string chimes kicks hats snares
 all >> reverb
+
+/*---SYNTHDEFS---*/
+SynthDef(\sawpad, {arg out=0, freq=220, gate=1, amp=0.3, pan=0;
+			var wave, amps, env;
+			amps = [0.6134, 0.5103, 0.3041, 0.2216, 0.4175, 0.1082, 0.067, 0.0773, 0, 0.01546];
+			wave = amps.collect({|amp, i| Saw.ar([freq *(i+1), freq *(i+1) +Rand(1, 3.8)], amp*0.1) }).sum;
+			env = EnvGen.ar(Env.asr(0.01, 1, 0.2), gate, doneAction:2);
+			Out.ar(out, Balance2.ar(wave[0], wave[1], pan, amp*env));
+		}).add(\n1c);
