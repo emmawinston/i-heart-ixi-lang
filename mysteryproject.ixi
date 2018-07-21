@@ -9,25 +9,48 @@ a -> (136)
 
 instruments
 
+chords -> sawpad[](0)
+bass ->   elbass[](0.8)-12
+lead ->   synth[]
+lead2 ->  synth[]
+drums ->       ||
+hats ->         ||
+kicks ->        ||
+
+group perc -> drums hats kicks
+group inst -> chords lead bass
+chords << reverb
+
 VERSE
 chords -> sawpad[ffffggggccccccccffffffffggggggggffffggggccccccccffffffffgggggggg](0)
 bass ->   elbass[4444555511111111444444445555555544445555111111114444444455555555](0.8)-12
-
-chords ((
-bass ((
-drums ->        |ooxooxox|
-hats ->         |j i jWi|
-kicks ->        |y z |
+lead ->  synth  [8   7   5       8   7   5       6   5   4   3   5   4   3       ](0)
 
 snapshot -> one
 snapshot one
 
-CHORUS
-chords -> sawpad[ffffggggccccccccffffffffggggggggffffggggccccccccffffffffgggggggg](0)
-bass ->   elbass[4444555511111111444444445555555544445555111111114444444455555555](0.8)-12
-lead ->    synth[876543215   1   876543215       876543215   1   876543215       ](0.2)
+
+
+drums ->        |ooxooxox|
+hats ->         |j i jWi|
+kicks ->        |y z |
 
 snapshot -> two
 snapshot two
+
+chords ((
+bass ((
+
+CHORUS
+chords -> sawpad[ccccggggccccccccffffccccggggggggaaaaggggffffccccaaaaffffcccccccc](0)
+bass ->   elbass[1111555511111111444411115555555566665555444411116666444411111111](0.8)-12
+lead ->   synth[876543215   1   876543215       876543215   1   876543215       ](0.2)
+lead2 ->  synth[88 888 888 88888](0.2)+12
+
+snapshot -> three
+snapshot three
+
+snapshot -> four
+
 
 store sessionone
