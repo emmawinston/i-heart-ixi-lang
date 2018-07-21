@@ -11,6 +11,7 @@ a -> (136)
 
 instruments
 
+//chords use the sawpad synthdef from n1c
 chords -> sawpad[ccccggggccccccccffffccccggggggggaaaaggggffffccccaaaaffffcccccccc](0)
 
 chords -> sawpad[ffffggggccccccccffffffffggggggggffffggggccccccccffffffffgggggggg](0)
