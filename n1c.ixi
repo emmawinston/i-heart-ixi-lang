@@ -8,11 +8,36 @@ b -> (57)
 c -> (46)
 kill
 
-loop1 -> piano[a3a3a3a3b2b2b2b2c1c1c1c1c1c1b2b2](0.5)
-loop2 -> piano[6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ](0.5)-24
+loop1 -> sine [a3a3a3a3b2b2b2b2c1c1c1c1c1c1b2b2](1)
+loop2 -> sine [6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ](1)-12
+
+instruments 
 
 group pianos -> loop1 loop2
 pianos >> reverb
+doze pianos
+perk pianos
+
+VERSE
+When lightning struck the spire of the station
+We listened, lost in wonder, to the sound
+a storm in from the south
+a crack across the sky 
+that shook us where we waited on the ground
+
+bass -> fmbass  [66 666  55 555  44 444  44445555]-12
+chimes -> klang [8 38    727  7 6 6 16 6 616 7 7 ]
+
+kicks ->        |o       |
+snares ->       |    x   |
+hats ->         | j   j  |
+kicks ))
+
+I laughed that this was what I'd always wanted
+Be washed away without a trace behind 
+it breaks my heart in half
+it breaks my heart in half 
+No one can be this happy all the time 
 
 /*---GLOBAL STORAGE---*/
 
@@ -21,18 +46,7 @@ kill
 
 
 /*---LYRICS---*/
-VERSE
-When lightning struck the spire of the station
-We listened, lost in wonder, to the sound
-a storm in from the south
-a crack across the sky 
-that shook us where we waited on the ground
 
-I laughed that this was what I'd always wanted
-Be washed away without a trace behind 
-it breaks my heart in half
-it breaks my heart in half 
-No one can be this happy all the time 
 
 CHORUS
 everything will change, you said 
