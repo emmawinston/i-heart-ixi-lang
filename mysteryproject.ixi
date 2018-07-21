@@ -1,1 +1,19 @@
 /* a mystery project */
+
+/* ??? */
+
+tempo 60:2
+scale major
+c -> (135)
+f -> (146)
+g -> (257)
+a -> (136)
+
+instruments
+
+chords -> sawpad[ccccggggccccccccffffccccggggggggaaaaggggffffccccaaaaffffcccccccc](0)
+
+chords -> sawpad[ffffggggccccccccffffffffggggggggffffggggccccccccffffffffgggggggg](0)
+
+drums ->        |ooxooxox|
+hats ->         |j i jWi| 
