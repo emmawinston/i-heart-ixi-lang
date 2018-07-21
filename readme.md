@@ -1,4 +1,4 @@
-# ixi lang experiments
+# I 💚 ixi lang
 
 Can you live-code pop music? I'm going to try.
 
