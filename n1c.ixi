@@ -15,8 +15,6 @@ kill
 loop1 -> sine [a3a3a3a3b2b2b2b2c1c1c1c1c1c1b2b2](1)
 loop2 -> sine [6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ](1)-12
 
-instruments 
-
 group pianos -> loop1 loop2
 pianos >> reverb
 doze pianos
@@ -30,7 +28,6 @@ a crack across the sky
 that shook us where we waited on the ground
 
 bass -> fmbass  [66 666  55 555  44 444  44445555]-12
-chimes -> klang [8 38    727  7 6 6 16 6 616 7 7 ]
 
 I laughed that this was what I'd always wanted
 Be washed away without a trace behind 
@@ -39,12 +36,13 @@ it breaks my heart in half
 No one can be this happy all the time 
 
 hats ->         |F F F F F F F F FFFFFFFFF F F FF|/2^844484444444444484443^
-kicks ->        |o       |
-snares ->       |    x   |
-group drums -> hats kicks snares
+kicks ->        |o   x   |
+group drums -> hats kicks
 kicks ))
+hats ))
 
-string -> sawpad[33332222111111113333225511111122](0)+12*2^9^
+string -> sawpad[33332222111111113333225511111122](0.1)+12*2^9^
+string ))
 
 CHORUS
 everything will change, you said 
@@ -54,6 +52,7 @@ What am I supposed to do instead
 
 string -> sawpad[](0)+12*2^9^
 chimes -> klang []
+chimes -> klang [8 38    727  7 6 6 16 6 616 7 7 ]
 
 VERSE 
 The hours I spent fixating on the weather 
@@ -65,7 +64,7 @@ And now I don't know where to even start
 chimes -> klang [8 38    727  7 6 6 16 6 616 7 7 ]
 
 
-string -> dubpad[33332222111111113333225511111122](0)+12*2^9^ 
+string -> sawpad[33332222111111113333225511111122](0)+12*2^9^ 
 
 CHORUS
 everything will change, you said 
@@ -80,9 +79,11 @@ But what if I'm not ready
 What if I'm not ready 
 What am I supposed to do instead 
 
+string ((
+string ))
 string -> sawpad[](0)+12*2^9^
-chimes -> klang []
-bass -> fmbass  []-12
+doze chimes
+doze bass
 
 doze drums
 perk drums
