@@ -1,8 +1,8 @@
-/***DEERFUL - N1C*** (UNFINISHED)***/
+/***DEERFUL - N1C***/
 
 tonic 60
 scale major
-tempo 72:2
+tempo 76:2
 a -> (68)
 b -> (57)
 c -> (46)
@@ -11,6 +11,10 @@ e -> (24)
 f -> (13)
 g -> (58)
 kill
+
+snapshot -> one
+
+snapshot one
 
 loop1 -> sine [a3a3a3a3b2b2b2b2c1c1c1c1c1c1b2b2](1)
 loop2 -> sine [6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ](1)-12
@@ -28,6 +32,7 @@ a crack across the sky
 that shook us where we waited on the ground
 
 bass -> fmbass  [66 666  55 555  44 444  44445555]-12
+bass ((
 
 I laughed that this was what I'd always wanted
 Be washed away without a trace behind 
@@ -35,14 +40,19 @@ it breaks my heart in half
 it breaks my heart in half 
 No one can be this happy all the time 
 
+snapshot -> two
+
 hats ->         |F F F F F F F F FFFFFFFFF F F FF|/2^844484444444444484443^
 kicks ->        |o   x   |
 group drums -> hats kicks
 kicks ))
 hats ))
 
+snapshot two
+
 string -> sawpad[33332222111111113333225511111122](0.1)+12*2^9^
 string ))
+string ((
 
 CHORUS
 everything will change, you said 
@@ -51,7 +61,6 @@ What if I'm not ready
 What am I supposed to do instead 
 
 string -> sawpad[](0)+12*2^9^
-chimes -> klang []
 chimes -> klang [8 38    727  7 6 6 16 6 616 7 7 ]
 
 VERSE 
@@ -61,10 +70,8 @@ I could not read the signs
 I did not know you then 
 And now I don't know where to even start
 
-chimes -> klang [8 38    727  7 6 6 16 6 616 7 7 ]
-
-
 string -> sawpad[33332222111111113333225511111122](0)+12*2^9^ 
+chimes -> klang []
 
 CHORUS
 everything will change, you said 
@@ -73,6 +80,8 @@ What if I'm not ready
 What am I supposed to do instead 
 
 string -> sawpad[ddddeeeeffffffffddddeeggddddddee](0)+12*2^9^
+group all -> bass string chimes kicks hats
+all >> reverb
 
 Everything will change, you said 
 But what if I'm not ready 
@@ -95,22 +104,17 @@ A storm in from the west
 A crack across my heart
 Perhaps I wouldn't be so fucking scared
 
-doze pianos
+loop1 -> sine [a3a3a3a3b2b2b2b2c1c1c1c1c1c1b2b2]!128(1) //silence after last one
+loop2 -> sine [6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ]!128(1)-12
+kill
 
 /*---GLOBAL STORAGE---*/
 
-store session2
+store session6
 kill
 
-/*--- fx ---*/
-
-group pianos -> loop1 loop2
-pianos >> reverb
-group all -> bass string chimes kicks hats snares
-all >> reverb
-
 /*---SYNTHDEFS---*/
-SynthDef(\sawpad, {arg out=0, freq=220, gate=1, amp=0.3, pan=0;
+SynthDef(\sawpad, {arg out=0, freq=220, gate=1, amp=0.1, pan=0;
 			var wave, amps, env;
 			amps = [0.6134, 0.5103, 0.3041, 0.2216, 0.4175, 0.1082, 0.067, 0.0773, 0, 0.01546];
 			wave = amps.collect({|amp, i| Saw.ar([freq *(i+1), freq *(i+1) +Rand(1, 3.8)], amp*0.1) }).sum;
