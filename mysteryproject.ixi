@@ -34,7 +34,94 @@ hats ->         ||
 kicks ->        ||
                 |y z |
                 
+group perc -> drums hats kicks/* ??? */
+
+tempo 56:2
+scale major
+c -> (135)
+f -> (146)
+g -> (257)
+a -> (136)
+
+instruments
+
+drums ->        ||
+                |ooxooxox|
+hats ->         ||
+                |j i jWi|
+kicks ->        ||
+                |y z |
+
+chords -> sawpad[](0)
+                []
+                [ccccggggccccccccffffccccggggggggaaaaggggffffccccaaaaffffcccccccc](0) //verse
+                [ffffggggccccccccffffffffggggggggffffggggccccccccffffffffgggggggg](0) //chorus
+                [ccccggggccccccccffffccccggggggggaaaaggggffffccccaaaaffffcccccccc]!128(0) //final
+                
+                snapshot -> one
+                
+bass ->   elbass[](0.8)-12
+                []
+                [1111555511111111444411115555555566665555444411116666444411111111](0.8)-12 //verse
+                [4444555511111111444444445555555544445555111111114444444455555555](0.8)-12 //chorus
+                [1111555511111111444411115555555566665555444411116666444411111111]!128(0.8)-12 //final
+                
+                bass ((
+                
+                snapshot -> two
+                
+                snapshot -> three
+                
+                snapshot -> four
+                
+                snapshot -> five
+                
+                snapshot -> six
+                
+                snapshot -> seven
+                
+                snapshot -> eight
+                
+lead ->    synth[](0)
+                []
+                [8   7   5       8   7   5       6   5   4   3   5   4   3       ] //verse
+                [876543215   1   876543215       876543215   1   876543215       ](0.2) //chorus
+                [8   7   5       8   7   5       6   5   4   3   5   4   3       ]!128 //final
+                
+lead2 ->   synth[](0.2)+12
+                [88 888 888 88888] //final chorus
+                
+                lead2 ((
+                
 group perc -> drums hats kicks
+doze perc
+
+group inst -> chords lead bass
+doze lead
+doze chords
+doze bass
+
+chords ((
+bass ((
+perc ((
+
+store sessionfour
+
+snapshot one
+
+snapshot two
+
+snapshot three
+
+snapshot four
+
+snapshot five
+
+snapshot six
+
+snapshot seven
+
+snapshot eight
 doze perc
 
 group inst -> chords lead bass
