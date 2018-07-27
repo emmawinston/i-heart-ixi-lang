@@ -1,4 +1,4 @@
-/* ??? */
+ /* ??? */
 
 tempo 56:2
 scale major
@@ -6,8 +6,6 @@ c -> (135)
 f -> (146)
 g -> (257)
 a -> (136)
-
-instruments
 
 drums ->        ||
                 |ooxooxox|
