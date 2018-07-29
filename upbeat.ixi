@@ -1,9 +1,33 @@
 /*no title yet but this is probably the only one that might turn out to be danceable*/
-tempo 138:2
+
+tempo 110:2
 scale major
-loop1 ->     stab[13  31  5  6 87 ]
-loop1 ->     stab[3 33 33 3 33 2313 33 33 3 33 2316 64 44 4 44 2316 64 44 4 44 231]
+c -> (13)
+f -> (14)
+g -> (25)
+a -> (36)
 
-bassverse ->  bass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]-12
 
-drums ->          |xoghxoj xo xoFxo|
+/* VERSE */
+
+loop1 ->      glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231](0)
+
+bassverse ->       bass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^9^-7 
+
+padverse ->     techpad[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^1^+5(0)
+
+drums ->          |xochxoj xo xoFxo|
+
+
+/* BRIDGE */
+
+
+loop1 ->      glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316](0)
+
+bassverse ->       bass[66666 666 6666  44444 444 4444  11111 111 1111  11111 111 1111 1]^9^-7 
+
+padverse ->     techpad[aaaaaaaaaaaaaaaaffffffffffffffffcccccccccccccccccccccccccccccccc]^1^+5(0)
+
+drums ->          |xochxojchxocxoFxo|
+
+/* CHORUS */
