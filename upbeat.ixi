@@ -30,9 +30,9 @@ snapshot -> verse
 
 lead ->      glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)
 
-bassverse ->   wavebass[66666 666 6666  44444 444 4444  11111 111 1111  11111 111 1111 1]^6^(0)+7 
+bass ->   wavebass[66666 666 6666  44444 444 4444  11111 111 1111  11111 111 1111 1]^6^(0)+7 
 
-padverse ->     square[aaaaaaaaaaaaaaaaffffffffffffffffcccccccccccccccccccccccccccccccc]^2^+17(0)
+pad ->     square[aaaaaaaaaaaaaaaaffffffffffffffffcccccccccccccccccccccccccccccccc]^2^+17(0)
 
 drums ->          |xochxojchxocxoFxo|^3^
 
