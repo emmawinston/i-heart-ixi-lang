@@ -35,8 +35,7 @@ snapshot -> verse
 
 lead ->      glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)
 
-chimes -> 80schime[7                       8       ](0)
-
+chimes -> 80schime[7                       8       ]^4^(0)
 chimes >> reverb
 
 
@@ -52,6 +51,8 @@ snapshot -> bridge
 /* CHORUS */
 
 lead ->      glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^8^(0)
+
+chimes -> 80schime[7                       8   6   8                       8   6   ]^4^(0)
 
 bass ->      wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^6^(0)+7 
 
