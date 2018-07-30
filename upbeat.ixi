@@ -17,7 +17,7 @@ bass ->       bass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 444
 
 pad ->     square[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^2^+17(0)
 
-drums ->          |xochxoj xo xoFxo|^3^
+perc ->          |xochxoj xo xoFxo|^3^
 
 kicks ->         |a   a   |
 snares ->        |    b   |
@@ -34,7 +34,7 @@ bass ->   wavebass[66666 666 6666  44444 444 4444  11111 111 1111  11111 111 111
 
 pad ->     square[aaaaaaaaaaaaaaaaffffffffffffffffcccccccccccccccccccccccccccccccc]^2^+17(0)
 
-drums ->          |xochxojchxocxoFxo|^3^
+perc ->          |xochxojchxocxoFxo|^3^
 
 
 /* CHORUS */
@@ -45,7 +45,4 @@ bass ->  wavebass[44444 444 4444  55555 555 5555 511111 111 1111  11111 111 1111
 
 pad ->     square[ffffffffffffffffggggggggggggggggcccccccccccccccccccccccccccccccc]^2^+17(0)
                  
-drums ->         |xochxojexoaxoFxo|^3^
-
-
-							
+perc ->         |xochxojexoaxoFxo|^3^
