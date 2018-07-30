@@ -10,6 +10,7 @@ a -> (136)
 
 lead -> glitchvox []
 chimes -> 80schime[]
+chimes >> reverb
 bass -> wavebass[]
 pad -> square[]
 perc -> ||
@@ -40,11 +41,9 @@ snapshot -> verse
 
 /* BRIDGE */
 
-
 lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)
 
 chimes -> 80schime[7                       8       ]^4^(0)
-chimes >> reverb
 
 bass ->   wavebass[66666 666 6666  44444 444 4444  11111 111 1111  11111 111 1111 1]^6^(0)+7 
 
