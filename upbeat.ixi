@@ -50,7 +50,7 @@ snapshot drums
 
 lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)
 
-chimes -> 80schime[7                       8       ]^4^(0)
+chimes -> 80schime[7                       8       ]^3^(0)
 
 bass ->   wavebass[66666 666 6666  44444 444 4444  11111 111 1111  11111 111 1111 1]^6^(0)+7 
 
@@ -65,7 +65,7 @@ snapshot -> bridge
 
 lead ->      glitchvox[2316 64 44 4 44 2315 75 55 5 55 231 2313 33 33 3 2313 33 3 33 33]^8^(0)
 
-chimes ->    80schime[7                       8   6   7                       8   6   ]^4^(0)
+chimes ->    80schime[7                       8   6   7                       8   6   ]^3^(0)
 
 bass ->      wavebass[44444 444 4444  55555 555 5555 511111 111 1111  11111 111 1111 1]^6^(0)+7 
 
@@ -75,8 +75,25 @@ perc ->          |xochxoj xo xoFxo|^3^
 
 snapshot -> chorus
 
+
+/* LATER VERSES */
+
+lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^8^(0)
+
+chimes -> 80schime[7                       8       ]^3^(0)
+
+bass ->  wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^6^(0)+7
+
+pad ->     square[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^2^+17(0)
+
+perc ->          |xochxoj xo xoFxo|^3^
+
+snapshot -> verse2
+
+
 snapshot verse
 snapshot bridge
 snapshot chorus
+snapshot verse2
 
-store sessiontwo
+store sessionfive
