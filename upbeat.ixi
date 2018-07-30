@@ -8,6 +8,8 @@ f -> (146)
 g -> (257)
 a -> (136)
 
+/* INITIAL SETUP */
+
 lead -> glitchvox []
 chimes -> 80schime[]
 chimes >> reverb
@@ -18,8 +20,6 @@ kicks -> ||
 snares -> ||
 hats -> ||
 group drums -> kicks snares hats
-
-doze drums
 
 snapshot -> init
 snapshot init
@@ -44,7 +44,6 @@ snapshot -> drums
 
 snapshot -> verse
 
-snapshot init
 snapshot drums
 
 /* BRIDGE */
@@ -80,4 +79,4 @@ snapshot verse
 snapshot bridge
 snapshot chorus
 
-store sessionone
+store sessiontwo
