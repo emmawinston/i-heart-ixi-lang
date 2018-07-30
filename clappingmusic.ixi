@@ -1,0 +1,11 @@
+/* clapping music sort of thing (unfinished) */
+
+tempo 110:2
+scale major
+
+one ->      | Y  Y|
+two ->      |x x   x    x|
+three ->    |A   | 
+four ->     |  c   |
+
+drone -> piano[1     1    1    1     1    1    1     1    1    1     1    1    ]^855^/2(0)
