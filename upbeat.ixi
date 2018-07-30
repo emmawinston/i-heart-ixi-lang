@@ -33,11 +33,16 @@ drums ->          |xochxojchxocxoFxo|
 
 /* CHORUS */
 
-loop1 ->      glitchvox[2316 64 44 4 44 2315 75 55 5 55 231 2313 33 33 3 2313 33 3 33 33](0)
+loop1 ->     glitchvox[2316 64 44 4 44 2315 75 55 5 55 231 2313 33 33 3 2313 33 3 33 33]^8^(0)
 
-bassverse ->       bass[44444 444 4444  55555 555 5555 511111 111 1111  11111 111 1111 1]^9^-7 
+bassverse ->  wavebass[44444 444 4444  55555 555 5555 511111 111 1111  11111 111 1111 1]^4^(0)+7
 
-padverse ->     casp[ffffffffffffffffggggggggggggggggcccccccccccccccccccccccccccccccc]^2^+17(0)
+padverse ->     square[ffffffffffffffffggggggggggggggggcccccccccccccccccccccccccccccccc]^2^+17(0)
                  
 drums ->         |xochxojexoaxoFxo|
+
+kicks ->         |a   a   |
+snares ->        |    b   |
+hats   ->        | CC  CC |
+
 							
