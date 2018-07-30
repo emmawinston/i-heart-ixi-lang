@@ -17,6 +17,12 @@ perc -> ||
 kicks -> ||
 snares -> ||
 hats -> ||
+group drums -> kicks snares hats
+
+doze drums
+
+snapshot -> init
+snapshot init
 
 /* VERSE */
 
@@ -34,10 +40,12 @@ kicks ->         |a   a   |
 snares ->        |    b   |
 hats   ->        | CC  CC |^2^
 
-group drums -> kicks snares hats
+snapshot -> drums
 
 snapshot -> verse
 
+snapshot init
+snapshot drums
 
 /* BRIDGE */
 
