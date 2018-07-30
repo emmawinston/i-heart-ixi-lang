@@ -17,32 +17,33 @@ bassverse ->       bass[11111 111 1111  11111 111 1111  44444 444 4444 444444 44
 
 padverse ->     techpad[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^1^+5(0)
 
-drums ->          |xochxoj xo xoFxo|
+drums ->          |xochxoj xo xoFxo|^3^
+
+kicks ->         |a   a   |
+snares ->        |    b   |
+hats   ->        | CC  CC |^2^
 
 
 /* BRIDGE */
 
-loop1 ->      glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316](0)
+loop1 ->      glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)
 
-bassverse ->       bass[66666 666 6666  44444 444 4444  11111 111 1111  11111 111 1111 1]^9^-7 
+bassverse ->   wavebass[66666 666 6666  44444 444 4444  11111 111 1111  11111 111 1111 1]^6^(0)+7 
 
-padverse ->     techpad[aaaaaaaaaaaaaaaaffffffffffffffffcccccccccccccccccccccccccccccccc]^1^+5(0)
+padverse ->     square[aaaaaaaaaaaaaaaaffffffffffffffffcccccccccccccccccccccccccccccccc]^2^+17(0)
 
-drums ->          |xochxojchxocxoFxo|
+drums ->          |xochxojchxocxoFxo|^3^
 
 
 /* CHORUS */
 
 loop1 ->     glitchvox[2316 64 44 4 44 2315 75 55 5 55 231 2313 33 33 3 2313 33 3 33 33]^8^(0)
 
-bassverse ->  wavebass[44444 444 4444  55555 555 5555 511111 111 1111  11111 111 1111 1]^4^(0)+7
+bassverse ->  wavebass[44444 444 4444  55555 555 5555 511111 111 1111  11111 111 1111 1]^6^(0)+7
 
 padverse ->     square[ffffffffffffffffggggggggggggggggcccccccccccccccccccccccccccccccc]^2^+17(0)
                  
-drums ->         |xochxojexoaxoFxo|
+drums ->         |xochxojexoaxoFxo|^3^
 
-kicks ->         |a   a   |
-snares ->        |    b   |
-hats   ->        | CC  CC |
 
 							
