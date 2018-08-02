@@ -12,6 +12,6 @@ Videos/audio of songs will be posted in this readme as I record them. Some thing
 - Sunset Drive
 - Loop (working title)
 
-I'm now playing the [TOPLAP Moot](https://toplap.org/moot2018/) in Sheffield on the 1st of September. Watch this repository for my progress in building a full live set throughout July (it's fine, I work fast).
+I'm now playing the [TOPLAP Moot](https://toplap.org/moot2018/) in Sheffield on the 1st of September. Watch this repository for my progress in building a six-song live set.
 
 *If you are having difficulty installing ixi lang yourself, have a look at my [tips and tricks blog post](https://emmawinston.me/2018/07/18/installing-ixi-lang/).*
