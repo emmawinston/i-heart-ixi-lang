@@ -10,7 +10,7 @@ Videos/audio of songs will be posted in this readme as I record them. Some thing
 - [The Seaside Town](https://www.youtube.com/watch?v=NAyDQdjcNq0)
 - N1C
 - Sunset Drive
-- Loop (working title)
+- Loop
 
 I'm now playing the [TOPLAP Moot](https://toplap.org/moot2018/) in Sheffield on the 1st of September. Watch this repository for my progress in building a six-song live set.
 
