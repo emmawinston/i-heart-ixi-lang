@@ -1,6 +1,6 @@
-/* SUNSET DRIVE (unfinished) */
+/* SUNSET DRIVE */
 
-tempo 118:2
+tempo 106:2
 scale major
 c -> (135)
 d -> (246)
@@ -26,13 +26,13 @@ snapshot init
 
 /* VERSE */
 
-lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^8^(0)
+lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^8^(0)-2
 
-chimes -> 80schime[](0)
+chimes -> 80schime[](0)-2
 
-bass ->  wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^6^(0)+7
+bass ->  wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^6^(0)+5
 
-pad ->     square[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^2^+17(0)
+pad ->     square[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^2^+15(0)
 
 perc ->          |xochxoj xo xoFxo|^3^
 
@@ -48,13 +48,13 @@ snapshot drums
 
 /* BRIDGE */
 
-lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)
+lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)-2
 
-chimes -> 80schime[7                       8       ]^3^(0)
+chimes -> 80schime[7                       8       ]^3^(0)-2
 
-bass ->   wavebass[66666 666 6666  44444 444 4444  11111 111 1111  11111 111 1111 1]^6^(0)+7 
+bass ->   wavebass[66666 666 6666  44444 444 4444  11111 111 1111  11111 111 1111 1]^6^(0)+5
 
-pad ->     square[aaaaaaaaaaaaaaaaffffffffffffffffcccccccccccccccccccccccccccccccc]^2^+17(0)
+pad ->     square[aaaaaaaaaaaaaaaaffffffffffffffffcccccccccccccccccccccccccccccccc]^2^+15(0)
 
 perc ->          |xochxojchxocxoFxo|^3^
 
@@ -78,13 +78,13 @@ snapshot -> chorus
 
 /* LATER VERSES */
 
-lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^8^(0)
+lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^8^(0)-2
 
-chimes -> 80schime[7                       8       ]^3^(0)
+chimes -> 80schime[7                       8       ]^3^(0)-2
 
-bass ->  wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^6^(0)+7
+bass ->  wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^6^(0)+5
 
-pad ->     square[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^2^+17(0)
+pad ->     square[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^2^+15(0)
 
 perc ->          |xochxoj xo xoFxo|^3^
 
@@ -96,4 +96,76 @@ snapshot bridge
 snapshot chorus
 snapshot verse2
 
-store sessioneight
+
+/* LYRICS */
+
+VERSE
+back in the old time
+static and sidewalks
+like an illusion
+nothing to do 
+
+fill up the hours 
+fill up the daytime
+dream of the evening
+dream of the new
+
+think of the city 
+think of the starlight
+think of the ocean
+think of the view
+
+start up the engine
+fire the ignition 
+waiting for sunset
+waiting for you 
+
+BRIDGE 
+we’ll get lost in time 
+on the sunset drive
+we’ll get lost in time 
+on the sunset drive
+
+CHORUS
+Flying through the city in the streetlights
+Keep it like a secret that we share
+Know whatever happens we’ll be all right
+Neon glow that guides us through the night
+
+VERSE
+Drive by your window
+Counting the moments
+Counting the hours
+Counting the days
+
+Open the door wide
+Climb in beside me 
+Holding you tightly
+Nothing to say
+
+Pass by the palm trees 
+City is quiet 
+Savour the warm air
+Free in the night
+
+Watching the sunset
+Watching the moon rise
+Lay all the stars out 
+Set them alight
+
+BRIDGE 
+we’ll get lost in time 
+on the sunset drive
+we’ll get lost in time 
+on the sunset drive
+
+CHORUS
+Flying through the city in the streetlights
+Keep it like a secret that we share
+Know whatever happens we’ll be all right
+Neon glow that guides us through the night
+
+
+/* STORAGE */
+
+store sunsetdrive4
