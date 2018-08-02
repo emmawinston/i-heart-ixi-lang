@@ -8,4 +8,24 @@ two ->      |x x   x    x|
 three ->    |A   | 
 four ->     |  c   |
 
-drone -> piano[1     1    1    1     1    1    1     1    1    1     1    1    ]^855^/2(0)
+drone ->  strum[1     1    1    1     1    1    1     1    1    1     1    1    ]^311^/2(0)
+
+drone2 -> sonar[  1   1   1   1   1   1   1   1   5   5   5   5   4   4   4   4   4   4   5   5   3   3   3   3 ]^212^+3(0)
+
+
+/*LYRICS*/
+
+A
+lean against my shoulder in the park
+tell me that you’ll always be my friend
+[hold me in hotel rooms] after dark
+one day we’ll loop around and start again
+
+Show me all the light that you let in
+Tell me where the cracks are to repair
+Guide me through the places that you’ve been
+Hold for me the secrets that we share
+
+B
+Time stands still
+Still the days keep marching on
