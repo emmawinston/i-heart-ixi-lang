@@ -90,7 +90,7 @@ two ->      |x x   x    x|^8^
 three ->    |A   |^8^ 
 four ->     |  c   |^8^
 
-drone ->  strum[1     1    1    1     1    1    1     1    1    1     1    1    ]^644^/2(0)-1
+drone ->  strum[]^644^/2(0)-1
 doze drone
 
 When the clock that wakes us can be heard
