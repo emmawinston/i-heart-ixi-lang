@@ -1,5 +1,5 @@
-/***THE SEASIDE TOWN***/
-/***---Deerful---***/
+/*****THE SEASIDE TOWN******/
+/*---Deerful---*/
 
 /*----SETUP----*/
 tempo 45:2
@@ -7,87 +7,28 @@ scale minor
 a -> $1
 b -> $4
 c -> $11
-kill
-
-/* use these to save appropriate combinations of instruments/effects */
-snapshot -> intro
-snapshot -> verse1
-snapshot -> chorus1
-snapshot -> verse2
-snapshot -> verse2lead
-snapshot -> chorus2
-snapshot -> verse3
-snapshot -> bassoutro
-snapshot -> outro
 
 /*----- WAVES ------*/
-waves -> waves {1 }
+waves -> waves {2 }
 doze waves
 perk waves
 waves ))
 
-/*----- MAIN CHORDS -----*/
-
-loop1 -> weirdchord [5  8  5 4  4  3 ](0)
-
-//                  [5  8  5 4  4  3 ](0)
-//                  [1  1    5  5  5 ](0)
-
-doze loop1
-
-/* FADE */
-loop1 ((
-
-/*--- LEAD VERSE SYNTH ---*/
-loop2 -> smooth     [a       1       a   3   1       ](0)+6
-//                  [a       1       a   3   1       ](0)+6
-
-doze loop2
-
-/* FADE */
-loop2 ((
-
-/*--- LEAD CHORUS RHODES ---*/
-loop3 -> rhodes     [22 99 cc22 99 cc ](0)
-doze loop3
-perk loop3
-
-/* FADE */
-loop3 ((
-
-/* use these to control */
-snapshot intro
-snapshot chorus1
-snapshot verse2
-snapshot verse2lead
-snapshot chorus2
-snapshot verse3
-snapshot bassoutro
-snapshot outro
-
-/* ----------- DRUMS ---------- */
-
-drum1 ->            |o xo ox o xo oYi|
-hats1 ->            | j  j  j j  j jj|
+loop1 -> weirdchord[]
+loop2 -> smooth[]
+bass1 -> lofibass[]
+drum1 -> ||
+hats1 -> ||
 group drumsverse -> drum1 hats1
-doze drumsverse
-
-/* ----------- BASS ---------- */
-
-bass1 -> lofibass   [3333333322222222](0)-8
-doze bass1
-
-/* EFFECTS */
-group reverbed -> loop1 loop2 bass1 loop3
+group reverbed -> loop1 loop2 bass1 
 reverbed >> reverb
 
-/*---------- GLOBAL FILE STORAGE ---------*/
+loop1 -> weirdchord [1  1    5  5  5 ](0)^8^
 
-store seasidetown
+drum1 ->            |o xo ox o xo oYi|^5^
+hats1 ->            | j  j  j j  j jj|
 
-kill
-
-/*---LYRICS---*/
+bass1 -> lofibass[3333333322222222](0)-8^7^
 
 VERSE
 across the bay
@@ -97,26 +38,38 @@ I'm waiting for the day
 
 my ship comes in 
 the summer sky is grey 
-and can‚Äôt you see
+and can't you see
 I only wanted you to stay
 
 CHORUS
+
+loop1 -> weirdchord [5  8  5 4  4  3 ](0)^8^
+
 Aren't you the girl from the seaside town, they say
 Weren't you the one who lost her way
 But you were the girl with the salt taste skin, I know
 Come back to me with the ocean spray
+
+loop2 -> smooth[a       1       a   3   1       ](0)+6^3^
+loop1 -> weirdchord[1  1    5  5  5 ](0)^8^
 
 VERSE
 the garden blown
 the wind against the stone 
 the light that fades 
 and leaves me out here on my own
- 
+
+loop1 -> weirdchord [5  8  5 4  4  3 ](0)^8^
+loop2 -> rhodes[22 99 cc22 99 cc ](0)^3^
+
 CHORUS
 Aren't you the girl from the seaside town, they say
-Weren't you the one who lost her way
+Weren't you the girl who lost her way
 But you were the girl with the salt taste skin, I know
 Come back to me with the ocean spray
+
+loop1 -> weirdchord [1  1    5  5  5 ](0)^8^
+loop2 -> rhodes[]
 
 VERSE
 Come bind me here 
@@ -124,9 +77,11 @@ With all your silken sails
 and oh my dear
 the sea will tell your tale 
 
-/*---Synthdef for verse 2---*/
-/* SynthDef(\smooth, { |out, freq = 440, sustain = 1, gate=1, amp = 0.1|
-    var sig;
-    sig = SinOsc.ar(freq, 0, amp) * EnvGen.kr(Env.linen(0.05, sustain, 0.8), doneAction:2);
-    Out.ar(out, sig ! 2)
-}).add(\seasidetown); */
+doze drumsverse
+bass1 -> lofibass[](0)-8^7^
+loop1 -> weirdchord[]
+waves ((
+
+/*---------- GLOBAL FILE STORAGE ---------*/
+
+store seasidetown
