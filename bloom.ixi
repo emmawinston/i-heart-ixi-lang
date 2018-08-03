@@ -8,97 +8,53 @@ tempo 80:2
 c -> (13)
 f -> (14)
 g -> (25)
-
-/* ----- instruments ----- */
-/*---- these are all samples from Splice so alas I can't include them here, with the exception of the clicks/pings and the synth lead which are inbuilt with ixi lang -----*/
-
-glock1 -> glock         [1 2 3 5 6 5 86 1 2 3 5 6 53   ](0)-2
-lead -> synth           [333332222111111333332222115555](0)+10
-glock2 -> glock         [1313](0)-2  
-bass -> pongbass        [11 1 1 1111 32](0)-2
-drum ->         cozykick|1   1   1   1   1   1   1   1 |
-chord1 -> drone[ccccccccccccccccccccccccccccccfffffffffffffffffffffffffffff ](0)-8
-clicks -> |      Q u  IQ om    | 
-pings -> |ld  J        DEI| 
-
-/*-----perk and doze-----*/ 
-
-group glocks -> glock1 glock2
-perk glocks
-doze glocks
-perk glock1
-doze glock1
-perk glock2
-doze glock2
-
-group perc -> clicks pings
-perk perc 
-doze perc
-perk clicks
-perk pings
-doze clicks
-doze pings
-
-perk drum
-doze drum
-
-perk chord1
-doze chord1
-
-perk lead
-doze lead
-
-perk bass
-doze bass
-
-kill
-
-
-/*----other controls----*/
-FADE OUT
-chord1 ((
-glock1 ((
-glock2 ((
-clicks ((
-pings ((
-drum ((
-bass ((
-lead ((
-
-TURN UP 
-chord1 ))
-glock1 ))
-glock2 ))
-clicks ))
-pings ))
-drum ))
-bass ))
-lead ))
-
+chord1 -> drone[]
+lead -> synth[]
 chord1 >> reverb
 lead >> reverb
+glock1 -> glock[]
+glock2 -> glock[]
+clicks -> ||
+pings -> ||
+group glocks -> glock1 glock2
+group perc -> clicks pings
 
+/* ----- instruments ----- */
 
-/*----basic performance directions------*/
+glock1 -> glock[1 2 3 5 6 5 86 1 2 3 5 6 53   ](0)-2^3^
+glock2 -> glock[1313](0)-2^3^  
+clicks -> |      Q u  IQ om    |^8^
+pings -> |ld  J        DEI|^8^
+bass -> pongbass[11 1 1 1111 32](0)-2^8^
 
-/* Set up the instruments. Send the lead synth and the pads through reverb at the bottom, mix things to your preference then doze everything. 
+chord1 -> drone[ccccccccccccccccccccccccccccccfffffffffffffffffffffffffffff ](0)-8^4^
 
-Perk the loops to bring them back in. In order, my YouTube performance goes glock2, glock1, perc, bass, then bring the chords in at the start of the verse. Kick comes in after first verse, then lead at start of second section. Then I start fading things out gradually with the fadeout section at the bottom - lead, pads, bass, kick, glock2, glock1, perc. */
-
-
-/*--------lyrics------*/
-
-/* water and sunlight and kind words and keeping things alive
+water and sunlight and kind words and keeping things alive
 shielding against all the darkness in order to survive
 roots growing down through the earth to some corner to entwine with
 finding the light at the angle our faces can align with
 
+drum -> cozykick|1   1   1   1   1   1   1   1 |^9^
+
+lead -> synth[333332222111111333332222115555](0)+10^4^
+
 what does it feel like to want to go on
 look out the window the stars are all gone
 what does it feel like to take this for granted
-what does it feel like to bloom where you’re planted
+what does it feel like to bloom where you‚Äôre planted
 
 there in the morning the seedlings rise lightly through the ground
 keep pushing onwards and upwards but never make a sound
 see through the window the sunlight that pulls us from our dream
-grow imperceptibly slowly but faster than it seems */
+grow imperceptibly slowly but faster than it seems
+
+lead -> synth[](0)+10^2^
+chord1 -> drone[](0)-8^4^
+bass -> pongbass[](0)-2^8^
+drum -> cozykick[]
+glocks ((
+perc ((
+kill
+
+/*STORAGE*/
+store bloom
