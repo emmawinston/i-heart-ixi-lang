@@ -6,6 +6,12 @@ scale major
 c -> (135)
 f -> (146)
 g -> (257)
+drone -> strum[]
+drone1 ->cutevoice[]
+sonar -> sonar[]
+tiny -> tinyhigh[]
+harmony ->  notification[]
+twinkle ->  twinkle2[]
 
 one ->      | Y  Y|^8^
 two ->      |x x   x    x|^8^
@@ -20,15 +26,15 @@ drone ->  strum[1     1    1    1     1    1    1     1    1    1     1    1    
 
 A
 lean against my shoulder in the park
-tell me that you’ll always be my friend
+tell me that you'll always be my friend
 hold me in the dusk and after dark
-one day we’ll loop around and start again
+one day we'll loop around and start again
 
 drone1 -> cutevoice[1                   2 ]^2^(0)-1
 
 Show me all the light that you let in
 Tell me where the cracks are to repair
-Guide me through the places that you’ve been
+Guide me through the places that you've been
 Hold for me the secrets that we share
 
 sonar -> sonar[  1   1   1   1   1   1   1   1   5   5   5   5   4   4   4   4   4   4   5   5   3   3   3   3 ]^535^+2(0)
@@ -40,24 +46,22 @@ group chorus -> sonar tiny
 doze chorus
 perk chorus
 
-B
 Time stands still
 Still the days keep marching on
 Time runs out
-At the ending you’ll be gone 
+At the ending you'll be gone 
 
 harmony ->  notification[  3     3    3    3     3    3    3     3    3    3     3    3  ]^7^/2(0)+2 
 
 twinkle ->      twinkle2[1                                       ]^4^(0)-1
 
-A 
 Break me into pieces in your hands
 Put me back together in your mind
 Whisper things that no one understands
-Swear you’ll never let me fall behind
+Swear you'll never let me fall behind
 
 Hold my hand between us on the train 
-Teach me all the things you wish you’d known
+Teach me all the things you wish you'd known
 Hide with me in cafes from the rain
 Tell me I can fix this on my own 
 
@@ -69,16 +73,14 @@ tiny -> tinyhigh[1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 5 7 5 7 5 7 5 7 4 6 4 6 4 6 4 6
 
 doze chorus
 
-B
 Time stands still
-And the mountain’s mine to climb
+And the mountain's mine to climb
 Time runs out
-Still there’s somehow always time
-
+Still there's somehow always time
 
 harmony ->  notification[  3     3    3    3     3    3    3     3    3    3     3    3  ]^7^/2(0)+2 
 
-twinkle ->      twinkle2[1                                       ]^4^(0)-1 
+twinkle ->  twinkle2[1                                       ]^4^(0)-1 
 
 drone1 -> cutevoice[1                   2 ]^2^(0)-1
 
@@ -88,9 +90,11 @@ three ->    |A   |^8^
 four ->     |  c   |^8^
 
 drone ->  strum[1     1    1    1     1    1    1     1    1    1     1    1    ]^644^/2(0)-1
+doze drone
 
-A
 When the clock that wakes us can be heard
 Fly home to the nest from which you came
 Leave me healing halfway round the world
 Until we loop around and start again
+
+store loop
