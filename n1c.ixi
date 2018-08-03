@@ -24,6 +24,7 @@ hats -> ||
 kicks -> ||
 string -> synth[]
 chimes -> klang[]
+string >> reverb
 
 VERSE
 When lightning struck the spire of the station
@@ -44,7 +45,7 @@ hats ->         |F F F F F F F F FFFFFFFFF F F FF|/2^844484444444444484443^
 kicks ->        |o   x   |^86^
 group drums -> hats kicks
 
-string -> synth[33332222111111113333225511111122](0.1)+12*2^3^
+string -> synth[33332222111111113333225511111122](0)+12*2^3^
 
 CHORUS
 everything will change, you said 
