@@ -10,19 +10,20 @@ d -> (35)
 e -> (24)
 f -> (13)
 g -> (58)
-kill
 
-snapshot -> one
-
-snapshot one
-
-loop1 -> sine [a3a3a3a3b2b2b2b2c1c1c1c1c1c1b2b2](1)
-loop2 -> sine [6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ](1)-12
-
+loop1 -> sine[]
+loop2 -> sine[]
 group pianos -> loop1 loop2
 pianos >> reverb
-doze pianos
-perk pianos
+
+loop1 -> sine[a3a3a3a3b2b2b2b2c1c1c1c1c1c1b2b2](1)^4^
+loop2 -> sine[6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ](1)-12^4^
+
+bass -> fmbass[]
+hats -> ||
+kicks -> ||
+string -> synth[]
+chimes -> klang[]
 
 VERSE
 When lightning struck the spire of the station
@@ -31,8 +32,7 @@ a storm in from the south
 a crack across the sky 
 that shook us where we waited on the ground
 
-bass -> fmbass  [66 666  55 555  44 444  44445555]-12
-bass ((
+bass -> fmbass[66 666  55 555  44 444  44445555]-12^3^
 
 I laughed that this was what I'd always wanted
 Be washed away without a trace behind 
@@ -40,19 +40,11 @@ it breaks my heart in half
 it breaks my heart in half 
 No one can be this happy all the time 
 
-snapshot -> two
-
 hats ->         |F F F F F F F F FFFFFFFFF F F FF|/2^844484444444444484443^
-kicks ->        |o   x   |
+kicks ->        |o   x   |^74^
 group drums -> hats kicks
-kicks ))
-hats ))
 
-snapshot two
-
-string -> sawpad[33332222111111113333225511111122](0.1)+12*2^9^
-string ))
-string ((
+string -> synth[33332222111111113333225511111122](0.1)+12*2^3^
 
 CHORUS
 everything will change, you said 
@@ -60,8 +52,8 @@ But what if I'm not ready
 What if I'm not ready 
 What am I supposed to do instead 
 
-string -> sawpad[](0)+12*2^9^
-chimes -> klang [8 38    727  7 6 6 16 6 616 7 7 ]
+string -> synth[](0)+12*2^3^
+chimes -> klang[8 38    727  7 6 6 16 6 616 7 7 ]^3^
 
 VERSE 
 The hours I spent fixating on the weather 
@@ -70,8 +62,7 @@ I could not read the signs
 I did not know you then 
 And now I don't know where to even start
 
-string -> sawpad[33332222111111113333225511111122](0)+12*2^9^ 
-chimes -> klang []
+string -> synth[33332222111111113333225511111122](0)+12*2^3^ 
 
 CHORUS
 everything will change, you said 
@@ -79,20 +70,18 @@ But what if I'm not ready
 What if I'm not ready 
 What am I supposed to do instead 
 
-string -> sawpad[ddddeeeeffffffffddddeeggddddddee](0)+12*2^9^
-group all -> bass string chimes kicks hats
-all >> reverb
+string -> synth[ddddeeeeffffffffddddeeggddddddee](0)+12*2^3^
 
 Everything will change, you said 
 But what if I'm not ready 
 What if I'm not ready 
 What am I supposed to do instead 
 
+chimes -> klang[]
 string ((
 string ))
-string -> sawpad[](0)+12*2^9^
-doze chimes
-doze bass
+string -> synth[](0)+12*2^9^
+bass -> fmbass[]
 
 doze drums
 perk drums
@@ -104,20 +93,11 @@ A storm in from the west
 A crack across my heart
 Perhaps I wouldn't be so fucking scared
 
-loop1 -> sine [a3a3a3a3b2b2b2b2c1c1c1c1c1c1b2b2]!128(1) //silence after last one
-loop2 -> sine [6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ]!128(1)-12
+loop2 -> sine[]
+loop1 -> sine[]
+
 kill
 
 /*---GLOBAL STORAGE---*/
 
-store session6
-kill
-
-/*---SYNTHDEFS---*/
-SynthDef(\sawpad, {arg out=0, freq=220, gate=1, amp=0.1, pan=0;
-			var wave, amps, env;
-			amps = [0.6134, 0.5103, 0.3041, 0.2216, 0.4175, 0.1082, 0.067, 0.0773, 0, 0.01546];
-			wave = amps.collect({|amp, i| Saw.ar([freq *(i+1), freq *(i+1) +Rand(1, 3.8)], amp*0.1) }).sum;
-			env = EnvGen.ar(Env.asr(0.01, 1, 0.2), gate, doneAction:2);
-			Out.ar(out, Balance2.ar(wave[0], wave[1], pan, amp*env));
-		}).add(\n1c);
+store n1c
