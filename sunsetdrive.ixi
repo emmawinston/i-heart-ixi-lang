@@ -12,32 +12,29 @@ a -> (136)
 
 lead -> glitchvox[]-3
 chimes -> 80schime[]-3
-chimes >> reverb
 bass -> wavebass[]+4
-pad ->         square[]^2^+14(0)
-perc ->          ||^3^
-kicks ->         ||
-snares ->        ||
-hats   ->        ||^2^
+pad ->  echopad[]^1^+2(0)
+lead2 -> fantasy[]^2^+2(0)
+
 
 /* DRUMS */
 
 perc ->          |xochxoj xo xoFxo|^3^
 
-kicks ->         |a   a   |
-snares ->        |    b   |
+kicks ->         |a   a   |^6^
+snares ->        |    b   |^6^
 hats   ->        | CC  CC |^2^
 
 
 /*VERSE 1*/
 
-lead ->     glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^8^(0)-3
+lead ->     glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^9^(0)-3
 
-chimes ->    80schime[]^2^(0)-3
+bass ->  wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^7^(0)+4
 
-bass ->  wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^6^(0)+4
+lead2 -> fantasy[]^2^+2(0)
 
-pad ->         square[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^2^+14(0)
+pad ->         echopad[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^1^+2(0)
 
 snapshot verse
 
@@ -64,59 +61,63 @@ waiting for you
 
 /* BRIDGE */
 
-snapshot bridge
-
 lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)-3
 
-chimes ->    80schime[7                       8       ]^3^(0)-3
+chimes ->    80schime[7777777777777777777777  8888888 ]^6^(0)-5
 
 bass ->      wavebass[66666 666 6666  44444 444 4444  11111 111 1111 155555 555 5555 5]^6^(0)+4 
 
-pad ->         square[aaaaaaaaaaaaaaaaffffffffffffffffccccccccccccccccgggggggggggggggg]^2^+14(0)
+pad ->         echopad[aaaaaaaaaaaaaaaaffffffffffffffffccccccccccccccccgggggggggggggggg]^1^+2(0)
+
+lead2 -> fantasy[]^2^+2(0)
 
 perc ->          |xochxojchxocxoFxo|^3^
 
-BRIDGE 
-we’ll get lost in time 
-on the sunset drive
-we’ll get lost in time 
-on the sunset drive
+snapshot bridge
 
+BRIDGE 
+we'll get lost in time 
+on the sunset drive
+we'll get lost in time 
+on the sunset drive
 
 /* CHORUS */
 
-snapshot chorus
-
 lead ->     glitchvox[2315 53 33 3 33 2414 64 44 4 44 231 2313 33 33 3 2313 33 3 33 33]^8^(0)-3
 
-chimes ->    80schime[7                       8   6   3       7       6               ]^3^(0)-3
+chimes ->    80schime[777777777777            8   6   33333   77777   66666666666     ]^8^(0)-5
 
 bass ->      wavebass[11111 111 1111  44444 444 4444  66666 666 6666 655555 555 5555 5]^6^(0)+4 
 
-pad ->         square[ccccccccccccccccffffffffffffffffaaaaaaaaaaaaaaaagggggggggggggggg]^2^+14(0)
+pad ->         echopad[ccccccccccccccccffffffffffffffffaaaaaaaaaaaaaaaagggggggggggggggg]^1^+2(0)
+
+lead2 ->       fantasy[8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 5 5 5 5 5 5 5 5 ]^2^+2(0)
                  
 perc ->          |xochxoj xo xoFxo|^3^
+
+snapshot chorus
 
 CHORUS
 Flying through the city in the streetlights
 Keep it like a secret that we share
-Know whatever happens we’ll be all right
+Know whatever happens we'll be all right
 Neon glow that guides us through the night
-
 
 /* VERSE */
 
-snapshot verse2
-
 lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^8^(0)-3
 
-chimes -> 80schime[7                       8       ]^3^(0)-3
+chimes -> 80schime[]^3^(0)-3
 
 bass ->  wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^6^(0)+4
 
-pad ->     square[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^2^+14(0)
+pad ->     echopad[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^1^+2(0)
+
+lead2 ->   fantasy[  1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 ]^2^+2(0)
 
 perc ->          |xochxoj xo xoFxo|^3^
+
+snapshot verse2
 
 VERSE
 Drive by your window
@@ -139,55 +140,66 @@ Watching the moon rise
 Lay all the stars out 
 Set them alight
 
-
 /* BRIDGE 2 */
-
-snapshot bridge
 
 lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)-3
 
-chimes ->    80schime[7                       8       ]^3^(0)-3
+chimes ->    80schime[7777777777777777777777  8888888 ]^6^(0)-5
 
 bass ->      wavebass[66666 666 6666  44444 444 4444  11111 111 1111 155555 555 5555 5]^6^(0)+4 
 
-pad ->         square[aaaaaaaaaaaaaaaaffffffffffffffffccccccccccccccccgggggggggggggggg]^2^+14(0)
+pad ->         echopad[aaaaaaaaaaaaaaaaffffffffffffffffccccccccccccccccgggggggggggggggg]^1^+2(0)
 
-perc ->          |xochxojchxocxoFxo|^3^
+lead2 -> fantasy[]^2^+2(0)
+
+perc ->        |xochxojchxocxoFxo|^3^
+
+snapshot bridge2
 
 BRIDGE 
-we’ll get lost in time 
+we'll get lost in time 
 on the sunset drive
-we’ll get lost in time 
+we'll get lost in time 
 on the sunset drive
-
 
 /* CHORUS 2 */
 
-snapshot chorus
-
-lead ->     glitchvox[2315 53 33 3 33 2414 64 44 4 44 231 2313 33 33 3 2313 33 3 33 33]^8^(0)-3
-
-chimes ->    80schime[7                       8   6   3       7       6               ]^3^(0)-3
-
-bass ->      wavebass[11111 111 1111  44444 444 4444  66666 666 6666 655555 555 5555 5]^6^(0)+4 
-
-pad ->         square[ccccccccccccccccffffffffffffffffaaaaaaaaaaaaaaaagggggggggggggggg]^2^+14(0)
-                 
-perc ->          |xochxoj xo xoFxo|^3^
+snapshot chorus2
 
 CHORUS
 Flying through the city in the streetlights
 Keep it like a secret that we share
-Know whatever happens we’ll be all right
+Know whatever happens we'll be all right
 Neon glow that guides us through the night
 
+lead ->     glitchvox[2315 53 33 3 33 2414 64 44 4 44 231 2313 33 33 3 2313 33 3 33 33]^8^(0)-3
+
+chimes ->    80schime[777777777777            8   6   33333   77777   66666666666     ]^8^(0)-5
+chimes ((
+
+bass ->      wavebass[11111 111 1111  44444 444 4444  66666 666 6666 655555 555 5555 5]^6^(0)+4
+bass (( 
+
+pad ->        echopad[ccccccccccccccccffffffffffffffffaaaaaaaaaaaaaaaagggggggggggggggg]^1^+2(0)
+pad ((
+
+lead2 ->      fantasy[8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 5 5 5 5 5 5 5 5 ]^2^+2(0)
+lead2 ((
+                 
+perc ->          |xochxoj xo xoFxo|^3^
+
+kicks -> ||
+snares -> ||
+hats -> ||
+perc -> ||
 
 /* STORAGE */
-
-store sunsetdrive2
-
 
 snapshot -> verse
 snapshot -> bridge
 snapshot -> chorus
 snapshot -> verse2
+snapshot -> bridge2
+snapshot -> chorus2
+
+store sunsetdrive
