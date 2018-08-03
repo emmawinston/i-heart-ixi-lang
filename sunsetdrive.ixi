@@ -1,7 +1,5 @@
 /* SUNSET DRIVE */
 
-// sort out the chords for this - it's a complete mess currently
-
 tempo 106:2
 scale major
 c -> (135)
@@ -12,29 +10,17 @@ a -> (136)
 
 /* INITIAL SETUP */
 
-lead -> glitchvox []
-chimes -> 80schime[]
+lead -> glitchvox[]-3
+chimes -> 80schime[]-3
 chimes >> reverb
-bass -> wavebass[]
-pad -> square[]
-perc -> ||
-kicks -> ||
-snares -> ||
-hats -> ||
-group drums -> kicks snares hats
+bass -> wavebass[]+4
+pad ->         square[]^2^+14(0)
+perc ->          ||^3^
+kicks ->         ||
+snares ->        ||
+hats   ->        ||^2^
 
-snapshot -> init
-snapshot init
-
-/* VERSE */
-
-lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^8^(0)-2
-
-chimes -> 80schime[](0)-2
-
-bass ->  wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^6^(0)+5
-
-pad ->     square[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^2^+15(0)
+/* DRUMS */
 
 perc ->          |xochxoj xo xoFxo|^3^
 
@@ -42,64 +28,18 @@ kicks ->         |a   a   |
 snares ->        |    b   |
 hats   ->        | CC  CC |^2^
 
-snapshot -> drums
 
-snapshot -> verse
+/*VERSE 1*/
 
-snapshot drums
+lead ->     glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^8^(0)-3
 
-/* BRIDGE */
+chimes ->    80schime[]^2^(0)-3
 
-lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)-2
+bass ->  wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^6^(0)+4
 
-chimes -> 80schime[7                       8       ]^3^(0)-2
-
-bass ->      wavebass[66666 666 6666  44444 444 4444  11111 111 1111 133333 333 3333 3]^6^(0)+5 
-
-pad ->         square[aaaaaaaaaaaaaaaaffffffffffffffffcccccccccccccccceeeeeeeeeeeeeeee]^2^+15(0)
-
-perc ->          |xochxojchxocxoFxo|^3^
-
-snapshot -> bridge
-
-
-/* CHORUS */
-
-lead ->     glitchvox[2316 63 33 3 33 2414 64 44 4 44 231 2313 33 33 3 2313 33 3 33 33]^8^(0)
-
-chimes ->    80schime[7                       8   6   7                       8   6   ]^3^(0)
-
-bass ->      wavebass[66666 666 6666  44444 444 4444  11111 111 1111 155555 555 5555 5]^6^(0)+7 
-
-pad ->         square[aaaaaaaaaaaaaaaaffffffffffffffffccccccccccccccccgggggggggggggggg]^2^+17(0)
-                 
-perc ->          |xochxoj xo xoFxo|^3^
-
-snapshot -> chorus
-
-
-/* LATER VERSES */
-
-lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^8^(0)-2
-
-chimes -> 80schime[7                       8       ]^3^(0)-2
-
-bass ->  wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^6^(0)+5
-
-pad ->     square[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^2^+15(0)
-
-perc ->          |xochxoj xo xoFxo|^3^
-
-snapshot -> verse2
-
+pad ->         square[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^2^+14(0)
 
 snapshot verse
-snapshot bridge
-snapshot chorus
-snapshot verse2
-
-
-/* LYRICS */
 
 VERSE
 back in the old town
@@ -122,17 +62,61 @@ fire the ignition
 waiting for sunset
 waiting for you 
 
+/* BRIDGE */
+
+snapshot bridge
+
+lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)-3
+
+chimes ->    80schime[7                       8       ]^3^(0)-3
+
+bass ->      wavebass[66666 666 6666  44444 444 4444  11111 111 1111 155555 555 5555 5]^6^(0)+4 
+
+pad ->         square[aaaaaaaaaaaaaaaaffffffffffffffffccccccccccccccccgggggggggggggggg]^2^+14(0)
+
+perc ->          |xochxojchxocxoFxo|^3^
+
 BRIDGE 
 we’ll get lost in time 
 on the sunset drive
 we’ll get lost in time 
 on the sunset drive
 
+
+/* CHORUS */
+
+snapshot chorus
+
+lead ->     glitchvox[2315 53 33 3 33 2414 64 44 4 44 231 2313 33 33 3 2313 33 3 33 33]^8^(0)-3
+
+chimes ->    80schime[7                       8   6   3       7       6               ]^3^(0)-3
+
+bass ->      wavebass[11111 111 1111  44444 444 4444  66666 666 6666 655555 555 5555 5]^6^(0)+4 
+
+pad ->         square[ccccccccccccccccffffffffffffffffaaaaaaaaaaaaaaaagggggggggggggggg]^2^+14(0)
+                 
+perc ->          |xochxoj xo xoFxo|^3^
+
 CHORUS
 Flying through the city in the streetlights
 Keep it like a secret that we share
 Know whatever happens we’ll be all right
 Neon glow that guides us through the night
+
+
+/* VERSE */
+
+snapshot verse2
+
+lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^8^(0)-3
+
+chimes -> 80schime[7                       8       ]^3^(0)-3
+
+bass ->  wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^6^(0)+4
+
+pad ->     square[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^2^+14(0)
+
+perc ->          |xochxoj xo xoFxo|^3^
 
 VERSE
 Drive by your window
@@ -155,11 +139,41 @@ Watching the moon rise
 Lay all the stars out 
 Set them alight
 
+
+/* BRIDGE 2 */
+
+snapshot bridge
+
+lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)-3
+
+chimes ->    80schime[7                       8       ]^3^(0)-3
+
+bass ->      wavebass[66666 666 6666  44444 444 4444  11111 111 1111 155555 555 5555 5]^6^(0)+4 
+
+pad ->         square[aaaaaaaaaaaaaaaaffffffffffffffffccccccccccccccccgggggggggggggggg]^2^+14(0)
+
+perc ->          |xochxojchxocxoFxo|^3^
+
 BRIDGE 
 we’ll get lost in time 
 on the sunset drive
 we’ll get lost in time 
 on the sunset drive
+
+
+/* CHORUS 2 */
+
+snapshot chorus
+
+lead ->     glitchvox[2315 53 33 3 33 2414 64 44 4 44 231 2313 33 33 3 2313 33 3 33 33]^8^(0)-3
+
+chimes ->    80schime[7                       8   6   3       7       6               ]^3^(0)-3
+
+bass ->      wavebass[11111 111 1111  44444 444 4444  66666 666 6666 655555 555 5555 5]^6^(0)+4 
+
+pad ->         square[ccccccccccccccccffffffffffffffffaaaaaaaaaaaaaaaagggggggggggggggg]^2^+14(0)
+                 
+perc ->          |xochxoj xo xoFxo|^3^
 
 CHORUS
 Flying through the city in the streetlights
@@ -170,4 +184,10 @@ Neon glow that guides us through the night
 
 /* STORAGE */
 
-store sunsetdrive4
+store sunsetdrive2
+
+
+snapshot -> verse
+snapshot -> bridge
+snapshot -> chorus
+snapshot -> verse2
