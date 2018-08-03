@@ -1,5 +1,7 @@
 /* SUNSET DRIVE */
 
+// sort out the chords for this - it's a complete mess currently
+
 tempo 106:2
 scale major
 c -> (135)
@@ -52,9 +54,9 @@ lead ->   glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 
 
 chimes -> 80schime[7                       8       ]^3^(0)-2
 
-bass ->   wavebass[66666 666 6666  44444 444 4444  11111 111 1111  11111 111 1111 1]^6^(0)+5
+bass ->      wavebass[66666 666 6666  44444 444 4444  11111 111 1111 133333 333 3333 3]^6^(0)+5 
 
-pad ->     square[aaaaaaaaaaaaaaaaffffffffffffffffcccccccccccccccccccccccccccccccc]^2^+15(0)
+pad ->         square[aaaaaaaaaaaaaaaaffffffffffffffffcccccccccccccccceeeeeeeeeeeeeeee]^2^+15(0)
 
 perc ->          |xochxojchxocxoFxo|^3^
 
@@ -100,13 +102,13 @@ snapshot verse2
 /* LYRICS */
 
 VERSE
-back in the old time
+back in the old town
 static and sidewalks
 like an illusion
 nothing to do 
 
-fill up the hours 
-fill up the daytime
+fill up the hours
+fill up the daylight
 dream of the evening
 dream of the new
 
