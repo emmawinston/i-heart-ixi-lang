@@ -7,7 +7,7 @@ c -> (135)
 f -> (146)
 g -> (257)
 drone -> strum[]
-drone1 ->cutevoice[]
+drone1 -> cutevoice[]
 sonar -> sonar[]
 tiny -> tinyhigh[]
 harmony ->  notification[]
@@ -34,7 +34,7 @@ drone1 -> cutevoice[1                   2 ]^2^(0)-1
 Show me all the light that you let in
 Tell me where the cracks are to repair
 Guide me through the places that you've been
-Hold for me the secrets that we share
+Keep for me the secrets that we share
 
 sonar -> sonar[  1   1   1   1   1   1   1   1   5   5   5   5   4   4   4   4   4   4   5   5   3   3   3   3 ]^535^+2(0)
 
@@ -59,7 +59,7 @@ Put me back together in your mind
 Whisper things that no one understands
 Swear you'll never let me fall behind
 
-Hold my hand between us on the train 
+Take my hand between us on the train 
 Teach me all the things you wish you'd known
 Hide with me in cafes from the rain
 Tell me I can fix this on my own 
