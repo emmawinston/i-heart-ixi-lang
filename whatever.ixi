@@ -1,8 +1,10 @@
 tempo 100:2
 scale major
 
-jazz ->  coin[1  4  1  1](0)^2^
-jazz2 -> coin[4 4 4 4 4 5 5 5 5 5 6 6 6 6 6 5 5 5 5 5 ](0)^4^
+jazz ->    coin[1  4  1  1](0)^2^
+jazz2 ->   coin[4 4 4 4 4 5 5 5 5 5 6 6 6 6 6 5 5 5 5 5 ](0)^4^
+
+bass -> pianolo[1 1 111 1 111 1 1 115 5 5 555 5 555 5 55](0)+5
 
 kick ->          |o   o   o o   o o oo| 
 snare ->         |    Y     | 
