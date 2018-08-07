@@ -1,19 +1,30 @@
 tempo 100:2
 scale major
-b -> 
 
+
+kick ->          |o   o   o o   o o oo| 
+snare ->         |    Y     | 
+hats ->          |cccccccccc|
+
+---
 
 lead1 ->    coin[1  4  1  1](0)^2^
 lead2 ->   coin[4 4 4 4 4 5 5 5 5 5 6 6 6 6 6 5 5 5 5 5 ](0)^4^
 
 bass -> pianolo[1 1 111 1 111 1 1 115 5 5 555 5 555 5 55](0)+5
 
-kick ->          |o   o   o o   o o oo| 
-snare ->         |    Y     | 
-hats ->          |cccccccccc|
+snapshot one
 
---
+---
 
 lead1 ->   coin[2  5  2  2](0)^2^
-lead1 ->   coin[5 5 5 5 5 6 6 6 6 6 8 8 8 8 8 9 9 9 6 6 ](0)^4^
-bass -> pianolo[4 4 444 4 666 6 6 661 1 1 111 5 555 5 55](0)+5
+lead1 ->    coin[1  4  1  1](0)^2^
+bass -> pianolo[1 1 111 1 111 1 1 115 5 5 555 5 555 5 55](0)+5
+
+snapshot two
+
+
+
+/* GLOBAL STORAGE */
+
+store two
