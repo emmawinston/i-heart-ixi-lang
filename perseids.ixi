@@ -45,6 +45,14 @@ bass -> pianolo[4 4 444 4 666 6 6 661 1 1 111 1 111 1 11](0)+5^4^
 
 snapshot -> three
 
+CHORUS
+Meteoroids 
+travel together 
+through the night 
+watching the sky 
+maybe you’ll see them 
+burn up bright
+
 ---
 
 lead1 ->    coin[1  4  1  1](0)^1^
@@ -60,6 +68,36 @@ Though they were nowhere to be seen
 But still instead they found each other 
 And met there somewhere in between
 
+ADD ADDITIONAL VERSE
+
+---
+
+lead1 ->   coin[2  5  2  24  2  4  41  4  1  11  4  1  1](0)^3^
+lead2 ->   coin[5 5 5 5 5 6 6 6 6 6 8 8 8 8 8 4 4 4 4 4 ](0)^4^
+lead3 -> softwg[4444444444555555555566666666665555555555](0)^8^-2
+bass -> pianolo[4 4 444 4 666 6 6 661 1 1 111 1 111 1 11](0)+5^4^
+
+
+snapshot -> three
+
+CHORUS
+Meteoroids 
+travel together 
+through the night 
+watching the sky 
+maybe you’ll see them 
+burn up bright
+
+---
+
+lead1 ->    coin[1  4  1  1](0)^1^
+lead2 ->   coin[4 4 4 4 4 5 5 5 5 5 6 6 6 6 6 5 5 5 5 5 ](0)^3^
+lead3 -> softwg[3333333333333344444455555555555555555555](0)^8^-2
+bass -> pianolo[1 1 111 1 111 1 1 115 5 5 555 5 555 5 55](0)+5^2^
+
+snapshot -> four
+
+VERSE
 They watch for meteors together 
 And neither feels like she’s alone   
 there’s space inside the superstructure
