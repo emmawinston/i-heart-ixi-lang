@@ -1,0 +1,24 @@
+tempo 96:2
+
+highdrone -> highdrone{}
+lowdrone -> lowdrone{}
+radiodrone -> radiodrone{}
+highdrone >> delay
+highdrone >> reverbL
+lowdrone >> reverbL
+
+
+highdrone -> highdrone{ 2      2}
+lowdrone ->   lowdrone{    2   } 
+radiodrone -> radiodrone{ 1          }<15289>
+
+
+
+perc1 -> rand|   c     d     e     f |(0)^9^
+perc2 -> rand|h     b     h       m      |(0)^9^
+
+perc1 ))
+perc2 ))
+
+
+store arrow
