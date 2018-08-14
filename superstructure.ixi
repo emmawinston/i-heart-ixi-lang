@@ -4,13 +4,13 @@ scale major
 
 kick ->          |o   o   o o   o o oo| 
 snare ->         |    Y     | 
-hats ->          |cccccccccc|^2^
+hats ->          |cccccccccc|^4^
 
 ---
 
-lead1 ->   coin[1  4  1  1](0)^2^
-lead2 ->   coin[4 4 4 4 4 5 5 5 5 5 6 6 6 6 6 5 5 5 5 5 ](0)^2^
-bass -> bitbass[1 1 111 1 111 1 1 115 5 5 555 5 555 5 55](0.2)-2^3^
+lead1 ->   coin[1  4  1  1](0)^4^
+lead2 ->   coin[4 4 4 4 4 5 5 5 5 5 6 6 6 6 6 5 5 5 5 5 ](0)^4^
+bass -> bitbass[1 1 111 1 111 1 1 115 5 5 555 5 555 5 55](0.2)-2^4^
 
 snapshot one
 
@@ -28,11 +28,11 @@ to say the things she ought to say
 she tried to be just like the others
 she made a choice to fade away
 
-lead1 ->   coin[2  5  2  24  2  4  41  4  1  12  5  2  2](0)^2^
-lead2 ->   coin[5 5 5 5 5 6 6 6 6 6 8 8 8 8 8 9 9 9 6 6 ](0)^2^
-lead3 -> softwg[4444444444555555555588888888887777775555](0)^2^-2
-bass -> bitbass[4 4 444 4 666 6 6 661 1 1 111 5 555 5 55](0.2)-2^2^
-glass ->   glass[4 3 2 1 4 3 2 1 4 3 ]+17^9^
+lead1 ->   coin[2  5  2  24  2  4  41  4  1  12  5  2  2](0)^4^
+lead2 ->   coin[5 5 5 5 5 6 6 6 6 6 8 8 8 8 8 9 9 9 6 6 ](0)^4^
+lead3 -> softwg[4444444444555555555588888888887777775555](0)^6^-2
+bass -> bitbass[4 4 444 4 666 6 6 661 1 1 111 5 555 5 55](0.2)-2^4^
+glass ->   marimba2[4 3 2 1 4 3 2 1 4 3 ]+17^6^
 
 snapshot -> two
 
@@ -79,7 +79,7 @@ bass -> bitbass[4 4 444 4 666 6 6 661 1 1 111 1 111 1 11](0.2)-2^4^
 instruments
 
 inst ->    moog[8   7   4 333333333 6   5   3 222222111 ](0)-2^9^
-inst >> cyberpunk
+inst << cyberpunk
 
 snapshot -> three
 
