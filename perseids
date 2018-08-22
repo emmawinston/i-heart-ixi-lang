@@ -1,0 +1,137 @@
+tempo 100:2
+scale major
+xylo -> xylo[]
+xylo2 -> xylo[]
+
+kick ->          |o   o   o o   o o oo|^5^ 
+snare ->         |    Y     |^5^ 
+hats ->          |cccccccccc|^2^
+group drums -> kick snare hats
+group bells -> xylo xylo2
+
+glass -> marimba2[]
+lead1 -> coin[](0)^3^
+lead2 -> coin[](0)^3^
+lead3 -> softwg[](0)^4^-2
+bass -> bitbass[](0.2)-2^2^
+inst ->    moog[](0)-2^6^
+
+---
+
+lead1 -> coin[1  4  1  1](0)^3^
+lead2 -> coin[4 4 4 4 4 5 5 5 5 5 6 6 6 6 6 5 5 5 5 5 ](0)^3^
+bass -> bitbass[1 1 111 1 111 1 1 115 5 5 555 5 555 5 55](0.2)-2^2^
+
+VERSE
+she built a tiny superstructure
+filled it with charts and graphs and plans
+she made herself a home inside there
+she thought they'd never understand
+
+lead3 -> softwg[3333333333333344444455555555555555555555](0)^6^-2
+xylo -> xylo[4321432143]+17^7^
+
+she tried to pull herself together
+to say the things she ought to say
+she tried to be just like the others
+she made a choice to fade away
+
+lead1 ->   coin[2  5  2  24  2  4  41  4  1  12  5  2  2](0)^3^
+lead2 ->   coin[5 5 5 5 5 6 6 6 6 6 8 8 8 8 8 9 9 9 6 6 ](0)^3^
+lead3 -> softwg[4444444444555555555588888888887777775555](0)^6^-2
+bass -> bitbass[4 4 444 4 666 6 6 661 1 1 111 5 555 5 55](0.2)-2^2^
+glass ->   marimba2[4 3 2 1 4 3 2 1 4 3 ]+17^3^
+
+snapshot one
+
+CHORUS
+Meteors fall
+travel together 
+burn through the night 
+far from the earth 
+maybe you'll see them 
+casting a light
+
+---
+
+lead1 -> coin[1  4  1  1](0)^3^
+lead2 -> coin[4 4 4 4 4 5 5 5 5 5 6 6 6 6 6 5 5 5 5 5 ](0)^3^
+lead3 -> softwg[3333333333333344444455555555555555555555](0)^6^-2
+xylo -> xylo[]+17^7^
+bass -> bitbass[1 1 111 1 111 1 1 115 5 5 555 5 555 5 55](0.2)-2^2^
+glass -> marimba2[]+17^3^
+
+snapshot two
+
+VERSE
+They looked for answers to explain it
+Though they were nowhere to be seen
+But still instead they found each other 
+And met there somewhere in between
+
+xylo ->     xylo[4321432143]+17^9^
+
+They saw the flashes through the clouds
+that covered up the summer stars
+They reached a silent understanding
+they left a door to stand ajar
+
+---
+
+lead1 ->   coin[2  5  2  24  2  4  41  4  1  12  5  2  2](0)^3^
+lead2 ->   coin[5 5 5 5 5 6 6 6 6 6 8 8 8 8 8 9 9 9 6 6 ](0)^3^
+lead3 -> softwg[4444444444555555555588888888887777775555](0)^6^-2
+bass -> bitbass[4 4 444 4 666 6 6 661 1 1 111 5 555 5 55](0.2)-2^2^
+glass ->   marimba2[4 3 2 1 4 3 2 1 4 3 ]+17^3^
+xylo2 ->     xylo[6543654365]+17^9^
+
+snapshot three
+
+CHORUS
+Meteors fall 
+travel together 
+burn through the night 
+Far from the earth 
+maybe you'll see them 
+Casting a light
+
+/* TURN OFF THEN ON */
+inst ->    moog[8   7   4 333333333 6   5   3 222222111 ](0)-2^9^
+
+---
+
+inst ->    moog[](0)-2^6^
+glass ->   marimba2[]+17^3^
+lead1 ->    coin[1  4  1  1](0)^3^
+lead2 ->   coin[4 4 4 4 4 5 5 5 5 5 6 6 6 6 6 5 5 5 5 5 ](0)^3^
+lead3 -> softwg[3333333333333344444455555555555555555555](0)^6^-2
+xylo ->     xylo[4321432143]+17^9^
+bass -> bitbass[1 1 111 1 111 1 1 115 5 5 555 5 555 5 55](0.2)-2^2^
+
+snapshot four
+
+VERSE
+They watch for meteors together 
+No longer feel like they're alone   
+there's space inside the superstructure
+for others too to make a home
+
+lead3 -> softwg[](0)^6^-2
+glass -> marimba2[]+17^3^
+lead1 ->    coin[](0)^3^
+lead2 ->   coin[](0)^3^
+bass -> bitbass[]
+
+doze drums
+
+doze bells
+
+store perseids
+
+--------
+
+/*SNAPSHOTS*/
+snapshot -> one
+snapshot -> two
+snapshot -> three
+snapshot -> four
