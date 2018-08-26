@@ -1,0 +1,51 @@
+tempo 68:2
+tonality
+scale dorian
+tonic 67
+
+aa -> glass[]
+ab -> sine[]
+ac -> sine[]
+bb -> dubbass[]
+ee -> dubbass[]
+cc -> pongbass[]
+cd -> pongbass[]
+dd -> klang[]
+fl -> flute[]
+
+drums -> | L  y z Q x|(0)^8^
+kick ->  |F  p  p  |(0)^9^
+hats ->  |ccccccccc|^212^
+
+hats ((
+
+group all -> aa ab ad ac bb ee cc cd dd fl
+
+snapshot -> one
+snapshot one
+
+aa ->   glass[8  5  ]^86^
+ab ->    softwg[18]^4^
+ad ->    softwg[35]^4^
+ac ->    sine[53 53 53 53 53 53 41 41 41 41 41 41 ]^4^
+bb ->  dubbass[1 111 1 1 111 1   4  444 4 4 444 4  ]-12(0)^2^
+ee ->  dubbass[3 333 3 3 555 3   6  666 6 8 668 6 8]-12(0)^3^
+cc -> pongbass[1 151 1 1 111 1   4 4844 4 4 484 4  ](0)^3^-24<6>
+cd -> pongbass[1 151 1 1 111 1   4 4844 4 4 484 4  ](0)^2^-12<3>
+dd ->    klang[               555               666]^6^ 
+fl -> flute[88888888888888888](0)^3^
+
+cc << reverb
+
+all >> reverb
+aa >> reverb
+ac >> reverb
+fl >> reverbL
+instruments
+ee >> techno
+ab >> techno
+
+all ((
+kill
+
+store postfolk3
