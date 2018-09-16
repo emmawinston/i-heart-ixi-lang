@@ -17,6 +17,6 @@ Videos/audio of songs will be posted in this readme as I record them. Some thing
 - Untitled (post-folk instrumental)
 - Untitled (baroque instrumental)
 
-I'm now playing the [TOPLAP Moot](https://toplap.org/moot2018/) in Sheffield on the 1st of September. Watch this repository for my progress in building a six-song live set.
+This repository was set up when I was invited to play the [TOPLAP Moot](https://toplap.org/moot2018/) in Sheffield on the 1st of September 2018, and used this repository to build a live set, which ultimately became my mini-album [Tell Me I Can Fix This On My Own](https://github.com/emmawinston/tell-me-i-can-fix-this-on-my-own).
 
 *If you are having difficulty installing ixi lang yourself, have a look at my [tips and tricks blog post](https://emmawinston.me/2018/07/18/installing-ixi-lang/).*
