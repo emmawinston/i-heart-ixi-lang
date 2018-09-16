@@ -1,0 +1,28 @@
+/*--- BAROQUE (craftwork) ---*/
+
+tonic 55
+scale minor
+tempo 69:2
+instruments
+
+click -> |N   N   |^9^
+kick ->  |e   e   |^2^
+group perc -> click kick
+
+
+mel1 -> sonarpiano[1 3213231  212345  65   54325   ]-3(1~4)^5^
+mel1 -> rhodes[5   5   5   5   1   1   1   1   ](1~4)^6^
+
+pad ->  eerie[33333333333333338888888877777777]^2^(0)-4
+
+mel1 -> sonarpiano[6   6   6   6   5   5   5   5   1   1   1   1   5   5   5   5   ]-3(1~4)^5^
+mel1 -> rhodes[5   5   5   5   1   1   1   1   ](1~4)^6^
+
+mel1 -> sonarpiano[6   6   5   5   1   1   5   5   ]-3(1~4)^5^
+
+
+Gm Dm Gm Dm 
+Eb Dm Gm Dm
+
+coder
+store baroque
