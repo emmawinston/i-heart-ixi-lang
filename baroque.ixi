@@ -7,13 +7,15 @@ instruments
 
 click -> |N   N   |^9^
 kick ->  |e   e   |^2^
+snare -> |    g   |(1~4)^2^
+hat ->   |cc  c cccc|^2^<2736>
 group perc -> click kick
 
 ---
 
 /* SECTION 1 */
-mel1 -> sonarpiano[1   1   1   1   5   5   5   5   ]-3(1~4)^5^
-bass ->   pongbass[1   1   1   1   5 5 5 5 5 5 5 5 ]-4(1~4)^8^
+mel1 -> sonarpiano[1 321   1   1   565 5   5432 5   ]-3(1~4)^5^
+bass ->   pongbass[1   1   1   1   5   5   5   5   ]-12(1~4)^8^
 bass ->      gummy[1   1   1   1   5 5 5 5 5 5 5 5 ]-4(1~4)^8^
 
 bass >> reverbS
@@ -39,7 +41,7 @@ mel1 -> sonarpiano[1 3213231  212345  65   54325   ]-3(1~4)^5^
 mel1 -> sonarpiano[1 3213231  212345  65   54325   ]-3(1~4)^5^
 mel1 ->     rhodes[5   5   5   5   1   1   1   1   ](1~4)^6^
 
-pad ->       eerie[33333333333333337777777777777777]^4^(0)-4
+pad ->       eerie[33333333333333337777777777777777]^7^(0)-4
 bass ->   pongbass[1   1   1   1   5 5 5 5 5 5 5 5 ]-4(1~4)^8^
 bass ->      gummy[1   1   1   1   5 5 5 5 5 5 5 5 ]-4(1~4)^8^
 ---
@@ -56,7 +58,7 @@ mel1 ->     rhodes[5   5   5   5   1   1   1   1   ](1~4)^6^
 
 pad ->       eerie[33333333333333337777777777777777]^4^(0)-4
 bass ->   pongbass[1   1   1   1   5 5 5 5 5 5 5 5 ]-4(1~4)^8^
-bass ->      gummy[1   1   1   1   5 5 5 5 5 5 5 5 ]-4(1~4)^8^
+bass ->      gummy[1   1   1   1   5 5 5 5 5 5 5 5 ]-4(1~4)^2^
 
 
 Gm Dm Gm Dm 
