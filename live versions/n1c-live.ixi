@@ -1,0 +1,92 @@
+/*****N1C******/
+
+scale major
+tempo 76:2
+
+loop1 -> rhodes[83838383727272726161616161617272](1~3)^3^
+loop2 -> rhodes[6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ](1~3)^3^
+loop3 -> sine[6 6 6 6 5 5 5 5 4 4 4 4 4 4 5 5 ](0.9)-12^4^
+group pianos -> loop1 loop2 loop3
+pianos >> reverb
+
+string1 -> synth[]
+
+// REVERBS STRING1
+
+When lightning struck the spire of the station
+We listened, lost in wonder, to the sound
+a storm in from the south
+a crack across the sky 
+that shook us where we waited on the ground
+
+bass -> fmbass[66 666  55 555  44 444  44445555]-12^5^
+
+I laughed that this was what I'd always wanted
+Be washed away without a trace behind 
+it breaks my heart in half
+it breaks my heart in half 
+No one can be this happy all the time 
+
+hats ->         |F F F F F F F F FFFFFFFFF F F FF|/2^844484444444444484443^
+kicks ->        |o   x   |^86^
+
+
+// GROUP DRUMS HATS KICKS
+
+
+string1 -> synth[33332222111111113333225511111122](0)+12*2^4^
+
+everything will change, you said 
+But what if I'm not ready 
+What if I'm not ready 
+What am I supposed to do instead 
+
+string1 -> synth[]
+chimes -> klang[8 38    727  7 6 6 16 6 616 7 7 ]^5^
+
+The hours I spent fixating on the weather 
+And silencing the voice inside my heart 
+I could not read the signs 
+I did not know you then 
+And now I don't know where to even start
+
+string1 -> synth[33332222111111113333225511111122](0)+12*2^4^ 
+
+everything will change, you said 
+But what if I'm not ready 
+What if I'm not ready 
+What am I supposed to do instead 
+
+string2 -> synth[55554444333333335555448855555544](0)+12*2^3^
+
+Everything will change, you said 
+But what if I'm not ready 
+What if I'm not ready 
+What am I supposed to do instead 
+
+// COFFEE CHIMES
+
+
+chimes ->  []
+string1 -> []
+string2 -> []
+bass ->    []
+
+
+// DOZE DRUMS
+
+
+If I could climb inside your head and stay there
+If I could be the one who came prepared
+A storm in from the west 
+A crack across my heart
+Perhaps I wouldn't be so fucking scared
+
+loop3 -> []
+loop2 -> []
+loop1 -> []
+
+
+/*---GLOBAL STORAGE---*/
+
+store n1c
