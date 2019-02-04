@@ -1,0 +1,24 @@
+var o, p;
+o = [
+	Array.prNew(2),  Array.prNew(5),  Array.prNew(2),  "sdkfj -> |sdf s df d  |",  
+	Array.prNew(2),  "shake sdkfj",  Array.prNew(2),  "shake sdkfj",  
+	Array.prNew(2),  "shake sdkfj",  Array.prNew(2),  "savescore ooo"
+];
+p = [
+	// Array
+	0, [ 274152,  o[1] ],  
+	// Array
+	1, [ o[2],  o[4],  o[6],  o[8],  
+		o[10] ],  
+	// Array
+	2, [ 0.000000,  o[3] ],  
+	// Array
+	4, [ 4.896056,  o[5] ],  
+	// Array
+	6, [ 5.527757,  o[7] ],  
+	// Array
+	8, [ 6.161666,  o[9] ],  
+	// Array
+	10, [ 10.200015,  o[11] ]
+];
+prUnarchive(o,p);

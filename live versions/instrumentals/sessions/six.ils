@@ -1,0 +1,50 @@
+var o, p;
+o = [
+	Array.prNew(8),  "instrumentals",  "C",  "tempo 120:2
+scale lydian
+tonic 60
+
+
+store six
+",  
+	IdentityDictionary.prNew,  Array.prNew(32),  IdentityDictionary.prNew,  Array.prNew(32),  
+	Event.prNew,  Array.prNew(4)
+];
+p = [
+	// Array
+	0, [ o[1],  o[2],  nil,  o[3],  
+		o[4],  o[6],  o[8],  2 ],  
+	// IdentityDictionary
+	4, [ array: o[5],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	5, [ nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil ],  
+	// IdentityDictionary
+	6, [ array: o[7],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	7, [ nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil ],  
+	// Event
+	8, [ array: o[9],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	9, [ nil,  nil,  nil,  nil ]
+];
+prUnarchive(o,p);
