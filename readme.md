@@ -6,6 +6,8 @@ I've forgotten most of the Supercollider I once knew so I thought a way to get b
 
 There's a mix here of album tracks, live versions, and drafts of things that may or may not ever be finished (some of which were intended for other bands). 
 
+Finished tracks are:
+
 - [Bloom](https://www.youtube.com/watch?v=MJSRAuPQoA8)
 - [The Seaside Town](https://www.youtube.com/watch?v=NAyDQdjcNq0)
 - N1C
@@ -13,10 +15,8 @@ There's a mix here of album tracks, live versions, and drafts of things that may
 - Sunset Drive
 - Loop
 - Perseids
-- Replies Rarely (instrumental, draft)
-- Untitled 1 (instrumental, draft)
-- Untitled 2 (instrumental, draft)
 - Surface
+- Six very bare-bones templates for improvised instrumentals
 
 This repository was set up when I was invited to play the [TOPLAP Moot](https://toplap.org/moot2018/) in Sheffield on the 1st of September 2018, and used this repository to build a live set, which ultimately became my mini-album [Tell Me I Can Fix This On My Own](https://github.com/emmawinston/tell-me-i-can-fix-this-on-my-own).
 
