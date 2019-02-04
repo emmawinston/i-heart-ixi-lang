@@ -1,0 +1,129 @@
+var o, p;
+o = [
+	Array.prNew(8),  "liveset",  "C",  "/*****THE SEASIDE TOWN******/
+
+/* -----song setup----- */
+tempo 45:2
+scale minor
+
+waves -> waves {2 }^8^
+
+a -> $1
+b -> $4
+c -> $11
+
+/* ----- instruments ----- */
+loop -> weirdchord[]
+riff -> smooth[]
+bass -> lofibass[]
+group inst -> loop riff bass 
+
+// REVERB INST
+
+
+loop -> weirdchord [1  1    5  5  5 ](0)^8^
+
+drum ->            |o fo of o fo oGg|^5^
+hats ->            | j  j  j j  j jj|
+group drums -> drum hats
+
+bass -> lofibass[3333333322222222](0)-8^7^
+
+Across the bay
+A hundred miles away
+Get lost in me 
+I'm waiting for the day
+
+My ship comes in 
+The summer sky is grey 
+And can't you see
+I only wanted you to stay
+
+loop -> weirdchord [5  8  5 4  4  3 ](0)^8^
+
+Aren't you the girl from the seaside town, they say
+Weren't you the one who lost her way
+But you were the girl with the salt taste skin, I know
+Come back to me with the ocean spray
+
+loop -> weirdchord[1  1    5  5  5 ](0)^8^
+riff -> smooth[a       1       a   3   1       ](0)+6^3^
+
+The garden blown
+The wind against the stone 
+The light that fades 
+And leaves me out here on my own
+
+loop -> weirdchord [5  8  5 4  4  3 ](0)^8^
+riff -> rhodes[22 99 cc22 99 cc ](0)^3^
+
+Aren't you the girl from the seaside town, they say
+Weren't you the one who lost her way
+But you were the girl with the salt taste skin, I know
+Come back to me with the ocean spray
+
+loop -> weirdchord [1  1    5  5  5 ](0)^8^
+
+// STOP RIFF
+
+
+Come bind me here 
+With all your silken sails 
+And oh, my dear
+The sea will tell your tale 
+
+doze drums
+
+// STOP BASS / LOOP
+
+
+// FADE WAVES 
+
+
+
+/*---- file storage -----*/
+
+store seasidetown
+
+",  
+	IdentityDictionary.prNew,  Array.prNew(32),  IdentityDictionary.prNew,  Array.prNew(32),  
+	Event.prNew,  Array.prNew(4)
+];
+p = [
+	// Array
+	0, [ o[1],  o[2],  nil,  o[3],  
+		o[4],  o[6],  o[8],  1 ],  
+	// IdentityDictionary
+	4, [ array: o[5],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	5, [ nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil ],  
+	// IdentityDictionary
+	6, [ array: o[7],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	7, [ nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil ],  
+	// Event
+	8, [ array: o[9],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	9, [ nil,  nil,  nil,  nil ]
+];
+prUnarchive(o,p);

@@ -1,0 +1,109 @@
+var o, p;
+o = [
+	Array.prNew(8),  "liveset",  "C",  "/*****BLOOM******/
+
+/* -----song setup----- */
+scale major
+tempo 80:2
+
+/* -----glockenspiels----- */
+glock1 -> glock[1313](0)-2^3^  
+glock2 -> glock[1 2 3 5 6 5 86 1 2 3 5 6 53   ](0)-2^3^
+group glocks -> glock1 glock2 
+
+/* -----chord setup-----*/
+c -> (13)
+f -> (14)
+g -> (25)
+
+/* ----- initialise other instruments ----- */
+lead -> synth[]
+chord -> drone[]
+
+// REVERB LEAD
+
+
+perc1 -> |      Q u  IQ Im    |^8^
+perc2 -> |ld  J        QEI|^8^
+group perc -> perc1 perc2
+bass -> pongbass[11 1 1 1111 32](0)-2^6^
+chord -> drone[ccccccccccccccccccccccccccccccfffffffffffffffffffffffffffff ](0)-8^4^
+
+// REVERB CHORD
+
+
+water and sunlight and kind words and keeping things alive
+shielding against all the darkness in order to survive
+roots growing down through the earth to some corner to entwine with
+finding the light at the angle our faces can align with
+
+drum -> cozykick|1   1   1   1   1   1   1   1 |^7^
+
+lead -> synth[333332222111111333332222115555](0)+10^4^
+
+what does it feel like to want to go on
+look out the window the stars are all gone
+what does it feel like to take this for granted
+what does it feel like to bloom where you're planted
+
+// TECHNO LEAD
+
+
+there in the morning the seedlings rise lightly through the ground
+keep pushing onwards and upwards but never make a sound
+see through the window the sunlight that pulls us from our dream
+grow imperceptibly slowly but faster than it seems
+
+// STOP LEAD / CHORD / BASS / DRUM
+
+
+group end -> glocks perc
+end ((
+
+
+/*---- file storage -----*/
+
+store bloom
+
+",  
+	IdentityDictionary.prNew,  Array.prNew(32),  IdentityDictionary.prNew,  Array.prNew(32),  
+	Event.prNew,  Array.prNew(4)
+];
+p = [
+	// Array
+	0, [ o[1],  o[2],  nil,  o[3],  
+		o[4],  o[6],  o[8],  3 ],  
+	// IdentityDictionary
+	4, [ array: o[5],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	5, [ nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil ],  
+	// IdentityDictionary
+	6, [ array: o[7],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: false ],  
+	// Array
+	7, [ nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil,  
+		nil,  nil,  nil,  nil ],  
+	// Event
+	8, [ array: o[9],  size: 0,  
+		proto: nil,  parent: nil,  
+		know: true ],  
+	// Array
+	9, [ nil,  nil,  nil,  nil ]
+];
+prUnarchive(o,p);
