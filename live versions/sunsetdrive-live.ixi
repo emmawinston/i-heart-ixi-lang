@@ -1,0 +1,146 @@
+/*****SUNSET DRIVE******/
+
+/* -----song setup----- */
+tempo 106:2
+scale major
+
+/* ----- drums ----- */
+perc -> |xochxoj xo xoFxo|^3^
+kick -> |a   a   |^7^
+snare -> |    b   |^6^
+hat -> | CC  CC |^2^
+
+/* ----- chords ----- */
+c -> (135)
+d -> (246)
+f -> (146)
+g -> (257)
+a -> (136)
+
+/* ----- instruments ----- */
+lead -> glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^6^(0)-3
+bass -> wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^7^(0)+4
+lead2 -> fantasy[]^2^+2(0)
+pad -> echopad[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^1^+2(0)
+
+back in the old town
+static and sidewalks
+like an illusion
+nothing to do 
+
+fill up the hours
+fill up the daylight
+dream of the evening
+dream of the new
+
+think of the city 
+think of the starlight
+think of the ocean
+think of the view
+
+start up the engine
+fire the ignition 
+waiting for sunset
+waiting for you 
+
+
+lead -> glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)-3
+chimes -> 80schime[7777777777777777777777  8888888 ]^6^(0)-5
+bass -> wavebass[66666 666 6666  44444 444 4444  11111 111 1111 155555 555 5555 5]^6^(0)+4 
+pad -> echopad[aaaaaaaaaaaaaaaaffffffffffffffffccccccccccccccccgggggggggggggggg]^1^+2(0)
+lead2 -> fantasy[]^2^+2(0)
+perc -> |xoJuxojJuxoJxoFxo|^3^
+
+snapshot bridge
+
+We'll get lost in time 
+On the sunset drive
+
+
+lead -> glitchvox[2315 53 33 3 33 2414 64 44 4 44 231 2313 33 33 3 2313 33 3 33 33]^8^(0)-3
+chimes -> 80schime[777777777777            8   6   33333   77777   66666666666     ]^8^(0)-5
+bass -> wavebass[11111 111 1111  44444 444 4444  66666 666 6666 655555 555 5555 5]^6^(0)+4 
+pad -> echopad[ccccccccccccccccffffffffffffffffaaaaaaaaaaaaaaaagggggggggggggggg]^1^+2(0)
+lead2 -> fantasy[8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 5 5 5 5 5 5 5 5 ]^2^+2(0)     
+perc -> |xoJuxoj xo xoFxo|^3^
+
+snapshot chorus
+
+Flying through the city in the streetlights
+Keep it like a secret that we share
+Know whatever happens we'll be all right
+Neon glow that guides us through the night
+
+
+lead -> glitchvox[2313 33 33 3 2313 33 3 33 33 2316 64 44 4 44 2316 64 44 4 44 231]^8^(0)-3
+chimes -> 80schime[]^3^(0)-3
+bass -> wavebass[11111 111 1111  11111 111 1111  44444 444 4444 444444 444 4444 4]^6^(0)+4
+pad -> echopad[ccccccccccccccccccccccccccccccccffffffffffffffffffffffffffffffff]^1^+2(0)
+lead2 -> fantasy[  1   1   1   1   1   1   1   1   1   1   1   1   1   1   1   1 ]^2^+2(0)
+perc -> |xoJuxoj xo xoFxo|^3^
+
+snapshot verse2
+
+
+Drive by your window
+Counting the moments
+Counting the hours
+Counting the days
+
+Open the door wide
+Climb in beside me 
+Holding you tightly
+Nothing to say
+
+Pass by the palm trees 
+City is quiet 
+Savour the warm air
+Free in the night
+
+Watching the sunset
+Watching the moon rise
+Lay all the stars out 
+Set them alight
+
+
+
+
+lead -> glitchvox[2313 33 33 3 2313 33 3 33 33 2316 2313 33 33 3 2313 33 3 33 33 2316]^8^(0)-3
+chimes -> 80schime[7777777777777777777777  8888888 ]^6^(0)-5
+bass -> wavebass[66666 666 6666  44444 444 4444  11111 111 1111 155555 555 5555 5]^6^(0)+4 
+pad -> echopad[aaaaaaaaaaaaaaaaffffffffffffffffccccccccccccccccgggggggggggggggg]^1^+2(0)
+lead2 -> fantasy[]^2^+2(0)
+perc -> |xoJuxojJuxoJxoFxo|^3^
+
+snapshot bridge2
+ 
+we'll get lost in time 
+on the sunset drive
+we'll get lost in time 
+on the sunset drive
+
+
+lead -> glitchvox[2315 53 33 3 33 2414 64 44 4 44 231 2313 33 33 3 2313 33 3 33 33]^8^(0)-3
+chimes -> 80schime[777777777777            8   6   33333   77777   66666666666     ]^8^(0)-5
+bass -> wavebass[11111 111 1111  44444 444 4444  66666 666 6666 655555 555 5555 5]^6^(0)+4 
+pad -> echopad[ccccccccccccccccffffffffffffffffaaaaaaaaaaaaaaaagggggggggggggggg]^1^+2(0)
+lead2 -> fantasy[8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 8 5 5 5 5 5 5 5 5 ]^2^+2(0)     
+perc -> |xoJuxoj xo xoFxo|^3^
+
+snapshot chorus2
+
+Flying through the city in the streetlights
+Keep it like a secret that we share
+Know whatever happens we'll be all right
+Neon glow that guides us through the night          
+
+// GROUP LEAD / LEAD2 / PAD / PERC / KICK / SNARE / HAT / CHIMES
+group outro ->
+
+// FADE OUTRO
+
+
+
+/* STORAGE */
+
+store sunsetdrive

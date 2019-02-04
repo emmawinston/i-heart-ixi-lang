@@ -1,0 +1,89 @@
+/*****SURFACE******/
+
+scale major
+tempo 36:2
+
+// INTRO
+bass -> piano[6  66  66  66  74  44  44       ]()-12 
+top ->  piano[ 65  65  65  65  65  6563       ](1~1)
+mid ->  piano[ 3   3   3   3   4   4          ](0.8)
+
+group pianos -> bass top mid
+pianos >> reverb
+
+// VERSE
+bass -> piano[6  66  66  66  74  44  44  44  5](0.2)-12^4^
+top ->  piano[ 65  65  65  65  65  65  65  65 ](0.6)^8^
+mid ->  piano[ 3   3   3   3   4   4   4   4  ](0.8) 
+
+/* ---------------------------------------- */
+I brace myself against three surfaces at once
+The marble of the library walls
+And on the balcony I fold myself in corners,
+And try to keep from picturing the fall
+/* ---------------------------------------- */
+
+top -> piano[ 87  87  87  87  87  87  87  87 ](0.6)^8^
+e -> (57)
+a -> (68)
+f -> (468)
+// BACK TO VERSE
+
+
+/* ---------------------------------------- */
+In the apartment, then, the window stands ajar
+A moth slams up against the light
+I sit beside you with my back up to the wall,
+And watch it disappear into the night
+/* ---------------------------------------- */
+
+
+top ->  piano[ 33  33  33  33  33  33  33  33 ](0.6)+12^8^
+mid ->  piano[ aa  aa  aa  aa  ee  ee  ee  ee ](0.6)^8^
+bass -> piano[6  66  66  66  73  33  33  33  5](0.2)-12^4^
+mid ->  piano[ aa  aa  aa  aa  ff  ff  ff  ff ](0.6)^8^
+bass -> piano[6  66  66  66  74  44  44  44  5](0.2)-12^4^ 
+
+/* ---------------------------------------- */
+And then the rain begins to brush up to the glass;
+I hear it surface like a sigh
+And the edges in between us fade together in the dark
+Where I can look directly in your eyes
+/* ---------------------------------------- */
+
+// BACK TO INTRO
+
+
+bass -> piano[6  66  66  66  74  44  44  44  5](0.2)-12^4^
+top ->  piano[ 65  65  65  65  65  65  65  65 ](0.6)^8^
+mid ->  piano[ 3   3   3   3   4   4   4   4  ](0.8) 
+
+/* ---------------------------------------- */
+I fold into myself so I can find the words
+I push my head against your shoulder 
+I let myself unwind the sickness in my thoughts
+For a moment I can make myself be bolder
+
+And on the balcony the rain falls through the white light
+And I can lean against the wall of you beside
+And the edges in between us fade together in the dark
+Where I can look directly in your eyes
+/* ---------------------------------------- */
+
+
+bass -> piano[6  66  66  66  74  44  44  44  5](0.2)-12^4^
+top ->  piano[ 65  65  65  65  65  65  65  65 ](0.6)^8^
+mid ->  piano[ 3   3   3   3   4   4   4   4  ](0.8) 
+
+/* ---------------------------------------- */
+We brace ourselves against the surface of each other
+And there, surrounded, I will try
+I am safe, I am exposed, and I can feel the change is coming;
+But I cannot look directly in its eyes
+/* ---------------------------------------- */
+
+bass -> piano[6  66  66  66  74  44  44       ]()-12 
+top ->  piano[ 65  65  65  65  65  6563       ](1~1)
+
+store surface
+

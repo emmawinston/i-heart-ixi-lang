@@ -1,0 +1,26 @@
+/*****-> [INTERLUDE] ******/
+
+/* ----- initial setup ----- */
+tempo 96:2
+tonic 59
+scale minorPentatonic
+
+/* ----- drone setup ----- */
+highdrone -> highdrone{}
+lowdrone -> lowdrone{}
+radiodrone -> radiodrone{}
+
+/* ----- fx ----- */
+highdrone >> delay
+highdrone >> reverbL
+lowdrone >> reverbL
+
+/* ----- play drones ----- */
+highdrone -> highdrone{ 5      5}
+lowdrone ->   lowdrone{    5   } 
+radiodrone -> radiodrone{ 1          }<15289>
+
+/* ----- play percussion ----- */
+// wood, softwg, xylo, glass
+
+store interlude

@@ -1,0 +1,84 @@
+/*****LOOP******/
+
+/* -----song setup----- */
+tempo 110:2
+scale major
+
+/* ----- drums ----- */
+one ->      | Y  Y|^8^
+two ->      |E E   E    E|^8^
+three ->    |A   |^6^ 
+four ->     |  J   |^6^
+
+group drums -> one two three four
+
+/* ----- drone ----- */
+drone ->  strum[1     1    1    1     1    1    1     1    1    1     1    1    ]^533^/2(0)-1
+
+lean against my shoulder in the park
+tell me that you'll always be my friend
+talking in the dusk and after dark
+one day we'll loop around and start again
+
+vox -> cutevoice[1                   2 ]^2^(0)-1
+
+Show me all the light that you let in
+Tell me where the cracks are to repair
+Guide me through the places that you've been
+Keep for me the secrets that we share
+
+sonar -> sonar[  1   1   1   1   1   1   1   1   5   5   5   5   4   4   4   4   4   4   5   5   3   3   3   3 ]^535^+2(0)
+tiny -> tinyhigh[1 3 1 3 1 3 1 3 1 3 1 3 1 3 1 3 5 7 5 7 5 7 5 7 4 6 4 6 4 6 4 6 4 6 4 6 5 7 5 7 1 3 1 3 1 3 1 3 ]^2^(0)-1
+
+group chorus -> sonar tiny
+
+Time stands still
+Still the days keep marching on
+Time runs out
+At the ending you'll be gone 
+
+// DOZE CHORUS
+
+
+harmony ->  notification[  3     3    3    3     3    3    3     3    3    3     3    3  ]^7^/2(0)+2 
+
+Break me into pieces in your hands
+Put me back together in your mind
+Whisper things that no one understands
+Swear you'll never let me fall behind
+
+twinkle ->      twinkle2[1                                       ]^4^(0)-1
+
+Take my hand between us on the train 
+Teach me all the things you wish you'd known
+Hide with me in cafes from the rain
+Tell me I can fix this on my own 
+
+// PERK CHORUS 
+
+
+Time stands still
+And the mountain's mine to climb
+Time runs out
+Still there's somehow always time
+
+// DOZE CHORUS
+
+
+When the clock that wakes us can be heard
+Fly home to the nest from which you came
+Leave me healing halfway round the world
+Until we loop around and start again
+
+harmony ->  []
+twinkle ->  []
+vox ->      []
+
+one ->      ||
+two ->      ||
+three ->    ||
+four ->     ||
+
+drone ->    []
+
+store loop

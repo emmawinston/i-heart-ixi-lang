@@ -1,0 +1,83 @@
+/*****THE SEASIDE TOWN******/
+
+/* -----song setup----- */
+tempo 45:2
+scale minor
+
+waves -> waves {2 }^8^
+
+a -> $1
+b -> $4
+c -> $11
+
+/* ----- instruments ----- */
+loop -> weirdchord[]
+riff -> smooth[]
+bass -> lofibass[]
+group reverbed -> loop riff bass 
+reverbed >> reverb
+
+loop -> weirdchord [1  1    5  5  5 ](0)^8^
+
+
+drum ->            |o fo of o fo oYi|^5^
+hats ->            | j  j  j j  j jj|
+group drums -> drum hats
+
+bass -> lofibass[3333333322222222](0)-8^7^
+
+across the bay
+a hundred miles away
+get lost in me 
+I'm waiting for the day
+
+my ship comes in 
+the summer sky is grey 
+and can't you see
+I only wanted you to stay
+
+loop -> weirdchord [5  8  5 4  4  3 ](0)^8^
+
+Aren't you the girl from the seaside town, they say
+Weren't you the one who lost her way
+But you were the girl with the salt taste skin, I know
+Come back to me with the ocean spray
+
+riff -> smooth[a       1       a   3   1       ](0)+6^3^
+loop -> weirdchord[1  1    5  5  5 ](0)^8^
+
+the garden blown
+the wind against the stone 
+the light that fades 
+and leaves me out here on my own
+
+loop -> weirdchord [5  8  5 4  4  3 ](0)^8^
+riff -> rhodes[22 99 cc22 99 cc ](0)^3^
+
+Aren't you the girl from the seaside town, they say
+Weren't you the girl who lost her way
+But you were the girl with the salt taste skin, I know
+Come back to me with the ocean spray
+
+loop -> weirdchord [1  1    5  5  5 ](0)^8^
+
+// STOP RIFF
+
+
+Come bind me here 
+With all your silken sails 
+and oh my dear
+the sea will tell your tale 
+
+doze drums
+
+// STOP BASS / LOOP
+
+
+// FADE WAVES 
+
+
+
+/*---------- GLOBAL FILE STORAGE ---------*/
+
+store seasidetown
