@@ -1,0 +1,53 @@
+tonic 56
+scale major
+tempo 48:2
+
+a -> (16)
+g -> (57)
+c -> (38)
+
+bb ->  bitbass[6666677788888777](1~2)-12^2^ 
+aa ->  techpad[a    g  c    g  ](1~3)
+ab ->  techpad[3    2  5    2  ](1~3)
+cc -> synth[21122112]+12(1)^5^
+pp ->         |a   C     a C   a   C     a C   |(1~2)/2^8^
+
+
+Hey, I was doing just fine before I met you
+I drink too much and that's an issue but I'm okay
+
+
+hh ->         |C  CC C                         |(1~2)/2^2^
+ss ->         |                               f|*4
+
+Hey, you tell your friends it was nice to meet them
+But I hope I never see them again
+
+
+hh ->         |C C C C C C C C |(1~2)/2^2^
+pp ->         |a   b     a b   a   b     a b   |(1~2)/2^8^
+
+I know it breaks your heart
+Moved to the city in a broke down car
+And four years, no calls
+Now you're looking pretty in a hotel bar
+
+cc -> synth[2321543211111111]+12(1)^8^
+
+And I can't stop
+No, I can't stop
+
+
+cc -> synth[21122112]+12(1)^5^
+
+
+cc -> synth[2112211331122112]+12(1)^5^
+cc << bitcrush
+pp expand 1
+
+group pianos -> aa ab
+
+pianos >> reverbL
+
+instruments
+
